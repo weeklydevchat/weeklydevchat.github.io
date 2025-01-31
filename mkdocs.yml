@@ -1,0 +1,18 @@
+site_name: Weekly Dev Chat
+
+site_url: https://mydomain.org/mysite
+theme:
+    name: material
+    palette:
+        primary: teal
+        accent: blue
+    
+    font:
+        text: Roboto
+    
+
+
+    
+
+
+  

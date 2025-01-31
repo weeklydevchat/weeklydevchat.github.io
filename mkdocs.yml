@@ -14,7 +14,7 @@ theme:
     features:
     - navigation.indexes
 
-    logo: assets/logo/PNG/square_logo_light_150.png
+    logo: assets/logo/png/square_logo_light_150.png
 
 # Enable the blogging behaviour (builtin plugin)
 # see https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/

@@ -24,7 +24,10 @@ plugins:
 
 nav:
   - Home: index.md
+  - Join: join.md
+  - Hosts: hosts.md
   - Past Hosts: past-hosts/index.md
+  - Sponsors: sponsors.md
 
 
 markdown_extensions:

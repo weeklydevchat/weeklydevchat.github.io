@@ -1,6 +1,8 @@
 site_name: Weekly Dev Chat
+site_description: Every Tuesday at 12pm Mountain Time
 
-site_url: https://mydomain.org/mysite
+site_url: https://weeklydevchat.github.io
+
 theme:
     name: material
     palette:
@@ -9,10 +11,22 @@ theme:
     
     font:
         text: Roboto
-    
+    features:
+    - navigation.indexes
+
+# Enable the blogging behaviour (builtin plugin)
+# see https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
+plugins:
+    - search
+    - blog:
+        blog_dir: .
 
 
-    
+nav:
+  - Home: index.md
+  - Past Hosts: past-hosts/index.md
 
 
+markdown_extensions:
+  - attr_list  # This lets us specify image dimensions, etc.
   

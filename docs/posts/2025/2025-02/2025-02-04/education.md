@@ -6,12 +6,14 @@ categories:
 ---
 # Developer Education 
 
-The topic for this chat is developer education.  Did your education prepare you for what you're doing? Did you take a traditional, formal route or an alternative one? What have you seen in the field? If you had to do it over again what would you do?
+Good morning Dev Edmonton! I'm pleased to host today's meeting. Today #meetup-weekly-dev-chat will be talking about developer education. 
 
-How do you keep up with current trends? Corporate training or independent sources? Are credentials important? 
+Did your training prepare you for what you're doing? Did you take a traditional, formal route or an alternative one? What about your colleagues? If you had to do it over again what would you do?
 
-Do you specialize or generalize? Where is the future heading? 
+How do you keep up with current trends? Corporate training or on your own? Are credentials important?
 
-Everyone and anyone are welcome to join as long as you are kind, supportive, and respectful of others. Learn how to join the chat, and other useful information, here.
+Did you specialize or generalize? What trends do you see?
+
+Everyone and anyone is welcome to join as long as you are kind, supportive, and respectful of others. Zoom link will be posted shortly before 12pm MDT.
 
 ![alt text](2025-02-03_education.png)

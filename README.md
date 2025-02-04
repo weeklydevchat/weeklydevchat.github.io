@@ -12,7 +12,7 @@ Results are published to [weeklydevchat.github.io](https://weeklydevchat.github.
 # Authors Guide
 
 Requirements:
- - **Python**  (any recent should be fine.  Recommended to use a virtual environtment.)
+ - **Python**  (any recent should be fine.  Recommended to use a virtual environment.)
     - **Material for MkDocs**
 
       `pip install mkdocs-material`

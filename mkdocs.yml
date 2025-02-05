@@ -16,23 +16,29 @@ theme:
 
     logo: assets/logo/png/square_logo_light_150.png
 
+
+
+
 # Enable the blogging behaviour (builtin plugin)
 # see https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
 plugins:
     - search
     - blog:
         blog_dir: .
-
+        pagination_per_page: 3
+        # more blog parameters here:
+        # https://squidfunk.github.io/mkdocs-material/plugins/blog/
 
 
 nav:
   - Home: index.md
   - Join: join.md
-  - Hosts: hosts.md
+  - Hosts: hosts/index.md
   - Past Hosts: past-hosts/index.md
-  - Sponsors: sponsors.md
+  - Sponsors: sponsors/index.md
 
-
+exclude_docs: |
+    past_topics.md
 markdown_extensions:
   - attr_list  # This lets us specify image dimensions, etc.
   

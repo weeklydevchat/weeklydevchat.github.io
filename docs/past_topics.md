@@ -1,4 +1,5 @@
-A list of past topics
+A list of past topics.  This page is hidden (see .yml file)
+I generated it for information purposes.  We may generate the back-catalog of entries sometime.
 
 2025-01-14
 Bold Predictions for 2025 

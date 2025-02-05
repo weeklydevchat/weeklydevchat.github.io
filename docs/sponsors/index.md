@@ -11,19 +11,19 @@ If you have any other ideas for helping Weekly Dev Chat please give [Chris](htt
 Sponsors
 --------
 
-![](https://weeklydevchat.com/wp-content/uploads/2022/12/smp.jpeg){: style="width:150px;float: left;padding-right: 10px;"}
+![](smp.jpeg){: style="width:150px;float: left;padding-right: 10px;"}
 
 **Saturday Morning Productions**
 
 Thanks to [Saturday MP](https://saturdaymp.com/) for providing hosting, Zoom, and more.
 
-![](https://weeklydevchat.com/wp-content/uploads/2022/12/devEd.png){: style="width:150px;float: left;padding-right: 10px;"}
+![](devEd.png){: style="width:150px;float: left;padding-right: 10px;"}
 
 **Dev Edmonton Society**
 
 Thanks to [DES](https://devedmonton.com/) for providing a Slack channel.
 
-![](https://weeklydevchat.com/wp-content/uploads/2022/12/EdmontonUnlimited.jpeg){: style="width:150px;float: left;padding-right: 10px;"}
+![](EdmontonUnlimited.jpeg){: style="width:150px;float: left;padding-right: 10px;"}
 
 **Edmonton Unlimited**
 

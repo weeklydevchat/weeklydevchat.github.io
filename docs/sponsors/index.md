@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Help and Sponsorship
 
 The best way you can help the Weekly Dev Chat is to attend the events as the kind, supportive, and respectful person you are. A close second is to share the Weekly Dev Chat with others who might benefit.
@@ -6,7 +10,7 @@ We also need volunteers to help with a variety of tasks from helping with events
 
 The final way you can help is by sponsoring SaturdayMP, the main Weekly Dev Chat sponsor, via GitHub [sponsors](https://github.com/sponsors/saturdaymp). Saturday MP pays for Zoom, hosting, food for in real life (IRL) events, and other expenses.
 
-If you have any other ideas for helping Weekly Dev Chat please give [Chris](https://weeklydevchat.com/chris.cumming@saturdaymp.com) a shout. Thank you for your help and support, it is much appreciated.
+If you have any other ideas for helping Weekly Dev Chat please give [Chris](mailto:chris.cumming@saturdaymp.com) a shout. Thank you for your help and support, it is much appreciated.
 
 Sponsors
 --------

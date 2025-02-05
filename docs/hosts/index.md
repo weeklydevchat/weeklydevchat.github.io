@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 Chris Cumming
 -------------
 ![](chris.jpeg){: style="width:150px;float: left;padding-right: 10px;"}
@@ -17,4 +22,4 @@ Norm Lorrain
 I have degrees in EE and CS and have worked in industries from broadcast communications to nuclear power to SCADA. Currently call myself semi-retired, working part-time as an IT manager at a local healthcare clinic. Our first computer was a Heathkit HS-151, in 1984, programmed in GW-Basic and Turbo Pascal. My first IT summer job was writing Cobol code on an HP mainframe terminal. I love to work with embedded systems and have worked mostly in C and C++. These days I usually program in Python. I'm curious about many things; YouTube's algorithm has a hard time with me 😏.
 
 
-##### Also, a big thank you to our past hosts whose information you can find [here](https://weeklydevchat.com/past-hosts/).
+##### Also, a big thank you to our past hosts whose information you can find [here](../past-hosts/index.md).

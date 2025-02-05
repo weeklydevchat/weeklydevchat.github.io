@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Past Hosts
 
 ### A big thank you to our past hosts.  We appreciate you volunteering your time and energy!

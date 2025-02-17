@@ -1,6 +1,6 @@
 ---
-title: "Accessing Data"
-date: 2025-02-11
+title: "Editors, IDEs, etc."
+date: 2025-02-18
 ---
 
 Good morning Dev Edmonton! I'm pleased to host today's meeting. Today #meetup-weekly-dev-chat will be talking about editors, IDEs, and plugins.

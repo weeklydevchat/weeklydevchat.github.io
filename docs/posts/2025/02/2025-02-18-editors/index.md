@@ -1,6 +1,8 @@
 ---
 title: "Editors, IDEs, etc."
 date: 2025-02-18
+authors:
+ - norm
 ---
 
 I'm curious about how other people get their work done, so in today's #meetup-weekly-dev-chat we'll be talking about editors, IDEs, and plugins.

@@ -1,6 +1,8 @@
 ---
 title:  "Office Environments "
 date: 2025-01-21
+authors:
+ - norm
 coverImage: "2025-01-21.webp"
 ---
 

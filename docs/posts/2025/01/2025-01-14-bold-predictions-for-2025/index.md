@@ -1,6 +1,8 @@
 ---
 title:  "Bold Predictions for 2025 "
 date: 2025-01-14
+authors:
+ - chris
 categories: 
   - "events"
 tags: 

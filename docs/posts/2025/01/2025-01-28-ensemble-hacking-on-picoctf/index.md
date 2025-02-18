@@ -1,6 +1,8 @@
 ---
 title:  "Ensemble Hacking on PicoCTF "
 date: 2025-01-28
+authors:
+ - chris
 categories: 
   - "events"
 tags: 

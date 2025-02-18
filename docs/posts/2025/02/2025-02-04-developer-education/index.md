@@ -1,6 +1,8 @@
 ---
 title: "Developer Education"
 date: 2025-02-04
+authors:
+ - norm
 ---
 
 Good morning Dev Edmonton! I'm pleased to host today's meeting. Today #meetup-weekly-dev-chat will be talking about developer education.

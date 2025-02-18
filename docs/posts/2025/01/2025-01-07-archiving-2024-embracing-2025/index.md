@@ -1,6 +1,8 @@
 ---
 title:  "Archiving 2024, Embracing 2025 "
 date: 2025-01-07
+authors:
+ - chris
 categories: 
   - "events"
 tags: 

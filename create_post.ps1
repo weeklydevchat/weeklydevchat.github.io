@@ -1,3 +1,11 @@
+# GitHub Copilot prompt I used to generate this script:
+#     Write a Powershell script to create a starting point for a blog post.  
+#     The post is stored in folder "docs/posts/{year}/{month}/{day}" .  
+#     Create the folder, then in that folder create a markdown file called "index.md". 
+#     At the top of the file create a yaml block with title and date.  
+
+# I needed to unquote the date, and add the Out-Null to the New-Item command.
+
 # Get the current date
 $currentDate = Get-Date
 $year = $currentDate.Year

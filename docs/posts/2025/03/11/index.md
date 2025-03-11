@@ -1,6 +1,6 @@
 ---
 title: "Unconference"
-date: "2025-03-11"
+date: 2025-03-11
 authors:
  -  norm
 ---

@@ -22,7 +22,7 @@ $date = $currentDate.ToString("yyyy-MM-dd")
 $yamlContent = @"
 ---
 title: "$title"
-date: "$date"
+date: $date
 authors:
  -  
 ---

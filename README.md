@@ -32,3 +32,19 @@ Requirements:
         index.md  # The documentation homepage.
         posts/    # blog posts, organised anyway you like
         ...       # Other markdown pages, images and other files.
+
+# Docker Guide
+
+To build and run the Docker container locally, follow these steps:
+
+1. Build the Docker image:
+    ```sh
+    docker build -t weeklydevchat .
+    ```
+
+2. Run the Docker container:
+    ```sh
+    docker run -p 8000:8000 weeklydevchat
+    ```
+
+The MkDocs site will be served on port 8000.

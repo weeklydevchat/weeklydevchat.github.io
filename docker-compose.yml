@@ -1,0 +1,14 @@
+services:
+  app:
+    image: python:3-slim
+    command: mkdocs serve -a 0.0.0.0:8000
+    entrypoint: /app/docker-entrypoint.sh
+    working_dir: /app
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+      - python-packages:/usr/local/lib/python3.x/site-packages/
+
+volumes:
+  python-packages:

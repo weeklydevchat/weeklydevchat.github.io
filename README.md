@@ -33,18 +33,12 @@ Requirements:
         posts/    # blog posts, organised anyway you like
         ...       # Other markdown pages, images and other files.
 
-# Docker Guide
+## Docker Guide
 
-To build and run the Docker container locally, follow these steps:
+If you want to develop using Docker run the following command:
 
-1. Build the Docker image:
-    ```sh
-    docker build -t weeklydevchat .
-    ```
+```sh
+docker compose up app
+```
 
-2. Run the Docker container:
-    ```sh
-    docker run -p 8000:8000 weeklydevchat
-    ```
-
-The MkDocs site will be served on port 8000.
+This will bring the application up on port 8000 (e.g. http://localhost:8000).  It should hot-reload any changes you make during development.

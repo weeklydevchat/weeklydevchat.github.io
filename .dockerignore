@@ -1,3 +1,0 @@
-# Exclude unnecessary files from the Docker build context
-site/
-.venv/

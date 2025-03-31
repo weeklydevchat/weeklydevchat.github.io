@@ -17,8 +17,6 @@ theme:
     logo: assets/logo/png/square_logo_light_150.png
 
 
-
-
 # Enable the blogging behaviour (builtin plugin)
 # see https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
 plugins:
@@ -41,4 +39,6 @@ exclude_docs: |
     past_topics.md
 markdown_extensions:
   - attr_list  # This lets us specify image dimensions, etc.
-  
+
+extra_css: 
+  - stylesheets/extra.css

@@ -5,12 +5,22 @@
 #     At the top of the file create a yaml block with title and date.  
 
 # I needed to unquote the date, and add the Out-Null to the New-Item command.
+# update... use the current date to get the next Tuesday, and create the folder for that date.
+
 
 # Get the current date
 $currentDate = Get-Date
-$year = $currentDate.Year
-$month = $currentDate.Month.ToString("D2")
-$day = $currentDate.Day.ToString("D2")
+# Calculate days to Tuesday (Tuesday is 2 in DayOfWeek enum, 0-6 for Sunday-Saturday)
+$daysToTuesday = (2 - [int]$currentDate.DayOfWeek + 7) % 7
+# If today is Tuesday, we want same day, so adjust if result is 7
+if ($daysToTuesday -eq 7) { $daysToTuesday = 0 }
+# Get Tuesday's date
+$tuesdayDate = $currentDate.AddDays($daysToTuesday)
+$year = $tuesdayDate.Year
+$month = $tuesdayDate.Month.ToString("D2")
+$day = $tuesdayDate.Day.ToString("D2")
+
+
 
 # Define the folder path
 $folderPath = "docs/posts/$year/$month/$day"
@@ -25,15 +35,21 @@ $filePath = "$folderPath/index.md"
 
 # Create the markdown file with YAML front matter
 $title = "Your Blog Post Title"
-$date = $currentDate.ToString("yyyy-MM-dd")
+$date = $tuesdayDate.ToString("yyyy-MM-dd")
 
 $yamlContent = @"
 ---
 title: "$title"
 date: $date
 authors:
- -  
+ - chris | norm | omar
 ---
+
+TOPIC_INTRODUCTION_HERE
+
+Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
+
+![alt text](${date}_image_filename.webp)
 "@
 
 # Write the content to the file

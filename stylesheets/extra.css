@@ -1,0 +1,11 @@
+.logo-article-img {
+  width: 300px;
+  margin-left: 20px;
+}
+@media (min-width: 768px) {
+  .logo-article-img {
+    width: 450px;
+    float: right;
+    margin-left: 10px;
+  }
+}

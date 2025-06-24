@@ -1,5 +1,5 @@
 ---
-title: "Open source: Democratizing Powerful Tech"
+title: "Open Source: Democratizing Powerful Tech"
 date: 2025-06-10
 authors:
  - omar 

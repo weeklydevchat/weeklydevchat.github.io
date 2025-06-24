@@ -1,6 +1,6 @@
 ---
 title: "Chaos Engineering: How to Save a Trillion-Dollar Ecosystem"
-date: 2025-06-124
+date: 2025-06-24
 authors:
  - omar 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Project Approaches"
+title: "Stack Overflow 2025 Developer Survey Results"
 date: 2025-08-19
 authors:
  -  chris

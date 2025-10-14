@@ -1,6 +1,6 @@
 ---
-title: "Hacktoberfest"
-date: 2025-10-07
+title: "Thankful for Software"
+date: 2025-10-14
 authors:
  -  norm 
 ---

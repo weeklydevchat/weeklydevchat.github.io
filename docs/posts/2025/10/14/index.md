@@ -1,8 +1,8 @@
 ---
-title: "Hacktoberfest"
-date: 2025-10-07
+title: "Thankful for Software"
+date: 2025-10-14
 authors:
- -  norm 
+ -  omar 
 ---
 
 Today is about software and Thanksgiving! What should software developers be grateful for? Here is a list for inspiration: https://www.infoworld.com/article/3612366/a-software-developer-gives-thanks.html

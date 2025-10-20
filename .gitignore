@@ -6,3 +6,6 @@
 
 # mkdocs build output 
 site/
+
+# OS image files
+.DS_Store

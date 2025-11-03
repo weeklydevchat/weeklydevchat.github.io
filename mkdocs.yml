@@ -15,6 +15,7 @@ theme:
     - navigation.indexes
 
     logo: assets/logo/png/square_logo_light_150.png
+    favicon: assets/logo/Favicons/16X16_favicon2.png
 
 
 # Enable the blogging behaviour (builtin plugin)

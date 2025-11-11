@@ -5,7 +5,7 @@ authors:
  -  chris
 ---
 
-The topic for the November 11th, 2026 chat is remembering past developers whose shoulders we stand on. Who is your favorite software developer and why? Is there a developer that inspired you or whose past contributions you use regularly?
+The topic for the November 11th, 2025 chat is remembering past developers whose shoulders we stand on. Who is your favorite software developer and why? Is there a developer that inspired you or whose past contributions you use regularly?
 
 Everyone and anyone are welcome to join as long as you are kind, supportive, and respectful of others. You can find more information and register here:
 

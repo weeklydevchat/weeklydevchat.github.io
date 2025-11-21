@@ -112,6 +112,7 @@ These scripts will:
 ├── create_post.sh             # Bash script to create blog posts
 ├── create_post.ps1            # PowerShell script to create blog posts
 ├── .github/
+│   ├── dependabot.yml         # Dependabot configuration
 │   └── workflows/
 │       └── ci.yml             # GitHub Actions deployment
 └── docs/                      # All site content
@@ -164,6 +165,15 @@ While not typically needed, you can manually deploy:
 ```bash
 mkdocs gh-deploy --force
 ```
+
+## Dependency Management
+
+The project uses **Dependabot** to automatically keep dependencies up to date. Dependabot is configured to check weekly for:
+- Python package updates (mkdocs-material)
+- GitHub Actions updates
+
+When updates are available, Dependabot creates pull requests automatically. Review and merge these PRs after verifying the CI workflow passes.
+
 ## Resources
 
 - [MkDocs Documentation](https://www.mkdocs.org)

@@ -4,7 +4,7 @@
 
 This is the **Weekly Dev Chat** website, a static site built with MkDocs Material and hosted on GitHub Pages. The site serves as a platform for a weekly virtual developer chat community that meets every Tuesday at 12pm Mountain Time.
 
-**Live Site**: https://weeklydevchat.github.io
+**Live Site**: https://weeklydevchat.com
 **Repository**: weeklydevchat/weeklydevchat.github.io
 **Main Branch**: `main`
 **Deployment**: Automated via GitHub Actions to `gh-pages` branch

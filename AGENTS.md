@@ -29,6 +29,7 @@ This is the **Weekly Dev Chat** website, a static site built with MkDocs Materia
 ├── create_post.sh             # Bash script to create new blog posts
 ├── create_post.ps1            # PowerShell script to create new blog posts
 ├── .github/
+│   ├── dependabot.yml         # Dependabot dependency updates
 │   └── workflows/
 │       └── ci.yml             # GitHub Actions deployment workflow
 └── docs/                      # All site content
@@ -205,6 +206,39 @@ Not typically needed due to automated workflow, but can be done:
 ```bash
 mkdocs gh-deploy --force
 ```
+
+## Dependency Management
+
+### Dependabot
+
+Dependabot is configured in `.github/dependabot.yml` to automatically keep dependencies up to date:
+
+- **Python packages** (`requirements.txt`): Checked weekly for updates to mkdocs-material
+- **GitHub Actions**: Checked weekly for updates to workflow actions (checkout, setup-python, cache)
+
+When updates are available, Dependabot automatically creates pull requests with:
+- Version bump details
+- Changelog information
+- Compatibility notes
+
+**Configuration**:
+```yaml
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+```
+
+**Review Process**: Review and merge Dependabot PRs after verifying:
+1. CI/CD workflow passes
+2. Local testing confirms no breaking changes
+3. Release notes indicate compatibility
 
 ## Git Ignore Patterns
 

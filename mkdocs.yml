@@ -1,7 +1,7 @@
 site_name: Weekly Dev Chat
 site_description: Every Tuesday at 12pm Mountain Time
 
-site_url: https://weeklydevchat.github.io
+site_url: https://weeklydevchat.com
 
 theme:
     name: material

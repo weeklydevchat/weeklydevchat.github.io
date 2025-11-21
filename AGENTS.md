@@ -57,7 +57,8 @@ This is the **Weekly Dev Chat** website, a static site built with MkDocs Materia
 
 ### Site Information
 - **Site Name**: Weekly Dev Chat
-- **Site URL**: https://weeklydevchat.github.io
+- **Site URL**: https://weeklydevchat.com
+- **GitHub Pages URL**: https://weeklydevchat.github.io
 - **Description**: Every Tuesday at 12pm Mountain Time
 
 ### Theme Configuration
@@ -276,7 +277,7 @@ The following are ignored:
    author_id:
      name: Full Name
      description: Role
-     avatar: https://weeklydevchat.github.io/path/to/avatar.png
+     avatar: https://weeklydevchat/path/to/avatar.png
    ```
 3. **Ensure avatar image** exists in the repository
 4. **Test** by creating a post with the new author

@@ -8,7 +8,7 @@ authors:
 
 We had such a great time at the last In Real-Life Watch Party that we're hosting another one!
 
-Join us on **November 27th, 2025 at 7:00pm** for our next IRL gathering. This is a great opportunity to connect with fellow developers in person,
+Join us on **November 27th, 2025 at 7:00pm** for our next IRL gathering. This is a great opportunity to connect with fellow developers in person.
 
 To register and get more details, visit:
 

@@ -134,16 +134,18 @@ Two helper scripts are available for creating new blog posts:
 
 1. **Bash Script** (`create_post.sh`):
    - Calculates next Tuesday from current date
-   - Creates directory structure: `docs/posts/YYYY/MM/DD/`
+   - Creates directory structure: `docs/posts/YYYY/MM/DD/YYYY-MM-DD-title-of-post/`
    - Generates `index.md` with proper frontmatter template
    - Usage: `./create_post.sh`
+   - **Note**: Rename the created folder with a descriptive title after running
 
 2. **PowerShell Script** (`create_post.ps1`):
    - Same functionality as bash script
    - For Windows users
    - Usage: `.\create_post.ps1`
+   - **Note**: Rename the created folder with a descriptive title after running
 
-Both scripts automatically determine the date of the next Tuesday (or current day if Tuesday) and create the appropriate directory structure.
+Both scripts automatically determine the date of the next Tuesday (or current day if Tuesday) and create the appropriate directory structure with a placeholder title. After running, rename the folder to include a descriptive title (e.g., `2026-01-13-ai-coding-assistants`).
 
 ## Development Workflows
 

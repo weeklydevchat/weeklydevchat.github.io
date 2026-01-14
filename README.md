@@ -74,12 +74,16 @@ We provide scripts to automatically create properly formatted blog posts for the
 
 These scripts will:
 - Calculate the date of the next Tuesday (or use today if it's Tuesday)
-- Create the directory structure: `docs/posts/YYYY/MM/DD/`
+- Create the directory structure: `docs/posts/YYYY/MM/DD/YYYY-MM-DD-title-of-post/`
 - Generate an `index.md` file with proper frontmatter
+
+**Note**: After running the script, rename the created folder to include a descriptive title (e.g., `2026-01-13-ai-coding-assistants`). This allows multiple posts on the same day.
 
 ### Manual Blog Post Creation
 
-1. Create a directory following the date pattern: `docs/posts/YYYY/MM/DD/`
+1. Create a directory following the date pattern: `docs/posts/YYYY/MM/DD/YYYY-MM-DD-title-of-post/`
+   - Example: `docs/posts/2026/01/13/2026-01-13-ai-coding-assistants/`
+   - The descriptive title allows for multiple posts on the same day
 
 2. Create an `index.md` file with the following frontmatter:
    ```yaml
@@ -122,7 +126,7 @@ These scripts will:
     ├── hosts/                 # Current hosts
     ├── past-hosts/            # Past hosts
     ├── sponsors/              # Sponsors
-    ├── posts/                 # Blog posts (YYYY/MM/DD/)
+    ├── posts/                 # Blog posts (YYYY/MM/DD/YYYY-MM-DD-title/)
     ├── assets/                # Images, logos
     └── stylesheets/
         └── extra.css          # Custom CSS

@@ -25,6 +25,7 @@ plugins:
     - blog:
         blog_dir: .
         pagination_per_page: 3
+        post_url_format: "{date}/{slug}"
         # more blog parameters here:
         # https://squidfunk.github.io/mkdocs-material/plugins/blog/
 

@@ -32,6 +32,7 @@ plugins:
 nav:
   - Home: index.md
   - Join: join.md
+  - Bold Predictions 2026: bold-predictions-2026.md
   - Hosts: hosts/index.md
   - Past Hosts: past-hosts/index.md
   - Sponsors: sponsors/index.md

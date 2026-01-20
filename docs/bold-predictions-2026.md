@@ -14,7 +14,7 @@ During our [January 13, 2026 Weekly Dev Chat session](posts/2026/01/13/index.md)
 
 **Bobby**: NVIDIA graphics cards will go up in price.
 
-**Chris C**: The opposite - NVIDIA graphics cards will go down in price. Data centres are being over built and that will cause an oversupply of chips.
+**Chris C**: The opposite - NVIDIA graphics cards will go down in price. Data centres are being overbuilt and that will cause an oversupply of chips.
 
 **Harold**: Data centre in a non-obvious location such as space or ocean.
 

@@ -3,7 +3,6 @@ title: "Edmonton IRL: Swap Meet and Hardware Show - January 28th"
 date: 2026-01-12
 authors:
  - chris
-pin: true
 ---
 
 In the Edmonton area and looking to find a good home for hardware you no longer use? Looking for some "new to you" hardware? Have something cool you want to show off? Just want to meet and hang with other technologists in Edmonton?

@@ -1,6 +1,6 @@
 ---
 title: "What's in a name? That which we call a var by any other name would make code smell"
-date: 2027-01-27
+date: 2026-01-27
 authors:
  - omar
 ---

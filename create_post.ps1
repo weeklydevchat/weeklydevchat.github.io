@@ -19,11 +19,12 @@ $tuesdayDate = $currentDate.AddDays($daysToTuesday)
 $year = $tuesdayDate.Year
 $month = $tuesdayDate.Month.ToString("D2")
 $day = $tuesdayDate.Day.ToString("D2")
+$date = $tuesdayDate.ToString("yyyy-MM-dd")
 
-
-
-# Define the folder path
-$folderPath = "docs/posts/$year/$month/$day"
+# Define the folder path with descriptive title placeholder
+# Format: YYYY-MM-DD-title-of-post (allows multiple posts per day)
+$postSlug = "$date-title-of-post"
+$folderPath = "docs/posts/$year/$month/$day/$postSlug"
 
 # Create the folder if it doesn't exist
 if (-Not (Test-Path -Path $folderPath)) {
@@ -35,7 +36,6 @@ $filePath = "$folderPath/index.md"
 
 # Create the markdown file with YAML front matter
 $title = "Your Blog Post Title"
-$date = $tuesdayDate.ToString("yyyy-MM-dd")
 
 $yamlContent = @"
 ---
@@ -56,3 +56,5 @@ Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as lo
 Set-Content -Path $filePath -Value $yamlContent
 
 Write-Output "Blog post template created at $filePath"
+Write-Output "Remember to rename the folder with a descriptive title!"
+Write-Output "Example: Rename-Item '$folderPath' '$date-your-topic-here'"

@@ -6,7 +6,7 @@ authors:
 ---
 Hello Hardware Swappers!
 
-Thank you top those participating in the 1st ever [Swap Meet and Hardware Demo](https://luma.com/dbx9zrfr) hosted by the Weekly Dev Chat team!  Below are some notes, mostly for people bringing items to sell, but there is also advice that applies to everyone.
+Thank you to those participating in the 1st ever [Swap Meet and Hardware Demo](https://luma.com/dbx9zrfr) hosted by the Weekly Dev Chat team!  Below are some notes, mostly for people bringing items to sell, but there is also advice that applies to everyone.
 
 If you signed up for a table (PIN 3 or 4 ticket) you can show up between 6:30pm to 7:00pm to unload and set up.  If you signed up just to browse (PIN 1 or 2) please show up at 7:00pm or later unless you feel like helping us setup.
 

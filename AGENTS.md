@@ -168,11 +168,24 @@ mkdocs serve
 
 **Setup**:
 ```bash
-# Start development server
+# Start development server with hot reloading
 docker compose up app
 
 # Site available at http://localhost:8000
-# Hot-reloading enabled for development
+```
+
+**Features**:
+- **Hot Reloading**: File changes in `docs/` or `mkdocs.yml` automatically trigger a rebuild and browser refresh
+- **Pip Cache**: Python packages are cached in a Docker volume (`pip-cache`) for faster subsequent starts
+- **Theme Watching**: The `--watch-theme` flag enables detection of theme file changes
+
+**Stopping the Server**:
+```bash
+# Stop containers (preserves pip cache)
+docker compose down
+
+# Stop containers and remove all volumes (clears pip cache)
+docker compose down -v
 ```
 
 ### Testing Changes
@@ -359,8 +372,9 @@ mkdocs gh-deploy --force        # Force deploy (used by CI)
 mkdocs -h                       # Show help
 
 # Docker
-docker compose up app           # Start development server in Docker
-docker compose down             # Stop Docker containers
+docker compose up app           # Start development server with hot reloading
+docker compose down             # Stop containers (preserves pip cache)
+docker compose down -v          # Stop containers and clear pip cache
 
 # Create new post
 ./create_post.sh                # Create post for next Tuesday (bash)

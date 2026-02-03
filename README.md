@@ -54,7 +54,14 @@ This is a static site built with [MkDocs Material](https://squidfunk.github.io/m
 
 2. Open your browser to [http://localhost:8000](http://localhost:8000)
 
-The site will automatically reload when you make changes to the content.
+**Hot Reloading**: The Docker development environment supports hot reloading out of the box. When you edit any file in the `docs/` directory (or `mkdocs.yml`), the site will automatically rebuild and your browser will refresh to show the changes.
+
+**Pip Cache**: Python packages are cached in a Docker volume (`pip-cache`), so subsequent container starts are faster since packages don't need to be re-downloaded.
+
+To stop the server, press `Ctrl+C`. To completely remove containers and volumes:
+```bash
+docker compose down -v
+```
 
 ## Creating Blog Posts
 
@@ -143,8 +150,9 @@ mkdocs build --clean            # Clean build
 mkdocs -h                       # Show help
 
 # Docker
-docker compose up app           # Start development server
+docker compose up app           # Start development server (with hot reloading)
 docker compose down             # Stop containers
+docker compose down -v          # Stop containers and remove volumes (pip cache)
 ```
 
 ## Deployment

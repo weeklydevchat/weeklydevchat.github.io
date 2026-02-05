@@ -13,8 +13,10 @@ year=$(date -d "$tuesday" +%Y)
 month=$(date -d "$tuesday" +%02m)
 day=$(date -d "$tuesday" +%02d)
 
-# Define paths
-folder_path="docs/posts/$year/$month/$day"
+# Define paths with descriptive title placeholder
+# Format: YYYY-MM-DD-title-of-post (allows multiple posts per day)
+post_slug="${tuesday}-title-of-post"
+folder_path="docs/posts/$year/$month/$day/$post_slug"
 file_path="$folder_path/index.md"
 
 # Create the directory (including parents) if it doesn't exist
@@ -37,3 +39,5 @@ Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as lo
 EOF
 
 echo "Blog post template created at $file_path"
+echo "Remember to rename the folder with a descriptive title!"
+echo "Example: mv '$folder_path' 'docs/posts/$year/$month/$day/${tuesday}-your-topic-here'"

@@ -47,7 +47,8 @@ This is the **Weekly Dev Chat** website, a static site built with MkDocs Materia
     │   └── YYYY/
     │       └── MM/
     │           └── DD/
-    │               └── index.md  # Blog post content
+    │               └── YYYY-MM-DD-title-of-post/
+    │                   └── index.md  # Blog post content
     ├── assets/                # Images, logos, fonts, design files
     │   └── logo/              # Site branding assets
     └── stylesheets/
@@ -104,7 +105,9 @@ Each author has a name, description, and avatar URL.
 ## Blog Post Conventions
 
 ### File Structure
-Blog posts are organized by date: `docs/posts/YYYY/MM/DD/index.md`
+Blog posts are organized by date with descriptive titles: `docs/posts/YYYY/MM/DD/YYYY-MM-DD-title-of-post/index.md`
+
+This naming convention allows for multiple posts on the same day by using different descriptive titles.
 
 ### Post Frontmatter
 ```yaml
@@ -131,16 +134,18 @@ Two helper scripts are available for creating new blog posts:
 
 1. **Bash Script** (`create_post.sh`):
    - Calculates next Tuesday from current date
-   - Creates directory structure: `docs/posts/YYYY/MM/DD/`
+   - Creates directory structure: `docs/posts/YYYY/MM/DD/YYYY-MM-DD-title-of-post/`
    - Generates `index.md` with proper frontmatter template
    - Usage: `./create_post.sh`
+   - **Note**: Rename the created folder with a descriptive title after running
 
 2. **PowerShell Script** (`create_post.ps1`):
    - Same functionality as bash script
    - For Windows users
    - Usage: `.\create_post.ps1`
+   - **Note**: Rename the created folder with a descriptive title after running
 
-Both scripts automatically determine the date of the next Tuesday (or current day if Tuesday) and create the appropriate directory structure.
+Both scripts automatically determine the date of the next Tuesday (or current day if Tuesday) and create the appropriate directory structure with a placeholder title. After running, rename the folder to include a descriptive title (e.g., `2026-01-13-ai-coding-assistants`).
 
 ## Development Workflows
 
@@ -267,7 +272,7 @@ The following are ignored:
 - `docs/join.md` - Join instructions
 - `docs/hosts/index.md` - Current hosts information
 - `docs/sponsors/index.md` - Sponsor information
-- `docs/posts/YYYY/MM/DD/index.md` - Blog posts
+- `docs/posts/YYYY/MM/DD/YYYY-MM-DD-title/index.md` - Blog posts
 
 ### For Configuration Changes
 - `mkdocs.yml` - Site configuration, theme, plugins, navigation
@@ -277,14 +282,15 @@ The following are ignored:
 ### For Assets
 - `docs/assets/logo/` - Logo files (PNG, SVG)
 - `docs/assets/logo/Favicons/` - Favicon files
-- `docs/posts/YYYY/MM/DD/` - Post-specific images
+- `docs/posts/YYYY/MM/DD/YYYY-MM-DD-title/` - Post-specific images
 
 ## Common Agent Tasks
 
 ### Creating a New Blog Post
 
 1. **Determine the date**: Calculate next Tuesday or use provided date
-2. **Create directory**: `docs/posts/YYYY/MM/DD/`
+2. **Create directory**: `docs/posts/YYYY/MM/DD/YYYY-MM-DD-descriptive-title/`
+   - Example: `docs/posts/2026/01/13/2026-01-13-ai-coding-assistants/`
 3. **Create index.md** with proper frontmatter:
    ```yaml
    ---
@@ -344,7 +350,7 @@ The following are ignored:
 
 1. **Never modify** `.github/workflows/ci.yml` unless explicitly requested - deployment is automated and stable
 2. **Always test locally** before pushing changes to main branch
-3. **Blog posts must follow** the date-based directory structure: `YYYY/MM/DD/`
+3. **Blog posts must follow** the date-based directory structure with descriptive title: `YYYY/MM/DD/YYYY-MM-DD-title-of-post/`
 4. **Frontmatter is required** for all blog posts (title, date, authors)
 5. **Images for blog posts** should be placed in the same directory as the post's `index.md`
 6. **The site uses** Material for MkDocs theme - refer to https://squidfunk.github.io/mkdocs-material/ for advanced features

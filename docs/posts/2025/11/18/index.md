@@ -2,7 +2,13 @@
 title: "Managing Change / Change Management"
 date: 2025-11-18
 authors:
- - norm 
+ - norm
+categories:
+  - Technical
+tags:
+  - change-management
+  - version-control
+  - methodology
 ---
 
 This is a big topic! We can discuss change at the corporate/organizational level, or we can zoom in on controlling change in software development. I’ll leave it open for the group to steer the conversation. Controversial opinions welcome.

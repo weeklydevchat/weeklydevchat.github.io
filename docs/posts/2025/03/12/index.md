@@ -3,6 +3,12 @@ title: "The Tech Market: The Good, the Bad, and the Ugly "
 date: 2025-03-12
 authors:
  - omar
+categories:
+  - Career
+tags:
+  - job-market
+  - career
+  - hiring
 ---
 
 Hi! My name is Omar, and I'm happy to be a recent contributor to the weekly dev chats. I'm looking forward to hosting along with Chris and Norman after they put me through an arduous 8-week interview process where they give me 12 unsolvable technical assessments to be done on my own time without compensation. Actually, that’s not true. They're pretty nice people. In all seriousness, though, this does seem to be the state of the current job market for many developers and is what inspired an impromptu discussion during this week's dev chat.

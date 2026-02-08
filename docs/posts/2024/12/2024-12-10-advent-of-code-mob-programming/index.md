@@ -1,12 +1,12 @@
 ---
 title:  "Advent of Code Mob Programming "
 date: 2024-12-10
-categories: 
-  - "events"
-tags: 
-  - "adventofcode"
-  - "event"
-  - "virtual"
+categories:
+  - Technical
+tags:
+  - advent-of-code
+  - mob-programming
+  - coding-challenges
 coverImage: "advent_of_code_logo.webp"
 ---
 

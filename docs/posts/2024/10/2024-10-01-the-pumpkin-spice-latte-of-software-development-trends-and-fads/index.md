@@ -1,11 +1,11 @@
 ---
 title:  " The Pumpkin Spice Latte of Software Development: Trends and Fads"
 date: 2024-10-01
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "virtual"
+categories:
+  - Culture
+tags:
+  - trends
+  - industry
 
 ---
 

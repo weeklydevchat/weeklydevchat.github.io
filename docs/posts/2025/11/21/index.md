@@ -3,6 +3,12 @@ title: "In Real-Life Watch Party - November 27th"
 date: 2025-11-21
 authors:
  - chris
+categories:
+  - Community
+tags:
+  - irl
+  - meetup
+  - watch-party
 ---
 [![Watch Party Logo](watch_party_logo.svg){ align=right }](https://luma.com/0f3iqhdx)
 

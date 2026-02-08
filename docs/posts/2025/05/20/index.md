@@ -2,8 +2,13 @@
 title: "Innovation vs. Structure - When Culture Kills Creativity"
 date: 2025-05-20
 authors:
- - omar 
-
+ - omar
+categories:
+  - Culture
+tags:
+  - innovation
+  - organizations
+  - culture
 ---
 
 Does a playful company culture breed innovation while corporate structure stifles it?

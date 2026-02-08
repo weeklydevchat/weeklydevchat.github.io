@@ -2,7 +2,13 @@
 title: "Do you change your software development routines in the summer?"
 date: 2025-06-17
 authors:
- - chris 
+ - chris
+categories:
+  - Culture
+tags:
+  - productivity
+  - habits
+  - work-life-balance
 ---
 
 Summer is almost here, at least in the Edmonton area. Long sunny days and cool evenings that are perfect for outdoor activities. Which leads to the topic of the June 17th, 2025 Weekly Dev Chat: Do you change your software development routines in the summer?

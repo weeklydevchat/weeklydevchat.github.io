@@ -3,6 +3,12 @@ title: "Essential Prototyping"
 date: 2025-07-22
 authors:
  - omar
+categories:
+  - Technical
+tags:
+  - prototyping
+  - methodology
+  - agile
 ---
 
 Prototyping is a vital tool for visualising ideas, collecting user feedback, and refining requirements. However, it may not always be essential, particularly in agile environments where iterative development is valued. Some questions that arise here are:

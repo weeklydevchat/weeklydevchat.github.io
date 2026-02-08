@@ -3,12 +3,12 @@ title:  "Bold Predictions for 2025 "
 date: 2025-01-14
 authors:
  - chris
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "predictions"
-  - "virtual"
+categories:
+  - Culture
+tags:
+  - predictions
+  - trends
+  - ai
 coverImage: "wdc_2025-01-14.webp"
 ---
 

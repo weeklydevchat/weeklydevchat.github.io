@@ -3,6 +3,12 @@ title: "Third Places"
 date: 2025-12-02
 authors:
  - chris
+categories:
+  - Community
+tags:
+  - community
+  - meetups
+  - networking
 ---
 
 The topic for today's (Dec 2, 2025) chat is Third Places (not home or work), specifically for developers and other technologists. Where do you go to interact with other developers? Why do you go there? Why do you not go?

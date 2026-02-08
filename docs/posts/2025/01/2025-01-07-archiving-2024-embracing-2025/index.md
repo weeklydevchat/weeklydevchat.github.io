@@ -3,13 +3,12 @@ title:  "Archiving 2024, Embracing 2025 "
 date: 2025-01-07
 authors:
  - chris
-categories: 
-  - "events"
-tags: 
-  - "newyear"
-  - "reflection"
-  - "resolutions"
-  - "virtual"
+categories:
+  - Culture
+tags:
+  - year-in-review
+  - reflection
+  - goals
 coverImage: "wdc_2024-01-07.webp"
 ---
 

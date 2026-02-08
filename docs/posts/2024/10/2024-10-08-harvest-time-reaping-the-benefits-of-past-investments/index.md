@@ -1,11 +1,12 @@
 ---
 title:  " Harvest Time: Reaping the Benefits of Past Investments"
 date: 2024-10-08
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "virtual"
+categories:
+  - Career
+tags:
+  - reflection
+  - career
+  - growth
 ---
 
 What seeds have you planted in the past that you are now harvesting?  For example, any skills you spent the time mastering that are now paying off?  Any other past investments that you are now reaping the benefits of? 

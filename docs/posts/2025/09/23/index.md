@@ -2,7 +2,13 @@
 title: "Swimming in Metrics"
 date: 2025-09-23
 authors:
- -  omar 
+ -  omar
+categories:
+  - Technical
+tags:
+  - metrics
+  - methodology
+  - data
 ---
 
 Metrics are everywhere, but people tend to be divided on their real value and when they should be used. In this week's Weekly Dev Chat, we'll try to answer:

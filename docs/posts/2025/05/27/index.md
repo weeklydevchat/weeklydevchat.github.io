@@ -3,6 +3,12 @@ title: "Play with GitHub Copilot Agent in VS Code"
 date: 2025-05-27
 authors:
  - chris
+categories:
+  - Technical
+tags:
+  - ai
+  - tools
+  - github-copilot
 ---
 
 ![GitHub Copilot Agent in VS Code](2025-05-27.svg)

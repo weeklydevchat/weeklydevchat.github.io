@@ -2,7 +2,13 @@
 title: "Staying up to date - Virtual (October 21st, 2025)"
 date: 2025-10-21
 authors:
-    - chris 
+    - chris
+categories:
+  - Career
+tags:
+  - learning
+  - education
+  - trends
 ---
 [![Staying up to date](2025-10-21_header.svg)](https://luma.com/bvti0ksz)
 

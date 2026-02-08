@@ -2,7 +2,13 @@
 title: "Testing"
 date: 2025-10-28
 authors:
- -  norm 
+ -  norm
+categories:
+  - Technical
+tags:
+  - testing
+  - tdd
+  - quality-assurance
 ---
 
 What is the state of testing at your workplace? Is it continuous? Do you have a dedicated QA team? What tools are you using to support testing? Has Test-Driven Development (TDD) made a significant impact in the industry? Are you conducting security-focused testing?

@@ -2,7 +2,13 @@
 title: "Year in Review"
 date: 2025-12-30
 authors:
- - norm 
+ - norm
+categories:
+  - Culture
+tags:
+  - year-in-review
+  - reflection
+  - ai
 ---
 
 This is our last meeting of the year. Looking back, what are your highlights? Disappointments?

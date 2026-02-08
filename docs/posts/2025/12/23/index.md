@@ -3,6 +3,12 @@ title: "Mob Hacking Advent of Cyber"
 date: 2025-12-23
 authors:
  - chris
+categories:
+  - Security
+tags:
+  - cybersecurity
+  - mob-programming
+  - advent-of-cyber
 ---
 
 Today's (Dec 23rd, 2025) chat will be some pair hacking on Try Hack Me's Advent of Cyber. I will go through getting the key for side quest 1. Selfishly, I need the final step, I think, to get the key for side quest one, and I'm hoping others can help me.

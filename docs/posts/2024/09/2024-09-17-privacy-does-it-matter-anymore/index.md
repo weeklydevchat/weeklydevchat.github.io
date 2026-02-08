@@ -1,11 +1,12 @@
 ---
 title:  " Privacy, does it matter anymore?"
 date: 2024-09-17
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "virtual"
+categories:
+  - Security
+tags:
+  - cybersecurity
+  - privacy
+  - data
 ---
 
 In this chat we will discuss privacy and if people think it matters anymore. I figure by now all my personal information is already out there (e.g. credit card, SIN, names, etc) that it doesn't matter anymore but I'm likely mistaken.

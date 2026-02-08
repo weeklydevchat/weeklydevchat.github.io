@@ -4,6 +4,12 @@ date: 2025-07-01
 authors:
  - norm
 notes: "ascii art generator: https://www.asciiart.eu/image-to-ascii"
+categories:
+  - Community
+tags:
+  - unconference
+  - open-discussion
+  - holiday
 ---
 
 Happy Canada Day everyone.  Today we're putting our feet up and letting the conversation flow naturally. Join us and bring your own topic. BYOB too 😄.

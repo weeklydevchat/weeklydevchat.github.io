@@ -3,6 +3,12 @@ title: "Tech Solutions to Global Issues: Always, Sometimes, or Never?"
 date: 2025-04-08
 authors:
  -  omar
+categories:
+  - Culture
+tags:
+  - technology
+  - society
+  - ethics
 ---
 
 “The trick is not to skate where the puck is, but to skate where the puck is going.” This is Wayne Gretzky quoted in an [article from IndustryWired](https://industrywired.com/ten-big-global-challenges-technology-could-solve/) in March 2019. The article highlights our urgent global challenges and advocates for technology as a solution. It presents solutions like:

@@ -3,6 +3,12 @@ title: "Consolidating Systems"
 date: 2025-05-06
 authors:
  -  chris
+categories:
+  - Technical
+tags:
+  - architecture
+  - databases
+  - systems
 ---
 
 The topic for the May 6th, 2025 chat is consolidating systems.  Organizations often have data and business logic in several different databases and applications.  They would like to have everything in one place, which is a noble goal but hard to achieve.

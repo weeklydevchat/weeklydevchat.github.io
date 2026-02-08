@@ -27,6 +27,7 @@ plugins:
         pagination_per_page: 3
         # more blog parameters here:
         # https://squidfunk.github.io/mkdocs-material/plugins/blog/
+    - tags
 
 
 nav:

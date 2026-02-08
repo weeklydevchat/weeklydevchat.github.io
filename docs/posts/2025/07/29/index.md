@@ -3,6 +3,12 @@ title: "Database Migration Tools"
 date: 2025-07-29
 authors:
  - chris
+categories:
+  - Technical
+tags:
+  - databases
+  - tools
+  - devops
 ---
 ![header](header.svg)
 

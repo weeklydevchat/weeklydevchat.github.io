@@ -2,7 +2,12 @@
 title: "Hacktoberfest"
 date: 2025-10-07
 authors:
- -  norm 
+ -  norm
+categories:
+  - Community
+tags:
+  - hacktoberfest
+  - open-source
 ---
 
 This month is Hacktoberfest, an annual (since 2014) celebration of open-source development. Are you taking part in it? Have you contributed to any open-source projects? Do you have any side projects of your own that you're looking for help with?

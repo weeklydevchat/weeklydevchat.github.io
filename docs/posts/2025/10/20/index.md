@@ -2,7 +2,13 @@
 title: "IRL Watch Party - October 21st"
 date: 2025-10-20
 authors:
-    - chris 
+    - chris
+categories:
+  - Community
+tags:
+  - irl
+  - meetup
+  - watch-party
 ---
 [![WDC Watch Party](2025-10-21_WatchPartyHeader.png)](https://luma.com/n7wo0ucb)
 

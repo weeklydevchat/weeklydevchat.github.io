@@ -1,11 +1,11 @@
 ---
 title: "In-Real-Life Event (Nov 26th, 2024)"
 date: 2024-11-24
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "irl"
+categories:
+  - Community
+tags:
+  - irl
+  - meetup
 ---
 
 Do you like chatting about software development with other local developers? Then you are in luck as the Weekly Dev Chat In-Real-Life (WDC IRL) is on Nov 26th (Tue) at 7pm at the Strathcona Library just off Whyte Ave. It's like the virtual version of WDC but in 3D!  

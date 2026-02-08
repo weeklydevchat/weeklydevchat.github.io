@@ -2,8 +2,13 @@
 title: "Does Software Development Change the Way You Think?"
 date: 2025-05-13
 authors:
- - norm 
-
+ - norm
+categories:
+  - Culture
+tags:
+  - philosophy
+  - thinking
+  - culture
 ---
 
 As a developer, have you noticed that you approach life differently than "normal" people? After all those years of training and career, do you think differently than how you used to?

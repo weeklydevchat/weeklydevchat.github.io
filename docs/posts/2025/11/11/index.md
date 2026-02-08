@@ -3,6 +3,12 @@ title: "Remembering Past Developers"
 date: 2025-11-11
 authors:
  -  chris
+categories:
+  - Culture
+tags:
+  - history
+  - community
+  - inspiration
 ---
 
 The topic for the November 11th, 2025 chat is remembering past developers whose shoulders we stand on. Who is your favorite software developer and why? Is there a developer that inspired you or whose past contributions you use regularly?

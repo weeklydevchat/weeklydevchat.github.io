@@ -1,11 +1,12 @@
 ---
 title:  " Marketing - Building your personal or company brand"
 date: 2024-11-05
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "virtual"
+categories:
+  - Business
+tags:
+  - marketing
+  - branding
+  - career
 coverImage: "2024-11-05-Marketing-Building-your-personal-or-company-brand.webp"
 ---
 

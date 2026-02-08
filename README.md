@@ -11,6 +11,7 @@ A static website for the Weekly Dev Chat community - a weekly virtual developer 
 
 This is a static site built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and hosted on GitHub Pages. The site features:
 - Weekly blog posts for Tuesday chat topics
+- Tag-based browsing to filter posts by topic
 - Host information and community guidelines
 - Sponsor information
 - Automatic deployment via GitHub Actions
@@ -95,6 +96,10 @@ These scripts will:
    date: YYYY-MM-DD
    authors:
     - chris
+   categories:
+     - Category Name
+   tags:
+     - relevant-tag
    ---
    ```
 
@@ -126,6 +131,7 @@ These scripts will:
     ├── .authors.yml           # Author metadata
     ├── index.md               # Homepage
     ├── join.md                # How to join
+    ├── tags.md                # Tags index page (auto-populated by tags plugin)
     ├── hosts/                 # Current hosts
     ├── past-hosts/            # Past hosts
     ├── sponsors/              # Sponsors
@@ -187,6 +193,7 @@ When updates are available, Dependabot creates pull requests automatically. Revi
 - [MkDocs Documentation](https://www.mkdocs.org)
 - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 - [Material Blog Plugin](https://squidfunk.github.io/mkdocs-material/plugins/blog/)
+- [Material Tags Plugin](https://squidfunk.github.io/mkdocs-material/plugins/tags/)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 
 ## Community

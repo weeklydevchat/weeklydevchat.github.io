@@ -95,7 +95,7 @@ These scripts will:
    title: "Your Blog Post Title"
    date: YYYY-MM-DD
    authors:
-    - chris
+     - chris
    categories:
      - Category Name
    tags:

@@ -114,6 +114,14 @@ These scripts will:
 
 4. Add any images to the same directory as the post
 
+### Categories and Tags
+
+Categories are broad topic groupings and tags are specific topic labels for filtering. New categories and tags can be added as needed — these are the ones currently in use.
+
+**Categories**: Business, Career, Community, Culture, Security, Technical
+
+**Tags**: `administration`, `advent-of-code`, `advent-of-cyber`, `agile`, `ai`, `architecture`, `branding`, `cancelled`, `career`, `change-management`, `claude`, `code-quality`, `coding-challenges`, `coding-practices`, `community`, `conferences`, `creativity`, `ctf`, `culture`, `curriculum`, `cybersecurity`, `data`, `databases`, `design-patterns`, `devops`, `editors`, `education`, `entrepreneurship`, `ergonomics`, `estimation`, `ethics`, `events`, `finance`, `github-copilot`, `goals`, `gratitude`, `growth`, `habits`, `hacktoberfest`, `hardware`, `health`, `hiring`, `history`, `holiday`, `industry`, `infrastructure`, `innovation`, `inspiration`, `irl`, `job-market`, `learning`, `local-tech`, `marketing`, `meetup`, `meetups`, `metaphors`, `methodology`, `metrics`, `mob-programming`, `motivation`, `naming`, `networking`, `open-discussion`, `open-source`, `optimization`, `organizations`, `pair-programming`, `performance`, `philosophy`, `picoctf`, `predictions`, `priorities`, `privacy`, `productivity`, `project-management`, `prototyping`, `quality-assurance`, `reflection`, `remote-work`, `resilience`, `security`, `self-hosting`, `self-improvement`, `side-projects`, `society`, `supply-chain`, `surveys`, `swap-meet`, `systems`, `tdd`, `teaching`, `teamwork`, `technology`, `testing`, `thinking`, `time-management`, `tools`, `trends`, `unconference`, `version-control`, `watch-party`, `wellness`, `work-life-balance`, `workplace`, `workspace`, `year-in-review`
+
 ## Project Structure
 
 ```

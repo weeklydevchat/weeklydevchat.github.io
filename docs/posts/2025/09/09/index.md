@@ -1,8 +1,14 @@
 ---
-title: ""
+title: "What Events Are You Looking Forward To?"
 date: 2025-09-09
 authors:
  -  chris
+categories:
+  - Community
+tags:
+  - events
+  - meetups
+  - conferences
 ---
 ![Post Header](header.svg)
 

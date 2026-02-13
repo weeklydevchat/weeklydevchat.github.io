@@ -3,6 +3,12 @@ title: "Time-Boxing"
 date: 2025-09-02
 authors:
  -  omar
+categories:
+  - Technical
+tags:
+  - productivity
+  - methodology
+  - time-management
 ---
 
 Do you often time-box tasks while working? 

@@ -2,7 +2,13 @@
 title: "Staying Healthy"
 date: 2025-08-26
 authors:
- -  norm 
+ -  norm
+categories:
+  - Culture
+tags:
+  - health
+  - wellness
+  - ergonomics
 ---
 
 Software development can present its own set of healthcare challenges. Physically, poor ergonomics can lead to repetitive stress injuries (e.g., carpal tunnel syndrome), poor posture, vision problems, headaches, and more. Mentally, long hours and high stress levels can take a significant toll.

@@ -2,7 +2,13 @@
 title: "Open Source: Democratizing Powerful Tech"
 date: 2025-06-10
 authors:
- - omar 
+ - omar
+categories:
+  - Technical
+tags:
+  - open-source
+  - security
+  - community
 ---
 
 96% of software today uses open source code. Tech giants build billion-dollar empires on volunteer-maintained foundations. OpenSSL is encryption software that secures an estimated 66% of web traffic. So the internet runs on code secured by just 18 underpaid engineers.

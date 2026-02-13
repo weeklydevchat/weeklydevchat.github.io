@@ -3,6 +3,12 @@ title:  "Office Environments "
 date: 2025-01-21
 authors:
  - norm
+categories:
+  - Career
+tags:
+  - workplace
+  - remote-work
+  - hardware
 coverImage: "2025-01-21.webp"
 ---
 

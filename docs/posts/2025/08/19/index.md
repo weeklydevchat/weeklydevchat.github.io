@@ -3,6 +3,12 @@ title: "Stack Overflow 2025 Developer Survey Results"
 date: 2025-08-19
 authors:
  -  chris
+categories:
+  - Career
+tags:
+  - surveys
+  - trends
+  - industry
 ---
 
 Today, Aug 19th, 2025, we will discuss the Stack Overflow 2025 Developer Survey results.  Are there any results that surprised you?  Any results that you expected?  Any interesting trends?

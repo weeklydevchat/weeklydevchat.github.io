@@ -3,6 +3,12 @@ title: "Your Project, Your Choice"
 date: 2025-03-18
 authors:
  - omar
+categories:
+  - Culture
+tags:
+  - side-projects
+  - motivation
+  - creativity
 ---
 
 In today's Weekly Dev Chat (March 18) we propose a hypothetical:

@@ -3,6 +3,11 @@ title: "Career Twists and Turns"
 date: 2025-04-15
 authors:
  -  chris
+categories:
+  - Career
+tags:
+  - career
+  - reflection
 ---
 
 The topic for the 2025-04-15 chat is career twists and turns. Inspired by someone I know debating if they should take a position at a new company or stay with their current employer. That got me thinking about my own career path, and how 20-year-old me would never have guessed I would end up starting my own consulting business. 20-year-old me assumed I would be working in the game's industry.

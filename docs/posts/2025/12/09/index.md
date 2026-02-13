@@ -2,7 +2,13 @@
 title: "How long will it take to implement feature X?"
 date: 2025-12-09
 authors:
- - norm 
+ - norm
+categories:
+  - Technical
+tags:
+  - estimation
+  - methodology
+  - project-management
 ---
 
 I came across [this article](https://thorsell.io/2025/12/07/estimates.html).  I'll jump to the end and quote his conclusion: 

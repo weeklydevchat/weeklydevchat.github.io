@@ -3,6 +3,12 @@ title: "Bold Predictions for 2026"
 date: 2026-01-13
 authors:
  - chris
+categories:
+  - Culture
+tags:
+  - predictions
+  - trends
+  - ai
 ---
 
 What are your bold tech predictions for 2026?  Will AI take over or fizzle out?  What new job title will emerge?  What company will go the way of Netscape?  What new invention will change the way we live?  Will the Weekly Dev Chat hosts appear on Shark Tank?  The bolder the better!

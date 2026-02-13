@@ -2,7 +2,13 @@
 title: "Chaos Engineering: How to Save a Trillion-Dollar Ecosystem"
 date: 2025-06-24
 authors:
- - omar 
+ - omar
+categories:
+  - Technical
+tags:
+  - devops
+  - testing
+  - resilience
 ---
 
 Recently, missing data disrupted a trillion-dollar ecosystem. Could chaos engineering have helped? 

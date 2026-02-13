@@ -27,15 +27,18 @@ plugins:
         pagination_per_page: 3
         # more blog parameters here:
         # https://squidfunk.github.io/mkdocs-material/plugins/blog/
+    - tags:
+        tags_file: tags.md
 
 
 nav:
   - Home: index.md
   - Join: join.md
-  - Bold Predictions 2026: bold-predictions-2026.md
   - Hosts: hosts/index.md
   - Past Hosts: past-hosts/index.md
   - Sponsors: sponsors/index.md
+  - Bold Predictions 2026: bold-predictions-2026.md
+  - Tags: tags.md
 
 exclude_docs: |
     past_topics.md

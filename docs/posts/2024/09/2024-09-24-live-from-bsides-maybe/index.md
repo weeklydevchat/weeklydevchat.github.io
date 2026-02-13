@@ -1,11 +1,11 @@
 ---
 title:  " Live from BSides (maybe?)"
 date: 2024-09-18
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "virtual"
+categories:
+  - Security
+tags:
+  - cybersecurity
+  - conferences
 ---
 
 The initial topic is security in general. I'll be hosting live from BSides and hopefully there won't be an technical details. Looking forward to chatting about what I've learned at BSides and any security topics we haven't touched on during this month.

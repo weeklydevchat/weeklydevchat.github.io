@@ -2,7 +2,13 @@
 title: "Don’t Pre‑optimize: Why Clarity Beats Premature Performance Tweaks"
 date: 2025-11-04
 authors:
- -  omar 
+ -  omar
+categories:
+  - Technical
+tags:
+  - coding-practices
+  - performance
+  - optimization
 ---
 
 Every developer has stared at a fresh function and wondered, “Can I make this faster right now?” Simon Harris’s Beginner Algorithms (2006) reminds us that pre‑optimizing is often a wild goose chase. In this week’s Weekly Dev Chat we’ll unpack that advice, examine real‑world trade‑offs, and surface strategies for balancing performance with readability. Main arguments:

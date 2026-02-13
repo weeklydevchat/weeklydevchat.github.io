@@ -1,15 +1,12 @@
 ---
 title:  "Giving, Generosity, and Kindness "
 date: 2024-12-17
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "generosity"
-  - "giving"
-  - "kindness"
-  - "seasonsgreetings"
-  - "virtual"
+categories:
+  - Culture
+tags:
+  - holiday
+  - community
+  - reflection
 coverImage: "wdc_2024-12-17.webp"
 ---
 

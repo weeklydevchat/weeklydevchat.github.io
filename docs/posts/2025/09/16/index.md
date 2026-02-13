@@ -2,7 +2,13 @@
 title: "Agile, Patterns, Object-Oriented Design: who cares?"
 date: 2025-09-16
 authors:
- -  norm 
+ -  norm
+categories:
+  - Technical
+tags:
+  - methodology
+  - agile
+  - design-patterns
 ---
 
 Was Agile just a fad? Does anybody still care about patterns anymore? Does object-oriented design still matter? 

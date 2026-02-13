@@ -2,7 +2,13 @@
 title: "Joining a Team: Fit In or Stand Out?"
 date: 2025-06-03
 authors:
- - norm 
+ - norm
+categories:
+  - Career
+tags:
+  - teamwork
+  - career
+  - workplace
 ---
 
 When you start a new job, do you bring the habits and approaches you developed at your last workplace, or do you start fresh? Are those old habits holding you back or helping you shine in your new role?

@@ -1,11 +1,12 @@
 ---
 title:  " Winterizing Your Codebase: Preparing for Stormy Weather"
 date: 2024-10-22
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "virtual"
+categories:
+  - Technical
+tags:
+  - coding-practices
+  - resilience
+  - code-quality
 coverImage: "Winterizing-Your-Codebase-Preparing-for-Stormy-Weather.webp"
 ---
 

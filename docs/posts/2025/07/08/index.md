@@ -3,6 +3,12 @@ title: "Ideal Development Machine Specs"
 date: 2025-07-08
 authors:
  - chris
+categories:
+  - Technical
+tags:
+  - hardware
+  - tools
+  - workspace
 ---
 ![Chat Post Featured Image](2025-07-08.svg)
 

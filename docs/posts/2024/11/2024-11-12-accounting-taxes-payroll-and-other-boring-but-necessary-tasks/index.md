@@ -1,11 +1,11 @@
 ---
 title:  " Accounting - Taxes, payroll, and other boring but necessary tasks"
 date: 2024-11-12
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "virtual"
+categories:
+  - Business
+tags:
+  - finance
+  - administration
 coverImage: "2024-11-12-Accounting.webp"
 ---
 

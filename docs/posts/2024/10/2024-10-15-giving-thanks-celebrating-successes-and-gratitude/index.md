@@ -1,11 +1,11 @@
 ---
 title:  " Giving Thanks: Celebrating Successes and Gratitude"
 date: 2024-10-15
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "virtual"
+categories:
+  - Culture
+tags:
+  - reflection
+  - gratitude
 coverImage: "2022-10-15_featured_image.webp"
 ---
 

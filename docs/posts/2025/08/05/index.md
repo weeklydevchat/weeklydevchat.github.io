@@ -2,7 +2,12 @@
 title: "Open Space"
 date: 2025-08-05
 authors:
- -  norm 
+ -  norm
+categories:
+  - Community
+tags:
+  - unconference
+  - open-discussion
 ---
 
 For today’s #meetup-weekly-dev-chat we're going to open it up to anyone to bring a topic.  It should lean towards software development, but not necessarily.  Bring your questions, bring your answers.

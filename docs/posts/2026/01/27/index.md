@@ -3,6 +3,12 @@ title: "What's in a name? That which we call a var by any other name would make 
 date: 2026-01-27
 authors:
  - omar
+categories:
+  - Technical
+tags:
+  - coding-practices
+  - naming
+  - code-quality
 ---
 
 In today's (2026-01-27) chat we will discuss  names. 

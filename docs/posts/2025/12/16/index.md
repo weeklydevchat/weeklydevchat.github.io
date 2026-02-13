@@ -3,6 +3,12 @@ title: "Self-hosting: What gives?"
 date: 2025-12-16
 authors:
  - omar
+categories:
+  - Technical
+tags:
+  - self-hosting
+  - infrastructure
+  - devops
 ---
 
 The topic for the December 16th, 2025 chat is self-hosting. More and more developers are exploring it, but what are the benefits? Does it really improve security? And is the effort justified for a personal project or a small team?

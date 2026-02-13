@@ -3,6 +3,12 @@ title: "From Garage to Global: Mapping Edmonton's Tech Journey"
 date: 2025-11-25
 authors:
  - omar
+categories:
+  - Culture
+tags:
+  - history
+  - community
+  - local-tech
 ---
 
 Today we’re taking a quick tour of Edmonton’s tech journey, from the dial‑up ISP garages of the late ’90s, through the SaaS boom that gave us D2L and Benevity, to the AI‑driven labs and remote‑first studios shaping our scene now. 

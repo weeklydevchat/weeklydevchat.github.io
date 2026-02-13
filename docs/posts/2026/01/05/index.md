@@ -3,6 +3,12 @@ title: "Great Habits > Great Programmer"
 date: 2026-01-05
 authors:
  - omar
+categories:
+  - Culture
+tags:
+  - habits
+  - coding-practices
+  - self-improvement
 ---
 
 Kent Beck, creator of XP and an early proponent of Agile, has said, “I’m not a great programmer; I’m just a good programmer with great habits.”

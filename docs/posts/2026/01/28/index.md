@@ -3,6 +3,13 @@ title: "Notes for Swap Meet (Jan 28, 2026)"
 date: 2026-01-28
 authors:
  - chris
+categories:
+  - Community
+tags:
+  - irl
+  - meetup
+  - hardware
+  - swap-meet
 ---
 Hello Hardware Swappers!
 

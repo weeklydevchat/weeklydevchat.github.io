@@ -1,12 +1,10 @@
 ---
 title: "Dec 3rd, 2024 Chat Cancelled"
 date: 2024-12-02
-categories: 
-  - "events"
-tags: 
-  - "cancelled"
-  - "event"
-  - "virtual"
+categories:
+  - Community
+tags:
+  - cancelled
 ---
 
 Just a heads up that there is **no chat** **on** **December 3rd** as I'm on vacation.  We will return to our regular schedule on December 10th.

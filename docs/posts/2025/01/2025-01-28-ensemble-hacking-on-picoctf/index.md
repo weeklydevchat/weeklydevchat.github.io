@@ -3,13 +3,13 @@ title:  "Ensemble Hacking on PicoCTF "
 date: 2025-01-28
 authors:
  - chris
-categories: 
-  - "events"
-tags: 
-  - "cybersecurity"
-  - "event"
-  - "picoctf"
-  - "virtual"
+categories:
+  - Security
+tags:
+  - cybersecurity
+  - ctf
+  - picoctf
+  - mob-programming
 coverImage: "WDC_2025-01-28.webp"
 ---
 

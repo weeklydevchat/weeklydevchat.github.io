@@ -1,11 +1,13 @@
 ---
 title:  " PicoCTF Gym Pairing"
 date: 2024-09-10
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "virtual"
+categories:
+  - Security
+tags:
+  - cybersecurity
+  - ctf
+  - picoctf
+  - pair-programming
 ---
 
 We will be doing some pair practice hacking using [PicoCTF gym](https://picoctf.org/index.html#picogym). No need to create your own PicoCTF account unless you want too.  I'll be sharing my screen and we will work together to solve some PicoCTF examples.

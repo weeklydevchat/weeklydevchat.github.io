@@ -1,11 +1,11 @@
 ---
 title:  " Unmasking Code - Identifying and Understanding Code Smells"
 date: 2024-10-29
-categories: 
-  - "events"
-tags: 
-  - "event"
-  - "virtual"
+categories:
+  - Technical
+tags:
+  - coding-practices
+  - code-quality
 coverImage: "2024-10-28_Unmasking_Code-Identifying_and_Understanding_Code-Smells.webp"
 ---
 

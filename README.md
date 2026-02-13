@@ -11,6 +11,7 @@ A static website for the Weekly Dev Chat community - a weekly virtual developer 
 
 This is a static site built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and hosted on GitHub Pages. The site features:
 - Weekly blog posts for Tuesday chat topics
+- Tag-based browsing to filter posts by topic
 - Host information and community guidelines
 - Sponsor information
 - Automatic deployment via GitHub Actions
@@ -94,7 +95,11 @@ These scripts will:
    title: "Your Blog Post Title"
    date: YYYY-MM-DD
    authors:
-    - chris
+     - chris
+   categories:
+     - Category Name
+   tags:
+     - relevant-tag
    ---
    ```
 
@@ -108,6 +113,14 @@ These scripts will:
    ```
 
 4. Add any images to the same directory as the post
+
+### Categories and Tags
+
+Categories are broad topic groupings and tags are specific topic labels for filtering. New categories and tags can be added as needed — these are the ones currently in use.
+
+**Categories**: Business, Career, Community, Culture, Security, Technical
+
+**Tags**: `administration`, `advent-of-code`, `advent-of-cyber`, `agile`, `ai`, `architecture`, `branding`, `cancelled`, `career`, `change-management`, `claude`, `code-quality`, `coding-challenges`, `coding-practices`, `community`, `conferences`, `creativity`, `ctf`, `culture`, `curriculum`, `cybersecurity`, `data`, `databases`, `design-patterns`, `devops`, `editors`, `education`, `entrepreneurship`, `ergonomics`, `estimation`, `ethics`, `events`, `finance`, `github-copilot`, `goals`, `gratitude`, `growth`, `habits`, `hacktoberfest`, `hardware`, `health`, `hiring`, `history`, `holiday`, `industry`, `infrastructure`, `innovation`, `inspiration`, `irl`, `job-market`, `learning`, `local-tech`, `marketing`, `meetup`, `meetups`, `metaphors`, `methodology`, `metrics`, `mob-programming`, `motivation`, `naming`, `networking`, `open-discussion`, `open-source`, `optimization`, `organizations`, `pair-programming`, `performance`, `philosophy`, `picoctf`, `predictions`, `priorities`, `privacy`, `productivity`, `project-management`, `prototyping`, `quality-assurance`, `reflection`, `remote-work`, `resilience`, `security`, `self-hosting`, `self-improvement`, `side-projects`, `society`, `supply-chain`, `surveys`, `swap-meet`, `systems`, `tdd`, `teaching`, `teamwork`, `technology`, `testing`, `thinking`, `time-management`, `tools`, `trends`, `unconference`, `version-control`, `watch-party`, `wellness`, `work-life-balance`, `workplace`, `workspace`, `year-in-review`
 
 ## Project Structure
 
@@ -126,6 +139,7 @@ These scripts will:
     ├── .authors.yml           # Author metadata
     ├── index.md               # Homepage
     ├── join.md                # How to join
+    ├── tags.md                # Tags index page (auto-populated by tags plugin)
     ├── hosts/                 # Current hosts
     ├── past-hosts/            # Past hosts
     ├── sponsors/              # Sponsors
@@ -187,6 +201,7 @@ When updates are available, Dependabot creates pull requests automatically. Revi
 - [MkDocs Documentation](https://www.mkdocs.org)
 - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 - [Material Blog Plugin](https://squidfunk.github.io/mkdocs-material/plugins/blog/)
+- [Material Tags Plugin](https://squidfunk.github.io/mkdocs-material/plugins/tags/)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 
 ## Community

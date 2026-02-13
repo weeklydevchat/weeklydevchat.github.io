@@ -2,7 +2,12 @@
 title: "Thankful for Software"
 date: 2025-10-14
 authors:
- -  omar 
+ -  omar
+categories:
+  - Culture
+tags:
+  - gratitude
+  - reflection
 ---
 
 Today is about software and Thanksgiving! What should software developers be grateful for? Here is a list for inspiration: https://www.infoworld.com/article/3612366/a-software-developer-gives-thanks.html

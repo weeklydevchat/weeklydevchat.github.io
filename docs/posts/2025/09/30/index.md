@@ -3,6 +3,12 @@ title: "Experiment with Claude Code 2.0"
 date: 2025-09-30
 authors:
  -  chris
+categories:
+  - Technical
+tags:
+  - ai
+  - tools
+  - claude
 ---
 
 ![2025-09-30 Header Image about Claude Code](2025-09-30-header.svg)

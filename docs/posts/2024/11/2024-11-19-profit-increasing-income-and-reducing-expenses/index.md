@@ -1,13 +1,12 @@
 ---
 title:  " - Profit: Increasing income and reducing expenses"
 date: 2024-11-18
-categories: 
-  - "events"
-tags: 
-  - "business"
-  - "event"
-  - "profit"
-  - "virtual"
+categories:
+  - Business
+tags:
+  - finance
+  - career
+  - entrepreneurship
 coverImage: "2024-11-19-Profit-Featured-Image.webp"
 ---
 

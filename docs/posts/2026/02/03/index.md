@@ -3,6 +3,13 @@ title: "picoCTF Ensemble"
 date: 2026-02-03
 authors:
  - chris
+categories:
+  - Security
+tags:
+  - cybersecurity
+  - ctf
+  - picoctf
+  - mob-programming
 ---
 
 <img src="2026/02/03/pico-logo.svg" alt="picoCTF logo" style="float: right; margin-left: 20px; margin-bottom: 10px; width: 200px; max-width: 45%;">

@@ -19,9 +19,7 @@ Join us for an in-person Weekly Dev Chat focused on solving picoCTF challenges t
 
 This event is designed for both experienced CTF players and people brand new to capture-the-flag challenges. We’ll pair up, help each other through problems, and practice practical cybersecurity skills in a friendly setting.
 
-The event runs on Tuesday, February 24 from 6:30 PM to 8:30 PM at Edmonton Public Library - Strathcona.
-
-Register and view full details on Luma:
+The event runs on Tuesday, February 24 from 6:30 PM to 8:30 PM at Edmonton Public Library - Strathcona.  Register and view full details on Luma:
 
 [https://luma.com/5k23hpni](https://luma.com/5k23hpni)
 

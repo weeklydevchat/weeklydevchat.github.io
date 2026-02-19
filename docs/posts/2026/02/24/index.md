@@ -27,4 +27,4 @@ Register and view full details on Luma:
 
 [![IRL picoCTF Pairing event image](2026-02-24-picoctf-pairing-luma.png)](https://luma.com/5k23hpni)
 
-​*ChatGPT created the header image. Not bad but still has the unique AI feel to it.
+*ChatGPT created the header image. Not bad but still has the unique AI feel to it.

@@ -10,7 +10,7 @@ tags:
   - ctf
   - picoctf
   - pair-programming
-  - irl-event
+  - irl
   - edmonton
 pin: true
 ---

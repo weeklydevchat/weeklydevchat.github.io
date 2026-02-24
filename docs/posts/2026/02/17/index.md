@@ -18,6 +18,6 @@ I’ve been experimenting with MySQL on several cloud platforms including Railwa
 
 Have you run into the same hurdles? What are your work‑arounds? Any favourite low‑cost hosts? Any billing horror stories? Your tips could help everyone keep projects alive without breaking the bank.
 
-Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
+Everyone and anyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
 ![MySQL Icon](Sql-icon.svg.png)

@@ -43,6 +43,10 @@ title: "$title"
 date: $date
 authors:
  - chris | norm | omar
+categories:
+  - CATEGORY_HERE (use existing categories when possible)
+tags:
+  - TAG_HERE (use existing tags when possible)
 ---
 
 TOPIC_INTRODUCTION_HERE
@@ -56,3 +60,5 @@ Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as lo
 Set-Content -Path $filePath -Value $yamlContent
 
 Write-Output "Blog post template created at $filePath"
+Write-Output ""
+Write-Output "Reminder: Use existing categories and tags when possible."

@@ -27,6 +27,10 @@ title: "Your Blog Post Title"
 date: $tuesday
 authors:
  - chris | norm | omar
+categories:
+  - CATEGORY_HERE
+tags:
+  - TAG_HERE
 ---
 
 TOPIC_INTRODUCTION_HERE
@@ -37,3 +41,7 @@ Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as lo
 EOF
 
 echo "Blog post template created at $file_path"
+echo ""
+echo "Reminder: Use existing categories and tags when possible."
+echo "  Existing categories: Business, Career, Community, Culture, Security, Technical"
+echo "  To see existing tags, run: grep -rh '  - ' docs/posts/*/index.md docs/posts/*/*/index.md docs/posts/*/*/*/index.md | grep -v '^authors' | sort -u"

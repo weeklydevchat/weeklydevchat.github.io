@@ -196,6 +196,27 @@ The project uses **Dependabot** to automatically keep dependencies up to date. D
 
 When updates are available, Dependabot creates pull requests automatically. Review and merge these PRs after verifying the CI workflow passes.
 
+## Troubleshooting
+
+### Build Fails
+- Check YAML syntax in post frontmatter
+- Verify all referenced images exist
+- Check `mkdocs.yml` for syntax errors
+- Review GitHub Actions logs for deployment failures
+
+### Images Not Loading
+- Image paths must be relative to the markdown file (e.g., `![alt](image.webp)`)
+- Verify the image file exists in the same directory as the post's `index.md`
+
+### Navigation Issues
+- File paths in the `nav:` section of `mkdocs.yml` must match actual file locations
+- New pages need to be added to `nav:` manually
+
+### Styling Not Applied
+- Check `docs/stylesheets/extra.css` for syntax errors
+- Clear your browser cache
+- Theme updates may rename CSS classes — check the [Material for MkDocs changelog](https://squidfunk.github.io/mkdocs-material/changelog/)
+
 ## Resources
 
 - [MkDocs Documentation](https://www.mkdocs.org)

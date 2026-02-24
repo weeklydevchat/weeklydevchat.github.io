@@ -43,5 +43,3 @@ EOF
 echo "Blog post template created at $file_path"
 echo ""
 echo "Reminder: Use existing categories and tags when possible."
-echo "  Existing categories: Business, Career, Community, Culture, Security, Technical"
-echo "  To see existing tags, run: grep -rh '  - ' docs/posts/*/index.md docs/posts/*/*/index.md docs/posts/*/*/*/index.md | grep -v '^authors' | sort -u"

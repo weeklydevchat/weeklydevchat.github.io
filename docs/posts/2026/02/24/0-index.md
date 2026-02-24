@@ -1,5 +1,5 @@
 ---
-title: "Feature(s) you wish Existed in Language/Famework/Technology you are Currently Using"
+title: "Feature(s) You Wish Existed in Language/Framework/Technology You Are Currently Using"
 date: 2026-02-24
 authors:
  - chris

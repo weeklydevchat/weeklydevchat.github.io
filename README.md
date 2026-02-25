@@ -101,7 +101,7 @@ These scripts will:
      - CategoryTwo
    tags:
      - relevant-tag-one
-     - relevent-tag-two
+     - relevant-tag-two
    ---
    ```
 

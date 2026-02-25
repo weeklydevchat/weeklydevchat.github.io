@@ -32,11 +32,11 @@ date: $tuesday
 authors:
  - chris | norm | omar
 categories:
-    # use existing categories when possible, in YAML list format.
+  # use existing categories when possible, in YAML list format.
   - CATEGORY_ONE
   - CATEGORY_TWO
 tags:
-    # use existing tags when possible, in YAML list format.
+  # use existing tags when possible, in YAML list format.
   - TAG_ONE
   - TAG_TWO
 ---

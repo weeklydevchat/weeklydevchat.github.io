@@ -1,17 +1,21 @@
 #!/bin/bash
 
 # Calculate the next Tuesday (or today if it's Tuesday)
-# In Linux date, weekday: 0=Sunday, 1=Monday, ..., 6=Saturday
 current_weekday=$(date +%w)              # 0=Sun ... 6=Sat
 days_to_tuesday=$(( (2 - current_weekday + 7) % 7 ))
 
-# If today is Tuesday, days_to_tuesday will be 0 → perfect
-# Add the calculated days
-tuesday=$(date -d "+${days_to_tuesday} days" +%Y-%m-%d)
+# Add the calculated days (compatible with both macOS and Linux)
+if date -v +0d &>/dev/null; then
+  # macOS (BSD date)
+  tuesday=$(date -v "+${days_to_tuesday}d" +%Y-%m-%d)
+else
+  # Linux (GNU date)
+  tuesday=$(date -d "+${days_to_tuesday} days" +%Y-%m-%d)
+fi
 
-year=$(date -d "$tuesday" +%Y)
-month=$(date -d "$tuesday" +%02m)
-day=$(date -d "$tuesday" +%02d)
+year=${tuesday%%-*}                       # 2026
+month=${tuesday#*-}; month=${month%-*}    # 02
+day=${tuesday##*-}                        # 24
 
 # Define paths
 folder_path="docs/posts/$year/$month/$day"
@@ -27,6 +31,14 @@ title: "Your Blog Post Title"
 date: $tuesday
 authors:
  - chris | norm | omar
+categories:
+  # use existing categories when possible, in YAML list format.
+  - CATEGORY_ONE
+  - CATEGORY_TWO
+tags:
+  # use existing tags when possible, in YAML list format.
+  - TAG_ONE
+  - TAG_TWO
 ---
 
 TOPIC_INTRODUCTION_HERE
@@ -37,3 +49,7 @@ Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as lo
 EOF
 
 echo "Blog post template created at $file_path"
+echo ""
+echo "Reminder: Use existing categories and tags when possible."
+
+python "./docs/find_tags_categories.py"

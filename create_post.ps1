@@ -44,9 +44,13 @@ date: $date
 authors:
  - chris | norm | omar
 categories:
-  - CATEGORY_HERE (use existing categories when possible)
+  # use existing categories when possible, in YAML list format.
+  - CATEGORY_ONE
+  - CATEGORY_TWO
 tags:
-  - TAG_HERE (use existing tags when possible)
+  # use existing tags when possible, in YAML list format.
+  - TAG_ONE
+  - TAG_TWO
 ---
 
 TOPIC_INTRODUCTION_HERE

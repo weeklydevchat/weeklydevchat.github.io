@@ -97,9 +97,11 @@ These scripts will:
    authors:
      - chris
    categories:
-     - Category Name
+     - CategoryOne
+     - CategoryTwo
    tags:
-     - relevant-tag
+     - relevant-tag-one
+     - relevent-tag-two
    ---
    ```
 

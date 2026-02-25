@@ -12,7 +12,6 @@ tags:
   - pair-programming
   - irl
   - edmonton
-pin: true
 ---
 
 Join us for an in-person Weekly Dev Chat focused on solving picoCTF challenges together.

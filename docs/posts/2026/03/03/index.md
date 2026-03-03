@@ -11,12 +11,12 @@ categories:
 
 ---
 
-Are you swamped with meetings? How many meetings to you have in a day?  Are they useful?  Are they harmful? What works for you and your workplace? 
+Are you swamped with meetings? How many meetings do you have in a day? Are they useful? Are they harmful? What works for you and your workplace?
 
-Some problems with meetings: 
+Some common problems with meetings:
 
-- Lack of clear purpose or agenda. 
-- Unprepared attendees and excessive length. 
+- Lack of a clear purpose or agenda
+- Unprepared attendees and excessive length
 - Too many participants
 - Meeting fatigue
 

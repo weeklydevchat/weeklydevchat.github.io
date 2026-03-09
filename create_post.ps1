@@ -66,3 +66,4 @@ Set-Content -Path $filePath -Value $yamlContent
 Write-Output "Blog post template created at $filePath"
 Write-Output ""
 Write-Output "Reminder: Use existing categories and tags when possible."
+python3 "./scripts/find_tags_categories.py"

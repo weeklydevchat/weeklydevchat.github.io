@@ -52,4 +52,4 @@ echo "Blog post template created at $file_path"
 echo ""
 echo "Reminder: Use existing categories and tags when possible."
 
-python "./docs/find_tags_categories.py"
+python3 "./scripts/find_tags_categories.py"

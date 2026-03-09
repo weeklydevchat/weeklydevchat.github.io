@@ -97,11 +97,13 @@ These scripts will:
    authors:
      - chris
    categories:
-     - CategoryOne
-     - CategoryTwo
+     # use existing categories when possible, in YAML list format.
+     - CATEGORY_ONE
+     - CATEGORY_TWO
    tags:
-     - relevant-tag-one
-     - relevant-tag-two
+     # use existing tags when possible, in YAML list format.
+     - TAG_ONE
+     - TAG_TWO
    ---
    ```
 

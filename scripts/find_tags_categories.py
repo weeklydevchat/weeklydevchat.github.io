@@ -7,7 +7,7 @@ Looks for both 'tags' and 'categories' keys (common variations).
 from pathlib import Path
 from typing import Set
 
-DOCS_DIR = Path(__file__).parent
+DOCS_DIR = Path(__file__).parent.parent / "docs"
 EXTENSIONS = (".md", ".markdown", ".mkd")
 
 def extract_frontmatter(file_path: Path) -> dict:

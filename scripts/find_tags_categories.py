@@ -47,17 +47,11 @@ def collect_tags() -> tuple[Set[str], Set[str]]:
 
         # Handle 'tags'
         tags = fm.get("tags", [])
-        if isinstance(tags, str):
-            tags = [t.strip() for t in tags.split(",") if t.strip()]
-        if isinstance(tags, list):
-            all_tags.update(str(t).strip() for t in tags if t)
+        all_tags.update(str(t).strip() for t in tags if t)
 
         # Handle 'categories' (sometimes used instead / in addition)
         cats = fm.get("categories", [])
-        if isinstance(cats, str):
-            cats = [c.strip() for c in cats.split(",") if c.strip()]
-        if isinstance(cats, list):
-            all_categories.update(str(c).strip() for c in cats if c)
+        all_categories.update(str(c).strip() for c in cats if c)
         
         all_tags.discard('TAG_ONE')
         all_tags.discard('TAG_TWO')

@@ -52,11 +52,11 @@ def collect_tags() -> tuple[Set[str], Set[str]]:
         # Handle 'categories' (sometimes used instead / in addition)
         cats = fm.get("categories", [])
         all_categories.update(str(c).strip() for c in cats if c)
-        
-        all_tags.discard('TAG_ONE')
-        all_tags.discard('TAG_TWO')
-        all_categories.discard('CATEGORY_ONE')
-        all_categories.discard('CATEGORY_TWO')
+
+    all_tags.discard('TAG_ONE')
+    all_tags.discard('TAG_TWO')
+    all_categories.discard('CATEGORY_ONE')
+    all_categories.discard('CATEGORY_TWO')
 
     return all_tags, all_categories
 

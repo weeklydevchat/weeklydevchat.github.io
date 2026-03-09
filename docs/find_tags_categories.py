@@ -4,8 +4,6 @@ Lists all unique tags and categories found in YAML front matter of .md files.
 Looks for both 'tags' and 'categories' keys (common variations).
 """
 
-import os
-import yaml
 from pathlib import Path
 from typing import Set
 
@@ -13,19 +11,24 @@ DOCS_DIR = Path(__file__).parent
 EXTENSIONS = (".md", ".markdown", ".mkd")
 
 def extract_frontmatter(file_path: Path) -> dict:
-    """Extract YAML front matter if present."""
+    """Extract tags and categories from YAML front matter using string parsing."""
     content = file_path.read_text(encoding="utf-8")
     if not content.startswith("---"):
         return {}
-    try:
-        parts = content.split("---", 2)
-        if len(parts) < 3:
-            return {}
-        fm = yaml.safe_load(parts[1]) or {}
-        return fm if isinstance(fm, dict) else {}
-    except yaml.YAMLError:
-        print(f"Warning: Invalid YAML in {file_path}")
+    parts = content.split("---", 2)
+    if len(parts) < 3:
         return {}
+    result: dict[str, list[str]] = {"tags": [], "categories": []}
+    current_key = None
+    for line in parts[1].splitlines():
+        stripped = line.strip()
+        if stripped in ("tags:", "categories:"):
+            current_key = stripped[:-1]
+        elif current_key and stripped.startswith("- "):
+            result[current_key].append(stripped[2:].strip())
+        else:
+            current_key = None
+    return result
 
 def collect_tags() -> tuple[Set[str], Set[str]]:
     all_tags: Set[str] = set()

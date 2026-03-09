@@ -70,8 +70,12 @@ def collect_tags() -> tuple[Set[str], Set[str]]:
 def main():
     tags, categories = collect_tags()
 
-    print(f"\nExisting categories: {', '.join(sorted(categories))}", )
-    print(f"\nExisting tags: {', '.join(sorted(tags))}", )
+    print("\nExisting categories:")
+    for cat in sorted(categories):
+        print(f"  {cat}")
+    print(f"\nExisting tags:")
+    for tag in sorted(tags):
+        print(f"  {tag}")
 
 
 if __name__ == "__main__":

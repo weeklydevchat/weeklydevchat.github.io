@@ -97,9 +97,13 @@ These scripts will:
    authors:
      - chris
    categories:
-     - Category Name
+     # use existing categories when possible, in YAML list format.
+     - CATEGORY_ONE
+     - CATEGORY_TWO
    tags:
-     - relevant-tag
+     # use existing tags when possible, in YAML list format.
+     - TAG_ONE
+     - TAG_TWO
    ---
    ```
 
@@ -116,11 +120,14 @@ These scripts will:
 
 ### Categories and Tags
 
-Categories are broad topic groupings and tags are specific topic labels for filtering. New categories and tags can be added as needed — these are the ones currently in use.
+Categories are broad topic groupings and tags are specific topic labels for filtering. **Please use existing categories and tags when possible** to keep the taxonomy consistent. New ones can be added when truly needed.
 
-**Categories**: Business, Career, Community, Culture, Security, Technical
+To see all categories and tags currently in use, run:
+```bash
+python3 scripts/find_tags_categories.py
+```
 
-**Tags**: `administration`, `advent-of-code`, `advent-of-cyber`, `agile`, `ai`, `architecture`, `branding`, `cancelled`, `career`, `change-management`, `claude`, `code-quality`, `coding-challenges`, `coding-practices`, `community`, `conferences`, `creativity`, `ctf`, `culture`, `curriculum`, `cybersecurity`, `data`, `databases`, `design-patterns`, `devops`, `editors`, `education`, `entrepreneurship`, `ergonomics`, `estimation`, `ethics`, `events`, `finance`, `github-copilot`, `goals`, `gratitude`, `growth`, `habits`, `hacktoberfest`, `hardware`, `health`, `hiring`, `history`, `holiday`, `industry`, `infrastructure`, `innovation`, `inspiration`, `irl`, `job-market`, `learning`, `local-tech`, `marketing`, `meetup`, `meetups`, `metaphors`, `methodology`, `metrics`, `mob-programming`, `motivation`, `naming`, `networking`, `open-discussion`, `open-source`, `optimization`, `organizations`, `pair-programming`, `performance`, `philosophy`, `picoctf`, `predictions`, `priorities`, `privacy`, `productivity`, `project-management`, `prototyping`, `quality-assurance`, `reflection`, `remote-work`, `resilience`, `security`, `self-hosting`, `self-improvement`, `side-projects`, `society`, `supply-chain`, `surveys`, `swap-meet`, `systems`, `tdd`, `teaching`, `teamwork`, `technology`, `testing`, `thinking`, `time-management`, `tools`, `trends`, `unconference`, `version-control`, `watch-party`, `wellness`, `work-life-balance`, `workplace`, `workspace`, `year-in-review`
+This is also run automatically by the `create_post` scripts when scaffolding a new post.
 
 ## Project Structure
 
@@ -131,6 +138,8 @@ Categories are broad topic groupings and tags are specific topic labels for filt
 ├── docker-compose.yml         # Docker development environment
 ├── create_post.sh             # Bash script to create blog posts
 ├── create_post.ps1            # PowerShell script to create blog posts
+├── scripts/
+│   └── find_tags_categories.py # List all existing tags and categories
 ├── .github/
 │   ├── dependabot.yml         # Dependabot configuration
 │   └── workflows/

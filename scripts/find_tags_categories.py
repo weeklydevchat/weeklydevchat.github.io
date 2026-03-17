@@ -4,35 +4,34 @@ Lists all unique tags and categories found in YAML front matter of .md files.
 Looks for both 'tags' and 'categories' keys (common variations).
 """
 
+import yaml
 from pathlib import Path
-from typing import Set
 
 DOCS_DIR = Path(__file__).parent.parent / "docs"
 EXTENSIONS = (".md", ".markdown", ".mkd")
 
-def extract_frontmatter(file_path: Path) -> dict:
-    """Extract tags and categories from YAML front matter using string parsing."""
+
+def extract_frontmatter(file_path: Path) -> dict[str, list[str]]:
+    """Extract YAML front matter if present."""
     content = file_path.read_text(encoding="utf-8")
     if not content.startswith("---"):
         return {}
-    parts = content.split("---", 2)
-    if len(parts) < 3:
+    try:
+        parts = content.split("---", 2)
+        if len(parts) < 3:
+            return {}
+        fm = yaml.safe_load(parts[1])
+        if not isinstance(fm, dict):
+            return {}
+        return fm
+    except yaml.YAMLError:
+        print(f"Warning: Invalid YAML in {file_path}")
         return {}
-    result: dict[str, list[str]] = {"tags": [], "categories": []}
-    current_key = None
-    for line in parts[1].splitlines():
-        stripped = line.strip()
-        if stripped in ("tags:", "categories:"):
-            current_key = stripped[:-1]
-        elif current_key and stripped.startswith("- "):
-            result[current_key].append(stripped[2:].strip())
-        else:
-            current_key = None
-    return result
 
-def collect_tags() -> tuple[Set[str], Set[str]]:
-    all_tags: Set[str] = set()
-    all_categories: Set[str] = set()
+
+def collect_tags() -> tuple[set[str], set[str]]:
+    all_tags = set()
+    all_categories = set()
 
     docs_path = Path(DOCS_DIR)
     if not docs_path.is_dir():
@@ -40,16 +39,14 @@ def collect_tags() -> tuple[Set[str], Set[str]]:
         return all_tags, all_categories
 
     for file_path in docs_path.rglob("*"):
-        if not file_path.is_file() or not file_path.suffix.lower() in EXTENSIONS:
+        if not file_path.is_file() or file_path.suffix.lower() not in EXTENSIONS:
             continue
 
         fm = extract_frontmatter(file_path)
 
-        # Handle 'tags'
         tags = fm.get("tags", [])
         all_tags.update(str(t).strip() for t in tags if t)
 
-        # Handle 'categories' (sometimes used instead / in addition)
         cats = fm.get("categories", [])
         all_categories.update(str(c).strip() for c in cats if c)
 
@@ -61,7 +58,7 @@ def collect_tags() -> tuple[Set[str], Set[str]]:
     return all_tags, all_categories
 
 
-def main():
+def main() -> None:
     tags, categories = collect_tags()
 
     print("\nExisting categories:")

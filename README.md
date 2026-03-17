@@ -123,11 +123,18 @@ These scripts will:
 Categories are broad topic groupings and tags are specific topic labels for filtering. **Please use existing categories and tags when possible** to keep the taxonomy consistent. New ones can be added when truly needed.
 
 To see all categories and tags currently in use, run:
+
+**Bash (Linux/macOS)**:
 ```bash
 python3 scripts/find_tags_categories.py
 ```
 
-This is also run automatically by the `create_post` scripts when scaffolding a new post.
+**PowerShell (Windows)**:
+```powershell
+python scripts/find_tags_categories.py
+```
+
+This script requires `pyyaml`, which is included in `requirements.txt`. It is also run automatically by the `create_post` scripts when scaffolding a new post.
 
 ## Project Structure
 

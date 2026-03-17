@@ -16,7 +16,7 @@ In today's (2026-03-17) chat I'll get the chat mob to review my 99% vibe code [W
 
 I found the clanker was good at quickly creating a proof of concept (PoC) for my game ideas.  For example, I had one idea that I PoC in an afternoon, tried for a couple days, then ditched it.
 
-Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
+Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
 P.S. - Image was created using Nano Banana.  I love how the text is repeated.
 

@@ -6,12 +6,13 @@ Looks for both 'tags' and 'categories' keys (common variations).
 
 import yaml
 from pathlib import Path
+from typing import Any
 
 DOCS_DIR = Path(__file__).parent.parent / "docs"
 EXTENSIONS = (".md", ".markdown", ".mkd")
 
 
-def extract_frontmatter(file_path: Path) -> dict[str, list[str]]:
+def extract_frontmatter(file_path: Path) -> dict[str, Any]:
     """Extract YAML front matter if present."""
     content = file_path.read_text(encoding="utf-8")
     if not content.startswith("---"):

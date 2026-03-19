@@ -66,4 +66,14 @@ Set-Content -Path $filePath -Value $yamlContent
 Write-Output "Blog post template created at $filePath"
 Write-Output ""
 Write-Output "Reminder: Use existing categories and tags when possible."
-python "./scripts/find_tags_categories.py"
+# Optionally suggest existing tags and categories using the helper script, if available
+$pythonCmd = Get-Command python -ErrorAction SilentlyContinue
+if ($null -ne $pythonCmd) {
+    & python "./scripts/find_tags_categories.py"
+    if ($LASTEXITCODE -ne 0) {
+        Write-Warning "python ./scripts/find_tags_categories.py exited with code $LASTEXITCODE. The blog post file was created, but tag/category suggestions may be unavailable."
+    }
+}
+else {
+    Write-Warning "Python was not found on this system. Skipping tag/category suggestion step."
+}

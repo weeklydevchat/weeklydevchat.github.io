@@ -52,4 +52,10 @@ echo "Blog post template created at $file_path"
 echo ""
 echo "Reminder: Use existing categories and tags when possible."
 
-python3 "./scripts/find_tags_categories.py"
+# Optionally suggest existing tags and categories using the helper script, if available
+if command -v python3 &>/dev/null; then
+    python3 "./scripts/find_tags_categories.py" || echo "Warning: tag/category suggestion script failed, but the blog post file was created."
+else
+    echo "Warning: Python 3 was not found on this system. Skipping tag/category suggestion step."
+fi
+

@@ -45,10 +45,18 @@ def collect_tags() -> tuple[set[str], set[str]]:
 
         fm = extract_frontmatter(file_path)
 
-        tags = fm.get("tags", [])
+        tags = fm.get("tags") or []
+        if isinstance(tags, str):
+            tags = [tags]
+        elif not isinstance(tags, list):
+            tags = []
         all_tags.update(str(t).strip() for t in tags if t)
 
-        cats = fm.get("categories", [])
+        cats = fm.get("categories") or []
+        if isinstance(cats, str):
+            cats = [cats]
+        elif not isinstance(cats, list):
+            cats = []
         all_categories.update(str(c).strip() for c in cats if c)
 
     all_tags.discard('TAG_ONE')

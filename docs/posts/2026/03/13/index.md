@@ -14,7 +14,6 @@ tags:
   - beginner-friendly
   - irl
   - edmonton
-pin: true
 ---
 
 Join Weekly Dev Chat for a whiteboard practice night focused on explaining your thinking clearly while solving coding problems — a skill that matters in interviews and on the job.

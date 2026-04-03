@@ -15,3 +15,7 @@ The recommended way for getting the link for the Zoom meeting is by joining the 
 You can join the Dev Edmonton Slack even if you don't live in Edmonton and it's free to join. Details on how to join the Dev Edmonton Slack and the organization can be found on their [website](https://devedmonton.com/).
 
 A second option is to join the Edmonton Unlimited Meetup [group](https://www.meetup.com/startupedmonton/). Once you join the group look for the Weekly Dev Chat event and the Zoom link will be shown when you register for the event.
+
+#### In-Real-Life (IRL) Events
+
+We occasionally host in-person meetups in Edmonton. To stay up to date on IRL events, subscribe to our [Luma calendar](https://luma.com/weeklydevchat).

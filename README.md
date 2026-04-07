@@ -118,6 +118,43 @@ These scripts will:
 
 4. Add any images to the same directory as the post
 
+5. **Optimize images** for the web before committing (see [Optimizing Images](#optimizing-images) below)
+
+### Optimizing Images
+
+After adding an image to a post, run the optimization script to convert it to WebP and resize it for the web:
+
+```bash
+python3 scripts/optimize_image.py docs/posts/YYYY/MM/DD/your_image.png
+```
+
+This will create an optimized `.webp` file alongside the original. Update your post's markdown to reference the new `.webp` file, then delete the original if no longer needed.
+
+**Options:**
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--quality` | 80 | WebP quality (1–100) |
+| `--max-width` | 1200 | Max width in pixels (won't upscale) |
+
+**Examples:**
+
+```bash
+# Optimize a single image with defaults
+python3 scripts/optimize_image.py docs/posts/2026/04/14/photo.png
+
+# Batch optimize multiple images
+python3 scripts/optimize_image.py docs/posts/2026/04/14/*.png docs/posts/2026/04/14/*.jpg
+
+# Custom quality and max width
+python3 scripts/optimize_image.py --quality 90 --max-width 1600 image.jpeg
+```
+
+> **Note:** This script requires [Pillow](https://pillow.readthedocs.io/). Install dev dependencies with:
+> ```bash
+> pip install -r requirements-dev.txt
+> ```
+
 ### Categories and Tags
 
 Categories are broad topic groupings and tags are specific topic labels for filtering. **Please use existing categories and tags when possible** to keep the taxonomy consistent. New ones can be added when truly needed.
@@ -145,8 +182,11 @@ This script requires `pyyaml`, which is included in `requirements.txt`. It is al
 ├── docker-compose.yml         # Docker development environment
 ├── create_post.sh             # Bash script to create blog posts
 ├── create_post.ps1            # PowerShell script to create blog posts
+├── requirements-dev.in         # Dev-only dependency pins (e.g. Pillow)
+├── requirements-dev.txt        # Compiled dev dependencies
 ├── scripts/
-│   └── find_tags_categories.py # List all existing tags and categories
+│   ├── find_tags_categories.py # List all existing tags and categories
+│   └── optimize_image.py       # Optimize images for the web (PNG/JPEG → WebP)
 ├── .github/
 │   ├── dependabot.yml         # Dependabot configuration
 │   └── workflows/
@@ -175,6 +215,9 @@ mkdocs serve -a 0.0.0.0:8000   # Start server accessible on network
 # Build
 mkdocs build                    # Build static site to site/ directory
 mkdocs build --clean            # Clean build
+
+# Optimize an image for the web
+python3 scripts/optimize_image.py docs/posts/YYYY/MM/DD/image.png
 
 # Help
 mkdocs -h                       # Show help

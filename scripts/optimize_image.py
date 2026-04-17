@@ -14,6 +14,14 @@ from __future__ import annotations
 
 import argparse
 import sys
+
+if sys.version_info < (3, 14):
+    print(
+        f"Error: Python 3.14 or later is required (running {sys.version}).",
+        file=sys.stderr,
+    )
+    sys.exit(1)
+
 from pathlib import Path
 
 try:

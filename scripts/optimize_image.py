@@ -23,7 +23,7 @@ if sys.version_info < (3, 14):
 from pathlib import Path
 
 try:
-    from PIL import Image
+    from PIL import Image, ImageOps
 except ImportError:
     print(
         "Error: Pillow is not installed.\n"
@@ -49,6 +49,9 @@ def optimize_image(input_path: Path, *, quality: int, max_width: int) -> Path | 
     except Exception as e:
         print(f"  Error opening {input_path.name}: {e}", file=sys.stderr)
         return None
+
+    # Apply EXIF orientation so JPEGs rotated via metadata are correctly oriented
+    img = ImageOps.exif_transpose(img)
 
     # Convert palette/RGBA images appropriately for WebP
     if img.mode in ("P", "PA"):

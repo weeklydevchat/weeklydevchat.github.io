@@ -38,6 +38,22 @@ except ImportError:
 SUPPORTED_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff", ".tif"}
 
 
+def _quality_int(value: str) -> int:
+    """Argparse type for --quality: integer in range 1–100."""
+    v = int(value)
+    if not (1 <= v <= 100):
+        raise argparse.ArgumentTypeError(f"quality must be between 1 and 100 (got {v})")
+    return v
+
+
+def _positive_int(value: str) -> int:
+    """Argparse type for --max-width: integer greater than 0."""
+    v = int(value)
+    if v <= 0:
+        raise argparse.ArgumentTypeError(f"max-width must be greater than 0 (got {v})")
+    return v
+
+
 def optimize_image(input_path: Path, *, quality: int, max_width: int) -> Path | None:
     """Optimize a single image. Returns the output path, or None on error."""
     if input_path.suffix.lower() not in SUPPORTED_EXTENSIONS:
@@ -91,13 +107,13 @@ def main() -> None:
     )
     parser.add_argument(
         "--quality",
-        type=int,
+        type=_quality_int,
         default=80,
         help="WebP quality (1-100, default: 80).",
     )
     parser.add_argument(
         "--max-width",
-        type=int,
+        type=_positive_int,
         default=1200,
         help="Max image width in pixels (default: 1200). Images smaller than this are not upscaled.",
     )

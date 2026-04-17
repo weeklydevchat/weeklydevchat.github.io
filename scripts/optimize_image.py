@@ -10,8 +10,6 @@ Usage:
     python scripts/optimize_image.py --quality 85 --max-width 1600 image.png
 """
 
-from __future__ import annotations
-
 import argparse
 import sys
 

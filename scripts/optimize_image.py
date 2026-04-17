@@ -29,7 +29,7 @@ except ImportError:
     )
     sys.exit(1)
 
-SUPPORTED_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff", ".tif", ".webp"}
+SUPPORTED_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff", ".tif"}
 
 
 def optimize_image(input_path: Path, *, quality: int, max_width: int) -> Path | None:

@@ -15,4 +15,17 @@ Weekly Dev Chat website — MkDocs Material static site. Read `mkdocs.yml` and r
 
 - Pushing to `main` triggers automatic deployment to production. Do not push without explicit approval.
 - Do not modify `.github/workflows/ci.yml` unless explicitly asked.
-- Verify changes build cleanly with `mkdocs serve` before committing.
+- Verify changes build cleanly with `docker compose run mkdocs serve` before committing.
+
+## Using Docker Compose
+
+All Python, mkdocs, and similar commands should run via Docker Compose to ensure consistent Python versions:
+
+```bash
+docker compose run --rm mkdocs <command>
+
+# Examples:
+docker compose run --rm mkdocs serve
+docker compose run --rm mkdocs build
+docker compose run --rm python -m pip list
+```

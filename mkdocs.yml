@@ -43,6 +43,10 @@ nav:
 
 exclude_docs: |
     past_topics.md
+
+watch:
+  - data
+
 markdown_extensions:
   - attr_list  # This lets us specify image dimensions, etc.
 

@@ -26,17 +26,12 @@ Use `mkdocs-macros-plugin` to load a YAML data file and render the sponsors page
 - **Deduplicated structure:** sponsor details live once in a top-level `sponsors` map keyed by ID. Year entries under `years:` reference sponsors by ID only, so a sponsor returning across multiple years appears exactly once in the source.
 - 2026 and 2025 corporate entries populated from the existing sponsors page. `individual: []` empty lists in both years — no placeholder donors committed.
 
-### 3. Rewrite the sponsors page template
-- Replace `docs/sponsors/index.md` with a Jinja2-templated version.
-- Top section: help/sponsorship info text (kept from current page). Decide whether to keep `SaturdayMP, the main Weekly Dev Chat sponsor` hardcoded or make it data-driven via a `primary_sponsor` field in the YAML. Hardcoded is fine for now — just call out the decision.
-- Iterate years newest-first with explicit sorting, not map iteration order:
-  ```jinja
-  {% for year in sponsors.years.keys() | sort(reverse=true) %}
-  ```
-- For each year: corporate sponsors section, then individual donors section. For each ID in the year's list, look up the full record from the top-level `sponsors` map (e.g. `sponsors.sponsors[id]`). Skip + log a warning on unknown IDs so a typo fails loudly rather than silently dropping a sponsor.
-- Each sponsor/donor shows: image (if present), name, and link (if present). Use Jinja conditionals so missing fields don't render broken `<img>` tags or empty links.
-- Add alt text (`alt="{{ s.name }}"`) to every image — the existing page uses `![]()` with no alt, which is an accessibility gap worth fixing here.
-- Style consistent with existing hosts/past-hosts pages (150px float-left images).
+### 3. Rewrite the sponsors page template ✅
+- Replaced `docs/sponsors/index.md` with a Jinja2-templated version that preserves the top help/sponsorship text (SaturdayMP kept hardcoded).
+- Years iterated newest-first via `sponsors.years.keys() | sort(reverse=true)`.
+- For each year: Corporate Sponsors section; Individual Donors section rendered only when the list is non-empty. IDs are looked up in the top-level `sponsors` map; unknown IDs render a visible `> **WARNING:** ...` blockquote so typos fail loudly.
+- Image, name, and link are each rendered behind a Jinja conditional — missing optional fields don't produce broken tags or empty links.
+- Alt text added to every image. 150px float-left style matches the hosts/past-hosts pages, with a `<div style="clear: both;">` after each entry so floats don't collide.
 
 ### 4. Privacy / consent check
 - Before listing any individual by name, confirm they've opted in. Worth flagging to Chris as a launch gate.

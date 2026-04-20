@@ -46,13 +46,18 @@ sponsors:
     link_label: Edmonton Unlimited
     description: Thanks to Edmonton Unlimited for providing a Meetup Link.
 
+  chris:
+    name: Chris
+    description: Thanks to Chris for being an individual donor.
+
 years:
   2026:
     corporate:
       - saturday-mp
       - dev-edmonton
       - edmonton-unlimited
-    individual: []
+    individual:
+      - chris
 
   2025:
     corporate:

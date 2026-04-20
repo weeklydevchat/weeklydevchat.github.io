@@ -1,6 +1,7 @@
 # uv pip compile requirements.in  --output-file requirements.txt
 
 mkdocs-material>=9.7.0
+mkdocs-macros-plugin
 
 # GitHub's dependabot detected an error in previous versions
 urllib3>=2.6.0

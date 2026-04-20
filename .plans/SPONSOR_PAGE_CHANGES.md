@@ -16,19 +16,14 @@ Use `mkdocs-macros-plugin` to load a YAML data file and render the sponsors page
 
 ## Todos
 
-### 1. Confirm dependency + plugin wiring
-- Verify `mkdocs-macros-plugin` resolves in `requirements.txt` after regeneration.
-- Decide where the YAML lives (see step 2) and confirm the `include_yaml` path in `mkdocs.yml` matches.
+### 1. Confirm dependency + plugin wiring ✅
+- Verified `mkdocs-macros-plugin` is in `requirements.txt`.
+- Decided on option (a): YAML lives at `data/sponsors.yml` (outside `docs/`). `include_yaml` in `mkdocs.yml` is already wired to `sponsors: data/sponsors.yml`. `data/` directory exists (empty).
 
-### 2. Create the YAML data file
-- Create the data file. **Path choice:** MkDocs does NOT auto-exclude `_data/` just because of the underscore. Two options:
-  - (a) Put it at `data/sponsors.yml` (outside `docs/`) and update `include_yaml` accordingly, OR
-  - (b) Keep it at `docs/_data/sponsors.yml` and add `_data/` to the `exclude_docs` block in `mkdocs.yml`.
-  Option (a) is cleaner — data isn't documentation.
-- Structure: yearly sections containing both corporate sponsors and individual donors.
-- Include existing corporate sponsors organized by year with their images and links.
-- **Do not commit placeholder/sample donors.** Fake names with non-existent image files will break the build and may confuse editors who copy the pattern. Start with empty `individual: []` lists (or keep examples in a commented block at the top of the YAML for editor reference).
-- Each entry: `name`, optional `image`, optional `link`, optional `link_label`, optional `description`. Make it explicit in a header comment that `image` and `link` are optional so donors can opt out of being pictured/linked.
+### 2. Create the YAML data file ✅
+- Created `data/sponsors.yml` using option (a) — data file outside `docs/`.
+- Header comment documents required/optional fields and the consent policy, with an example entry kept commented out for editor reference.
+- 2026 and 2025 corporate entries populated from the existing sponsors page. `individual: []` empty lists in both years — no placeholder donors committed.
 
 ### 3. Rewrite the sponsors page template
 - Replace `docs/sponsors/index.md` with a Jinja2-templated version.

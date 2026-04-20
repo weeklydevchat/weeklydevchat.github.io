@@ -28,6 +28,9 @@ plugins:
         # more blog parameters here:
         # https://squidfunk.github.io/mkdocs-material/plugins/blog/
     - tags
+    - macros:
+        include_yaml:
+          - sponsors: data/sponsors.yml
 
 nav:
   - Home: index.md

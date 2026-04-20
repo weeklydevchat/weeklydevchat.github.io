@@ -23,6 +23,7 @@ Use `mkdocs-macros-plugin` to load a YAML data file and render the sponsors page
 ### 2. Create the YAML data file ✅
 - Created `data/sponsors.yml` using option (a) — data file outside `docs/`.
 - Header comment documents required/optional fields and the consent policy, with an example entry kept commented out for editor reference.
+- **Deduplicated structure:** sponsor details live once in a top-level `sponsors` map keyed by ID. Year entries under `years:` reference sponsors by ID only, so a sponsor returning across multiple years appears exactly once in the source.
 - 2026 and 2025 corporate entries populated from the existing sponsors page. `individual: []` empty lists in both years — no placeholder donors committed.
 
 ### 3. Rewrite the sponsors page template
@@ -30,9 +31,9 @@ Use `mkdocs-macros-plugin` to load a YAML data file and render the sponsors page
 - Top section: help/sponsorship info text (kept from current page). Decide whether to keep `SaturdayMP, the main Weekly Dev Chat sponsor` hardcoded or make it data-driven via a `primary_sponsor` field in the YAML. Hardcoded is fine for now — just call out the decision.
 - Iterate years newest-first with explicit sorting, not map iteration order:
   ```jinja
-  {% for year in sponsors.sponsors.keys() | sort(reverse=true) %}
+  {% for year in sponsors.years.keys() | sort(reverse=true) %}
   ```
-- For each year: corporate sponsors section, then individual donors section, both rendered from data.
+- For each year: corporate sponsors section, then individual donors section. For each ID in the year's list, look up the full record from the top-level `sponsors` map (e.g. `sponsors.sponsors[id]`). Skip + log a warning on unknown IDs so a typo fails loudly rather than silently dropping a sponsor.
 - Each sponsor/donor shows: image (if present), name, and link (if present). Use Jinja conditionals so missing fields don't render broken `<img>` tags or empty links.
 - Add alt text (`alt="{{ s.name }}"`) to every image — the existing page uses `![]()` with no alt, which is an accessibility gap worth fixing here.
 - Style consistent with existing hosts/past-hosts pages (150px float-left images).
@@ -53,45 +54,61 @@ Use `mkdocs-macros-plugin` to load a YAML data file and render the sponsors page
 ## Data File Structure (Draft)
 
 ```yaml
-# docs/_data/sponsors.yml  (or data/sponsors.yml — see step 2)
-# Corporate sponsors and individual donors organized by year.
-# Fields: name (required), image (optional), link (optional),
-#         link_label (optional), description (optional).
+# data/sponsors.yml
+# Sponsor details are defined once under `sponsors:` and referenced by ID
+# in each year under `years:`. This avoids duplicating a sponsor's record
+# when they return across multiple years — update their info in one place.
+#
+# Sponsor fields: name (required), image (optional), link (optional),
+#                 link_label (optional), description (optional).
 # Policy: list individuals only with their explicit consent.
+
 sponsors:
+  saturday-mp:
+    name: Saturday Morning Productions
+    image: smp.jpeg
+    link: https://saturdaymp.com/
+    description: Thanks to Saturday MP for providing hosting, Zoom, and more.
+
+  dev-edmonton:
+    name: Dev Edmonton Society
+    image: devEd.png
+    link: https://devedmonton.com/
+    description: Thanks to DES for providing a Slack channel.
+
+  edmonton-unlimited:
+    name: Edmonton Unlimited
+    image: EdmontonUnlimited.jpeg
+    link: https://edmontonunlimited.com/
+    description: Thanks to Edmonton Unlimited for providing a Meetup Link.
+
+years:
   2026:
     corporate:
-      - name: Saturday Morning Productions
-        image: smp.jpeg
-        link: https://saturdaymp.com/
-        description: Thanks to Saturday MP for providing hosting, Zoom, and more.
-
-      - name: Dev Edmonton Society
-        image: devEd.png
-        link: https://devedmonton.com/
-        description: Thanks to DES for providing a Slack channel.
-
-      - name: Edmonton Unlimited
-        image: EdmontonUnlimited.jpeg
-        link: https://edmontonunlimited.com/
-        description: Thanks to Edmonton Unlimited for providing a Meetup Link.
-
+      - saturday-mp
+      - dev-edmonton
+      - edmonton-unlimited
     individual: []
 
   2025:
     corporate:
-      - name: Saturday Morning Productions
-        image: smp.jpeg
-        link: https://saturdaymp.com/
-        description: Thanks to Saturday MP for providing hosting, Zoom, and more.
-
+      - saturday-mp
     individual: []
+```
+
+Example template lookup:
+```jinja
+{% for id in sponsors.years[year].corporate %}
+  {% set s = sponsors.sponsors[id] %}
+  ...
+{% endfor %}
 ```
 
 ## Key Decisions
 - **mkdocs-macros-plugin** chosen for Jinja2 templating in markdown (clean data/presentation separation).
 - **Corporate sponsors** and **individual donors** stored in same YAML file, organized by year.
 - **Corporate sponsors** for each year listed separately from **individual donors** on the page.
+- **Sponsor records deduplicated**: defined once under `sponsors:` by ID, referenced by ID from each year under `years:`. A returning sponsor is updated in one place.
 - **No placeholder donors** in committed data — start with empty lists.
 - **Images** stay in `docs/sponsors/`, referenced by filename in YAML.
 - **Existing help/volunteering text** at top of sponsors page is preserved.

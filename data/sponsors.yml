@@ -1,0 +1,62 @@
+# Sponsors & Donors data for Weekly Dev Chat
+#
+# Sponsor details are defined once under `sponsors:` and referenced by ID
+# in each year under `years:`. This avoids duplicating a sponsor's record
+# when they return across multiple years — update their info in one place.
+#
+# Sponsor fields:
+#   name         (required) Display name.
+#   image        (optional) Filename in docs/sponsors/.
+#   link         (optional) URL to sponsor's site.
+#   link_label   (optional) Visible text for the link; defaults to the URL.
+#   description  (optional) Short thank-you or description line.
+#
+# Consent policy: only list individual donors by name with their explicit
+# opt-in consent. When in doubt, leave them out or use "Anonymous".
+#
+# Example (commented out — copy, uncomment, and edit when adding a sponsor):
+#
+# sponsors:
+#   example-org:
+#     name: Example Org
+#     image: example.png
+#     link: https://example.com/
+#     link_label: example.com
+#     description: Thanks to Example Org for supporting the community.
+
+sponsors:
+  saturday-mp:
+    name: Saturday Morning Productions
+    image: smp.jpeg
+    link: https://saturdaymp.com/
+    link_label: Saturday MP
+    description: Thanks to Saturday MP for providing hosting, Zoom, and more.
+
+  dev-edmonton:
+    name: Dev Edmonton Society
+    image: devEd.png
+    link: https://devedmonton.com/
+    link_label: DES
+    description: Thanks to DES for providing a Slack channel.
+
+  edmonton-unlimited:
+    name: Edmonton Unlimited
+    image: EdmontonUnlimited.jpeg
+    link: https://edmontonunlimited.com/
+    link_label: Edmonton Unlimited
+    description: Thanks to Edmonton Unlimited for providing a Meetup Link.
+
+years:
+  2026:
+    corporate:
+      - saturday-mp
+      - dev-edmonton
+      - edmonton-unlimited
+    individual: []
+
+  2025:
+    corporate:
+      - saturday-mp
+      - dev-edmonton
+      - edmonton-unlimited
+    individual: []

@@ -19,3 +19,5 @@ Another side responds: “Every C programmer should write assembler. Every assem
 Who’s right? What has worked for you personally?
 
 Everyone and anyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
+
+![Close-up of ticker tape](Telex_Ticker_Tape.webp)

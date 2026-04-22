@@ -15,9 +15,7 @@ If you have any other ideas for helping Weekly Dev Chat please give [Chris](mail
 {% for year in sponsors.years.keys() | sort(reverse=true) %}
 ## {{ year }}
 
-### Corporate Sponsors
-
-{% for id in sponsors.years[year].corporate %}
+{% for id in (sponsors.years[year].corporate or []) + (sponsors.years[year].individual or []) %}
 {% if id in sponsors.sponsors %}
 {% set s = sponsors.sponsors[id] %}
 {% if s.image %}![{{ s.name }}]({{ s.image }}){: style="width:150px;float: left;padding-right: 10px;"}
@@ -29,29 +27,8 @@ If you have any other ideas for helping Weekly Dev Chat please give [Chris](mail
 <div style="clear: both;"></div>
 
 {% else %}
-> **WARNING:** Unknown sponsor ID `{{ id }}` referenced in `{{ year }}` corporate list. Check `data/sponsors.yml` for a typo.
+> **WARNING:** Unknown sponsor ID `{{ id }}` referenced in `{{ year }}`. Check `data/sponsors.yml` for a typo.
 
 {% endif %}
 {% endfor %}
-
-{% if sponsors.years[year].individual %}
-### Individual Donors
-
-{% for id in sponsors.years[year].individual %}
-{% if id in sponsors.sponsors %}
-{% set s = sponsors.sponsors[id] %}
-{% if s.image %}![{{ s.name }}]({{ s.image }}){: style="width:150px;float: left;padding-right: 10px;"}
-{% endif %}
-**{% if s.link %}[{{ s.name }}]({{ s.link }}){% else %}{{ s.name }}{% endif %}**
-
-{% if s.description %}{{ s.description }}{% endif %}
-
-<div style="clear: both;"></div>
-
-{% else %}
-> **WARNING:** Unknown donor ID `{{ id }}` referenced in `{{ year }}` individual list. Check `data/sponsors.yml` for a typo.
-
-{% endif %}
-{% endfor %}
-{% endif %}
 {% endfor %}

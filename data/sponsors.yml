@@ -7,9 +7,11 @@
 # Sponsor fields:
 #   name         (required) Display name.
 #   image        (optional) Filename in docs/sponsors/.
-#   link         (optional) URL to sponsor's site.
-#   link_label   (optional) Visible text for the link; defaults to the URL.
+#   tier         (optional) Short label shown on the card (e.g. "Primary Sponsor").
 #   description  (optional) Short thank-you or description line.
+#   links        (optional) List of { label, url } pairs shown on the card back.
+#   link         (optional, legacy) Single URL — used only if `links` is not set.
+#   link_label   (optional, legacy) Label for the legacy single `link`.
 #
 # Consent policy: only list individual donors by name with their explicit
 # opt-in consent. When in doubt, leave them out or use "Anonymous".
@@ -20,34 +22,49 @@
 #   example-org:
 #     name: Example Org
 #     image: example.png
-#     link: https://example.com/
-#     link_label: example.com
+#     tier: Community Partner
 #     description: Thanks to Example Org for supporting the community.
+#     links:
+#       - label: Website
+#         url: https://example.com/
 
 sponsors:
   saturday-mp:
     name: Saturday Morning Productions
     image: smp.jpeg
-    link: https://saturdaymp.com/
-    link_label: Saturday MP
-    description: Thanks to Saturday MP for providing hosting, Zoom, and more.
+    tier: Primary Sponsor
+    description: Covers Zoom hosting, website infrastructure, and food for IRL events. Main sponsor since day one.
+    links:
+      - label: Website
+        url: https://saturdaymp.com/
+      - label: GitHub Sponsors
+        url: https://github.com/sponsors/saturdaymp
 
   dev-edmonton:
     name: Dev Edmonton Society
     image: devEd.png
-    link: https://devedmonton.com/
-    link_label: DES
-    description: Thanks to DES for providing a Slack channel.
+    tier: Community Partner
+    description: Provides the #meetup-weekly-dev-chat Slack channel where Zoom links and topic discussion live all week.
+    links:
+      - label: Website
+        url: https://devedmonton.com/
+      - label: Join Slack
+        url: https://devedmonton.com/#about-our-slack
 
   edmonton-unlimited:
     name: Edmonton Unlimited
     image: EdmontonUnlimited.jpeg
-    link: https://edmontonunlimited.com/
-    link_label: Edmonton Unlimited
-    description: Thanks to Edmonton Unlimited for providing a Meetup Link.
+    tier: Community Partner
+    description: Hosts the Weekly Dev Chat Meetup group, making it easy for new folks to find us and RSVP.
+    links:
+      - label: Website
+        url: https://edmontonunlimited.com/
+      - label: Meetup Group
+        url: https://www.meetup.com/startupedmonton/
 
   chris:
     name: Chris
+    tier: Individual Donor
     description: Thanks to Chris for being an individual donor.
 
 years:

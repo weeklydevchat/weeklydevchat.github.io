@@ -19,4 +19,4 @@ Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as lo
 
 P.S. - As usual the feature image was created using ChatGPT.  This one did not disappoint!
 
-![2026-01-20 Feature Image](2026-01-20-feature-image.jpg)
+![2026-01-20 Feature Image](2026-01-20-feature-image.webp)

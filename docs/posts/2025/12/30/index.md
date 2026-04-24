@@ -18,4 +18,4 @@ Did you get a promotion? Did you change roles?
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![alt text](father_time.png)
+![alt text](father_time.webp)

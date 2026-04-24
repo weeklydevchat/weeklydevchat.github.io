@@ -2,12 +2,12 @@ authors:
   chris:
     name: Chris Cumming
     description: Host
-    avatar: https://weeklydevchat.com/hosts/chris.jpeg
+    avatar: /hosts/chris.webp
   norm:
     name: Norman Lorrain
     description: Host
-    avatar: https://weeklydevchat.com/hosts/norm.png
+    avatar: /hosts/norm.webp
   omar:
     name: Omar Ashour
     description: Host
-    avatar: https://weeklydevchat.com/hosts/omar.png
+    avatar: /hosts/omar.webp

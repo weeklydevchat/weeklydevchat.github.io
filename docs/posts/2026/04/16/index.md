@@ -22,6 +22,6 @@ The event runs on Wednesday, April 22 from 7:00 PM to 8:30 PM at Edmonton Public
 
 [https://luma.com/jbjhkupb](https://luma.com/jbjhkupb)
 
-[![IRL picoCTF Pairing event image](2026-04-16-picoctf-pairing-luma.png)](https://luma.com/jbjhkupb)
+[![IRL picoCTF Pairing event image](2026-04-16-picoctf-pairing-luma.webp)](https://luma.com/jbjhkupb)
 
 *ChatGPT created the header image. Not bad but still has the unique AI feel to it.

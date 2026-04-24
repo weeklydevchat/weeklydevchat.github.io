@@ -21,4 +21,4 @@ Did you specialize or generalize? What trends do you see?
 
 Everyone and anyone is welcome to join as long as you are kind, supportive, and respectful of others. Zoom link will be posted shortly before 12pm MDT.
 
-![](images/2025-02-03_education-1022x1024.png)
+![](images/2025-02-03_education-1022x1024.webp)

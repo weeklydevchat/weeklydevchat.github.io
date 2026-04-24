@@ -19,4 +19,4 @@ Is chaos engineering the future, or just for well-resourced companies? What’s 
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![Crash test dummies](Vince_and_Larry_the_crash_test_dummies_buckle_up_coloring_page.jpg)
+![Crash test dummies](Vince_and_Larry_the_crash_test_dummies_buckle_up_coloring_page.webp)

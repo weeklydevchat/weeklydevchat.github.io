@@ -19,4 +19,4 @@ Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as lo
 
 P.S. - ChatGPT created the attached image. It got the test correct, which is a big improvement from the previous versions.
 
-![Chat Post Featured Image](2025-06-17.png)
+![Chat Post Featured Image](2025-06-17.webp)

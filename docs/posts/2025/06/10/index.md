@@ -19,4 +19,4 @@ Does democratizing powerful technology also democratize its misuse?
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![Open science infographic](Open_Science_Pillars.png)
+![Open science infographic](Open_Science_Pillars.webp)

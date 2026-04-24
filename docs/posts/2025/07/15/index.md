@@ -16,4 +16,4 @@ Sometimes these analogies are helpful; sometimes they're not. What's your prefer
 
 Everyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![garden](garden.png)
+![garden](garden.webp)

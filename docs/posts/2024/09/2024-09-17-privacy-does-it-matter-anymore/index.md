@@ -25,4 +25,4 @@ September's security theme schedule:
 
 Learn how to join the chat, and other useful information, [here](https://weeklydevchat.com/). Everyone and anyone is welcome to join as long as you are kind, supportive, and respectful of others.
 
-![alt text](images/a_business_man_at_a_computer.png)
+![alt text](images/a_business_man_at_a_computer.webp)

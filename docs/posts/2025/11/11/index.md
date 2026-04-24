@@ -21,4 +21,4 @@ Inspired by this chat being held on Remembrance Day:
 
 [https://en.wikipedia.org/wiki/Remembrance_Day#Canada](https://en.wikipedia.org/wiki/Remembrance_Day#Canada)
 
-![Poppy on lapel](2025-11-11_featured_image.png)
+![Poppy on lapel](2025-11-11_featured_image.webp)

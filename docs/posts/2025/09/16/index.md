@@ -20,4 +20,4 @@ Bonus question: What’s your experience with low-code/no-code platforms? Do the
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
 
-![alt text](2025-09-16_agile_patterns_ood.jpg)
+![alt text](2025-09-16_agile_patterns_ood.webp)

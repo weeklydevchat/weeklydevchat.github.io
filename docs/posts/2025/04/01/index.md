@@ -28,4 +28,4 @@ There's an old saying: “Good. Fast. Cheap. Pick Any Two.” In any work we do,
 
 Everyone and anyone are welcome to [join](../../../../join.md) as long as you are kind, supportive, and respectful of others.
 
-![sound board mixer](mixer.png)
+![sound board mixer](mixer.webp)

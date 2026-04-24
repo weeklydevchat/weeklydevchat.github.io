@@ -18,4 +18,4 @@ Last week, AWS experienced an outage—arguably unanticipated due to insufficien
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![testing](testing.png)
+![testing](testing.webp)

@@ -19,5 +19,5 @@ Let’s dive in!
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
-![Old Picture of Jasper Avenue, Edmonton](JasperAv1927.jpg)
+![Old Picture of Jasper Avenue, Edmonton](JasperAv1927.webp)
 

@@ -19,4 +19,4 @@ Every developer has stared at a fresh function and wondered, “Can I make this 
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![scientist in laboratory](DR._LJUBCMIR_JEFTIC,_VICE-CHIEF_OF_THE_LABORATORY_OF_PHYSICO-CHEMICAL_SEPARATIONS,_STUDIES_HEAVY_METALS_IN_SAMPLES_OF..._-_NARA_-_549378.jpg)
+![scientist in laboratory](DR._LJUBCMIR_JEFTIC,_VICE-CHIEF_OF_THE_LABORATORY_OF_PHYSICO-CHEMICAL_SEPARATIONS,_STUDIES_HEAVY_METALS_IN_SAMPLES_OF..._-_NARA_-_549378.webp)

@@ -20,4 +20,4 @@ Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as lo
 
 P.S. - Image was created using Nano Banana.  I love how the text is repeated.
 
-![Review my Vibe Coded App Image](wdc_2026-03-17.jpg)
+![Review my Vibe Coded App Image](wdc_2026-03-17.webp)

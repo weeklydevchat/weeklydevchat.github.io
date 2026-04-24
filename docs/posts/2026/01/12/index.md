@@ -22,4 +22,4 @@ For more details and to register, please see the event on Luma:
 
 Feel free to post questions to this messages thread or DM me.
 
-[![Weekly Dev Chat IRL: Swap Meet and Hardware Show Image](WDC_IRL_SwapMeet_2026-01-28.png)](https://luma.com/dbx9zrfr)
+[![Weekly Dev Chat IRL: Swap Meet and Hardware Show Image](WDC_IRL_SwapMeet_2026-01-28.webp)](https://luma.com/dbx9zrfr)

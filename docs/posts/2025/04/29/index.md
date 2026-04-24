@@ -15,4 +15,4 @@ As the head of the computer science and IT department at your university or coll
 
 Everyone and anyone are welcome to [join](../../../../join.md) as long as you are kind, supportive, and respectful of others.
 
-![a computer at the science museum](A_computer_at_the_Science_Museum_(2020).jpg)
+![a computer at the science museum](A_computer_at_the_Science_Museum_(2020).webp)

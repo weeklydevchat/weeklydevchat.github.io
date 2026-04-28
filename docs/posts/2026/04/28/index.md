@@ -4,11 +4,11 @@ date: 2026-04-28
 authors:
  - chris
 categories:
-   - Community
+  - Community
 tags:
-   - open-discussion
-   - productivity
-   - habits
+  - open-discussion
+  - productivity
+  - habits
 ---
 
 Spring* is finally here! Well, hopefully. With that comes the time for spring cleaning. For me, that means outdoor tasks like getting the BBQ cleaned, prepping the garden, trimming the trees, and cleaning windows. I also try to use this time for digital cleaning, like unsubscribing from emails I no longer read, deleting apps and files I don't need, and deciding which projects need to be sunsetted.

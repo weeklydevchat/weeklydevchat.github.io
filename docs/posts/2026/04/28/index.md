@@ -21,4 +21,4 @@ Everyone and anyone is welcome to [join](https://weeklydevchat.com/join/) as lon
 
 **Image generated using ChatGPT.  I like the happy positive vibes from the image.
 
-![alt text](2026-04-28_featured_image.webp)
+![Cheerful digital spring cleaning illustration](2026-04-28_featured_image.webp)

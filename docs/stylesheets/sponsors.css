@@ -23,15 +23,25 @@
   --wdc-mono: ui-monospace, "SF Mono", Menlo, monospace;
 }
 
+/* ---------- Lead paragraph ---------- */
+.wdc-sponsors-page .lead {
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--wdc-ink);
+  margin: 8px 0 24px;
+  max-width: 60ch;
+}
+
 /* ---------- Support block (3 numbered cards) ---------- */
 .wdc-sponsors-page .support {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 32px 0;
+  margin: 32px 0 56px;
   border-top: 1px solid var(--wdc-line);
   border-bottom: 1px solid var(--wdc-line);
-  margin: 32px 0 56px;
 }
 .wdc-sponsors-page .support-card {
   padding: 22px;
@@ -84,7 +94,7 @@
 }
 .wdc-sponsors-page .year-header h2.year-num {
   font-weight: 300;
-  font-size: clamp(40px, 6vw, 64px);
+  font-size: clamp(24px, 3vw, 32px);
   letter-spacing: -0.02em;
   line-height: 1;
   margin: 0;

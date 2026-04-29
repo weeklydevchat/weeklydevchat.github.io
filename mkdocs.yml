@@ -50,6 +50,7 @@ watch:
 markdown_extensions:
   - attr_list  # This lets us specify image dimensions, etc.
 
-extra_css: 
+extra_css:
   - stylesheets/extra.css
+  - stylesheets/sponsors.css
 

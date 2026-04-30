@@ -25,11 +25,11 @@
 
 /* ---------- Lead paragraph ---------- */
 .wdc-sponsors-page .lead {
-  font-size: clamp(18px, 2vw, 22px);
+  font-size: clamp(22px, 2.5vw, 28px);
   font-weight: 300;
   line-height: 1.5;
   color: var(--wdc-ink);
-  margin: 8px 0 24px;
+  margin: 4px 0 12px;
   max-width: 60ch;
 }
 
@@ -38,9 +38,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  padding: 32px 0;
-  margin: 32px 0 56px;
-  border-top: 1px solid var(--wdc-line);
+  padding: 20px 0;
+  margin: 16px 0 40px;
   border-bottom: 1px solid var(--wdc-line);
 }
 .wdc-sponsors-page .support-card {

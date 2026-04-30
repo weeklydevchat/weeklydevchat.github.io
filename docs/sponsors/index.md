@@ -26,7 +26,7 @@ hide:
       <div>
         <div class="eyebrow"><span class="dot"></span> Want on this page?</div>
         <h3>Contribute to Weekly Dev Chat</h3>
-        <p>Any amount helps cover Zoom, hosting, and the occasional IRL pizza. Sponsor Saturday MP and you'll be listed under this year's supporters.</p>
+        <p>Any amount helps cover streaming, hosting, IRL events, and </p>
       </div>
       <div class="become-ctas">
         <a class="btn primary" href="https://github.com/sponsors/saturdaymp" target="_blank" rel="noopener">Sponsor on GitHub</a>

@@ -21,4 +21,4 @@ Some points to discuss:
 
 Everyone and anyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
-![Shelf with programming language textbooks](Programming_language_textbooks.jpg)
+![Shelf with programming language textbooks](Programming_language_textbooks.webp)

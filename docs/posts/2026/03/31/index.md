@@ -14,4 +14,4 @@ How to break in to the industry today. Many have this question on their minds an
 
 Everyone and anyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
-![Future tech city](500px-Future_Tech_City_Model.jpg)
+![Future tech city](500px-Future_Tech_City_Model.webp)

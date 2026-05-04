@@ -14,8 +14,8 @@ theme:
     features:
     - navigation.indexes
 
-    logo: assets/logo/png/square_logo_light_150.png
-    favicon: assets/logo/Favicons/16X16_favicon2.png
+    logo: assets/logo/png/square_logo_light_150.webp
+    favicon: assets/logo/Favicons/16X16_favicon2.webp
 
 
 # Enable the blogging behaviour (builtin plugin)

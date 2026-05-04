@@ -14,4 +14,4 @@ Today is about software and Thanksgiving! What should software developers be gra
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![Thanksgiving cake](Thanksgiving_Cake_(30245602297).jpg)
+![Thanksgiving cake](Thanksgiving_Cake_(30245602297).webp)

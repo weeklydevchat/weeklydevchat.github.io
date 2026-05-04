@@ -21,4 +21,4 @@ Regarding version-control, we can also dig into trunk-based vs feature-branch wo
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![alt text](2025-11-18_branches.png)
+![alt text](2025-11-18_branches.webp)

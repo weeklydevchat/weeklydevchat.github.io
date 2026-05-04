@@ -10,7 +10,7 @@ tags:
   - meetup
   - watch-party
 ---
-[![WDC Watch Party](2025-10-21_WatchPartyHeader.png)](https://luma.com/n7wo0ucb)
+[![WDC Watch Party](2025-10-21_WatchPartyHeader.webp)](https://luma.com/n7wo0ucb)
 
 The Weekly Dev Chat team is hosting our first ever in real-life watch party on Tuesday, October 21st.  Similar to the virtual version but in real-life (IRL) and instead of an initial topic, we will watch a short video presentation about software development then discuss the ideas in the video.
 

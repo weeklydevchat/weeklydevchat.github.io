@@ -14,4 +14,4 @@ What are your favourite tools that you can’t imagine working without? This cou
 
 Everyone and anyone are welcome to [join](../../../../join.md) as long as you are kind, supportive, and respectful of others.
 
-![person's hand holding engineer's square](Engineer's_Square.jpg)
+![person's hand holding engineer's square](Engineer's_Square.webp)

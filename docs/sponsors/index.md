@@ -2,10 +2,10 @@
 hide:
   - toc
 ---
-# Contribute
+# Sponsors
 
 <div class="wdc-sponsors-page" markdown>
-  <p class="lead">Like the Weekly Dev Chat and want to help?</p>
+  <p class="lead">The Weekly Dev Chat is powered by community members like you!</p>
   <section class="support">
     <div class="support-card">
       <h3>Show Up</h3>
@@ -13,7 +13,7 @@ hide:
     </div>
     <div class="support-card">
       <h3>Spread the Word</h3>
-      <p>Invite people who follow our values to our events.  Everyone and anyone is welcome kind, supportive, and respectful of others.</p>
+      <p>Invite others who follow our values to an event.  Everyone and anyone is welcome kind, supportive, and respectful of others.</p>
     </div>
     <div class="support-card">
       <h3>Sponsor</h3>
@@ -22,20 +22,18 @@ hide:
   </section>
 
   <section class="become-sponsor">
+    <div class="eyebrow"><span class="dot"></span> Want on this page?</div>
     <div class="become-inner">
       <div>
-        <div class="eyebrow"><span class="dot"></span> Want on this page?</div>
-        <h3>Contribute to Weekly Dev Chat</h3>
-        <p>Any amount helps cover streaming, hosting, IRL events, and </p>
+        <h3>Thank you to our Current and Past Sponsors!</h3>
+        <p>Email us if you have any questions or would like to make non-financial contributions.</p>
       </div>
       <div class="become-ctas">
-        <a class="btn primary" href="https://github.com/sponsors/saturdaymp" target="_blank" rel="noopener">Sponsor on GitHub</a>
-        <a class="btn ghost" href="mailto:chris.cumming@saturdaymp.com">Email Chris</a>
+        <a class="btn primary" href="https://buy.stripe.com/dRmaEY4HJ2xUgcG8PdfIs01">Sponsor</a>
+        <a class="btn primary" href="mailto:chris@weeklydevchat.com">Email</a>
       </div>
     </div>
   </section>
-
-  Thanks to our current and past supporters!
 
   {% for year in sponsors.years.keys() | sort(reverse=true) %}
   {% set ids = (sponsors.years[year].corporate or []) + (sponsors.years[year].individual or []) %}
@@ -84,3 +82,7 @@ hide:
   {% endfor %}
 
 </div>
+
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>

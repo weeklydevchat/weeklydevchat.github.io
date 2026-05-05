@@ -27,7 +27,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 20px 0;
-  margin: 16px 0 40px;
+  margin: 16px 0 20px;
   border-bottom: 1px solid var(--line);
 }
 .wdc-sponsors-page .support-card {
@@ -219,7 +219,7 @@
 
 /* Become a sponsor CTA */
 .wdc-sponsors-page .become-sponsor {
-  margin: 40px 0;
+  margin: 20px 0;
   padding: 40px;
   border-radius: var(--radius);
   background: linear-gradient(135deg, var(--teal-dark), var(--teal));
@@ -258,6 +258,7 @@
   height: 7px;
   border-radius: 50%;
   background: var(--blue);
+  border: 1px solid #fff;
   box-shadow: 0 0 0 3px rgba(68, 138, 255, 0.3);
 }
 .wdc-sponsors-page .become-sponsor h3 {
@@ -282,18 +283,19 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 20px;
-  border-radius: 10px;
+  padding: 12px 48px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 17px;
   text-decoration: none;
   white-space: nowrap;
-  transition: background 0.15s;
+  transition: background 0.15s, border-color 0.15s;
 }
 .wdc-sponsors-page .btn.primary { background: var(--blue); color: #fff; }
-.wdc-sponsors-page .btn.primary:hover { background: #2979ff; }
-.wdc-sponsors-page .btn.ghost { background: rgba(255, 255, 255, 0.15); color: #fff; }
-.wdc-sponsors-page .btn.ghost:hover { background: rgba(255, 255, 255, 0.25); }
+.wdc-sponsors-page .btn.primary:hover { background: #2979ff; border-color: #fff; }
+.wdc-sponsors-page .btn.ghost { background: rgba(255, 255, 255, 0.25); color: #fff; }
+.wdc-sponsors-page .btn.ghost:hover { background: rgba(255, 255, 255, 0.35); border-color: #fff; }
 
 @media (max-width: 900px) {
   .wdc-sponsors-page .support { grid-template-columns: 1fr; }

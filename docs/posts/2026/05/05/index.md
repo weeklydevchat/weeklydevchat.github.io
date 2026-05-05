@@ -2,7 +2,7 @@
 title: "What's happening with GitHub.  "
 date: 2026-05-05
 authors:
- - chris | norm | omar
+ - norm 
 categories:
   # use existing categories when possible, in YAML list format.
   - Technical
@@ -19,7 +19,7 @@ GitHub had quite a time last week:
 
 ***April 27 (Elasticsearch/search incident)**: The Elasticsearch cluster (used for search in PRs, issues, projects, etc.) became overloaded—likely from a botnet attack—and stopped returning results. This disrupted UI search features for several hours but didn’t affect core Git operations or APIs.*
 
-Others have commented on their [recent decline](https://dbushell.com/2026/04/29/github-is-sinking) (see chart below).  Do you still trust them? Are you sticking with them, or exploring alternatives? Don’t forget... GitHub isn’t Git.
+Others have commented on their [recent decline](https://dbushell.com/2026/04/29/github-is-sinking) (see chart below).  Do you still trust them? Are you sticking with them, or exploring alternatives? Don’t forget... GitHub isn’t Git 😉  .
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 

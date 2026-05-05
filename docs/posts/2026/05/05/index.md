@@ -13,7 +13,7 @@ tags:
   - git
 ---
 
-GitHub had quite a time last week: 
+GitHub had quite a time last month: 
 
 ***April 23 (Merge Queue incident)**: A regression in the merge queue (especially with squash merges involving multiple PRs) caused incorrect merge commits. It affected 658 repositories and 2,092 pull requests. Changes from earlier merges were inadvertently reverted in some cases. No data loss occurred (commits were still in Git), but default branches ended up in inconsistent states for some repos. GitHub couldn’t auto-fix everything safely.*
 

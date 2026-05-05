@@ -6,3 +6,6 @@ mkdocs-material>=9.7.0
 urllib3>=2.6.0
 
 pygments~=2.20.0
+
+# Dependabot: https://github.com/weeklydevchat/weeklydevchat.github.io/security/dependabot/8
+pillow>=12.2.0

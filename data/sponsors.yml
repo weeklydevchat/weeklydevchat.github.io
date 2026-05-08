@@ -33,39 +33,29 @@ sponsors:
     name: Saturday Morning Productions
     image: smp.jpeg
     tier: Primary Sponsor
-    description: Covers Zoom hosting, website infrastructure, and food for IRL events. Main sponsor since day one.
+    description: Main financial sponsor.
     links:
       - label: Website
         url: https://saturdaymp.com/
-      - label: GitHub Sponsors
-        url: https://github.com/sponsors/saturdaymp
 
   dev-edmonton:
     name: Dev Edmonton Society
     image: devEd.png
     tier: Community Partner
-    description: Provides the #meetup-weekly-dev-chat Slack channel where Zoom links and topic discussion live all week.
+    description: Slack and other promotional support.
     links:
       - label: Website
         url: https://devedmonton.com/
-      - label: Join Slack
-        url: https://devedmonton.com/#about-our-slack
 
   edmonton-unlimited:
     name: Edmonton Unlimited
     image: EdmontonUnlimited.jpeg
     tier: Community Partner
-    description: Hosts the Weekly Dev Chat Meetup group, making it easy for new folks to find us and RSVP.
+    description: Meetup group and other promotional support.
+
     links:
       - label: Website
         url: https://edmontonunlimited.com/
-      - label: Meetup Group
-        url: https://www.meetup.com/startupedmonton/
-
-  chris:
-    name: Chris
-    tier: Individual Donor
-    description: Thanks to Chris for being an individual donor.
 
 years:
   2026:
@@ -73,8 +63,7 @@ years:
       - saturday-mp
       - dev-edmonton
       - edmonton-unlimited
-    individual:
-      - chris
+    individual: []
 
   2025:
     corporate:

@@ -136,6 +136,10 @@ python scripts/find_tags_categories.py
 
 This script requires `pyyaml`, which is included in `requirements.txt`. It is also run automatically by the `create_post` scripts when scaffolding a new post.
 
+## Updating Sponsors
+
+Sponsor and donor entries live in [`data/sponsors.yml`](data/sponsors.yml), which is loaded into the sponsors page via the [`mkdocs-macros`](https://mkdocs-macros-plugin.readthedocs.io/) plugin. The file's header comment documents the schema, consent policy, and how to reference one sponsor across multiple years. Place sponsor logos in `docs/sponsors/` and reference the filename via the `image:` field.
+
 ## Project Structure
 
 ```
@@ -147,6 +151,8 @@ This script requires `pyyaml`, which is included in `requirements.txt`. It is al
 ├── create_post.ps1            # PowerShell script to create blog posts
 ├── scripts/
 │   └── find_tags_categories.py # List all existing tags and categories
+├── data/
+│   └── sponsors.yml           # Sponsor & donor data (consumed by macros plugin)
 ├── .github/
 │   ├── dependabot.yml         # Dependabot configuration
 │   └── workflows/
@@ -162,7 +168,8 @@ This script requires `pyyaml`, which is included in `requirements.txt`. It is al
     ├── posts/                 # Blog posts (YYYY/MM/DD/)
     ├── assets/                # Images, logos
     └── stylesheets/
-        └── extra.css          # Custom CSS
+        ├── extra.css          # Site-wide custom CSS
+        └── sponsors.css       # Sponsors page styling
 ```
 
 ## Common Commands

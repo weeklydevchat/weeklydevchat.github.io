@@ -48,14 +48,14 @@ hide:
         {% if id in sponsors.sponsors %}
           {% set s = sponsors.sponsors[id] %}
           {% set card_links = s.links if s.links else ([{'label': s.link_label or 'Website', 'url': s.link}] if s.link else []) %}
-          <div class="sponsor-card" tabindex="0">
+          <div class="sponsor-card" role="button" tabindex="0">
             <div class="card-face card-front">
               <div class="card-logo">
                 {% if s.image %}<img src="{{ s.image }}" alt="{{ s.name }}">{% else %}<div class="card-logo-placeholder">{{ s.name[0] }}</div>{% endif %}
               </div>
               <div class="card-footer">
                 <span class="card-tier">{{ s.tier or 'Sponsor' }}</span>
-                <span class="card-hint">hover for info</span>
+                <span class="card-hint">click/tap for info</span>
               </div>
             </div>
             <div class="card-face card-back">
@@ -79,4 +79,53 @@ hide:
   </section>
   {% endfor %}
 
+  <dialog id="wdc-sponsor-modal">
+    <div class="wdc-sponsor-modal-inner">
+      <button class="wdc-sponsor-modal-close" aria-label="Close">&#x2715;</button>
+      <div class="wdc-sponsor-modal-tier"></div>
+      <h3 class="wdc-sponsor-modal-name"></h3>
+      <p class="wdc-sponsor-modal-desc"></p>
+      <div class="wdc-sponsor-modal-links"></div>
+    </div>
+  </dialog>
+
 </div>
+
+<script>
+(function () {
+  var BREAKPOINT = 768;
+  var modal = document.getElementById('wdc-sponsor-modal');
+  if (!modal) return;
+  var mTier  = modal.querySelector('.wdc-sponsor-modal-tier');
+  var mName  = modal.querySelector('.wdc-sponsor-modal-name');
+  var mDesc  = modal.querySelector('.wdc-sponsor-modal-desc');
+  var mLinks = modal.querySelector('.wdc-sponsor-modal-links');
+  var mClose = modal.querySelector('.wdc-sponsor-modal-close');
+
+  function openModal(card) {
+    var tier  = card.querySelector('.card-back-tier');
+    var name  = card.querySelector('.card-back-name');
+    var desc  = card.querySelector('.card-back-desc');
+    var links = card.querySelector('.card-back-links');
+    mTier.textContent  = tier  ? tier.textContent.trim()  : '';
+    mTier.hidden       = !tier;
+    mName.textContent  = name  ? name.textContent.trim()  : '';
+    mDesc.textContent  = desc  ? desc.textContent.trim()  : '';
+    mDesc.hidden       = !desc;
+    mLinks.innerHTML   = links ? links.innerHTML           : '';
+    mLinks.hidden      = !links;
+    modal.showModal();
+  }
+
+  document.querySelectorAll('.wdc-sponsors-page .sponsor-card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      if (window.innerWidth > BREAKPOINT) return;
+      card.blur();
+      openModal(card);
+    });
+  });
+
+  mClose.addEventListener('click', function () { modal.close(); });
+  modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+})();
+</script>

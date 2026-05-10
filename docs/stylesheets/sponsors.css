@@ -308,3 +308,85 @@
   .wdc-sponsors-page .become-sponsor { padding: 28px; }
   .wdc-sponsors-page .become-sponsor h3 { font-size: 28px; }
 }
+
+/* Sponsor info modal (replaces flip card on small screens) */
+#wdc-sponsor-modal {
+  border: none;
+  border-radius: var(--radius);
+  padding: 0;
+  width: min(92vw, 400px);
+  background: var(--teal-dark);
+  color: #fff;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+#wdc-sponsor-modal::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(3px);
+}
+.wdc-sponsor-modal-inner {
+  padding: 28px;
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+.wdc-sponsor-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.wdc-sponsor-modal-close:hover { background: rgba(255, 255, 255, 0.28); }
+.wdc-sponsor-modal-tier {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b2dfdb;
+  margin-bottom: 6px;
+}
+.wdc-sponsor-modal-name {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0 0 14px;
+  line-height: 1.2;
+  color: #fff;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.wdc-sponsor-modal-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 16px;
+}
+.wdc-sponsor-modal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.wdc-sponsor-modal-links a {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.wdc-sponsor-modal-links a:hover { background: var(--blue); }

@@ -73,8 +73,6 @@ hide:
               </div>
             </div>
           </div>
-        {% else %}
-  > **WARNING:** Unknown sponsor ID `{{ id }}` referenced in `{{ year }}`. Check `data/sponsors.yml` for a typo.
         {% endif %}
       {% endfor %}
     </div>

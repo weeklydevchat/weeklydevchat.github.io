@@ -80,7 +80,3 @@ hide:
   {% endfor %}
 
 </div>
-
-<script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script>

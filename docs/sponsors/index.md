@@ -9,15 +9,15 @@ hide:
   <section class="support">
     <div class="support-card">
       <h3>Show Up</h3>
-      <p>Attending events is the best way to support the Weekly Dev Chat.  Bring your curiousity and be willing to share your knowledge and learn from others.</p>
+      <p>Attending events is the best way to support the Weekly Dev Chat.  Bring your curiosity and be willing to share your knowledge and learn from others.</p>
     </div>
     <div class="support-card">
       <h3>Spread the Word</h3>
-      <p>Invite others who follow our values to an event.  Everyone and anyone is welcome kind, supportive, and respectful of others.</p>
+      <p>Invite others who follow our values to an event.  Everyone and anyone is welcome as long as they are kind, supportive, and respectful of others.</p>
     </div>
     <div class="support-card">
       <h3>Sponsor</h3>
-      <p>Help keep the lights and get things done with contributions of money, time, skills, or other resources.  Every little bit helps.</p>
+      <p>Help keep the lights on and get things done with contributions of money, time, skills, or other resources.  Every little bit helps.</p>
     </div>
   </section>
 

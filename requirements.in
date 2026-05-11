@@ -3,7 +3,7 @@
 mkdocs-material>=9.7.0
 
 # GitHub's dependabot detected an error in previous versions
-urllib3>=2.6.0
+urllib3>=2.7.0
 
 pygments~=2.20.0
 

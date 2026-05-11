@@ -2,3 +2,5 @@
 #    uv pip compile requirements-dev.in --output-file requirements-dev.txt
 pillow==12.2.0
     # via -r requirements-dev.in
+urllib3==2.7.0
+    # via -r requirements-dev.in

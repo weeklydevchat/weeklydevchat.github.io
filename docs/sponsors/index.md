@@ -40,7 +40,7 @@ hide:
   <section class="year-group" data-year="{{ year }}">
     <div class="year-header">
       <h2 class="year-num" id="year-{{ year }}">{{ year }}</h2>
-      <span class="year-meta">{{ ids|length }} sponsor{{ '' if ids|length == 1 else 's' }}</span>
+      <span class="year-meta">{{ ids|length }} sponsor{{ '' if ids|length == 1 else 's' }} (click/tap for info)</span>
       <div class="year-rule"></div>
     </div>
     <div class="sponsor-grid">
@@ -55,7 +55,6 @@ hide:
               </div>
               <div class="card-footer">
                 <span class="card-tier">{{ s.tier or 'Sponsor' }}</span>
-                <span class="card-hint">click/tap for info</span>
               </div>
             </div>
             <div class="card-face card-back">
@@ -93,7 +92,6 @@ hide:
 
 <script>
 (function () {
-  var BREAKPOINT = 768;
   var modal = document.getElementById('wdc-sponsor-modal');
   if (!modal) return;
   var mTier  = modal.querySelector('.wdc-sponsor-modal-tier');
@@ -119,7 +117,6 @@ hide:
 
   document.querySelectorAll('.wdc-sponsors-page .sponsor-card').forEach(function (card) {
     card.addEventListener('click', function () {
-      if (window.innerWidth > BREAKPOINT) return;
       card.blur();
       openModal(card);
     });

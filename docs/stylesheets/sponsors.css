@@ -87,8 +87,9 @@
 /* Sponsor cards with hover-reveal back face */
 .wdc-sponsors-page .sponsor-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, 160px);
   gap: 14px;
+  justify-content: start;
 }
 .wdc-sponsors-page .sponsor-card {
   position: relative;
@@ -101,8 +102,7 @@
   outline: none;
   transition: transform 0.25s, box-shadow 0.25s;
 }
-.wdc-sponsors-page .sponsor-card:hover,
-.wdc-sponsors-page .sponsor-card:focus-within {
+.wdc-sponsors-page .sponsor-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.18);
 }
@@ -155,20 +155,12 @@
   text-transform: uppercase;
 }
 .wdc-sponsors-page .card-tier { color: var(--ink-2); font-weight: 600; }
-.wdc-sponsors-page .card-hint { color: var(--ink-3); }
 
 .wdc-sponsors-page .card-back {
   background: var(--teal-dark);
   color: #fff;
   opacity: 0;
   pointer-events: none;
-}
-.wdc-sponsors-page .sponsor-card:hover .card-front,
-.wdc-sponsors-page .sponsor-card:focus-within .card-front { opacity: 0; }
-.wdc-sponsors-page .sponsor-card:hover .card-back,
-.wdc-sponsors-page .sponsor-card:focus-within .card-back {
-  opacity: 1;
-  pointer-events: auto;
 }
 .wdc-sponsors-page .card-back-inner {
   display: flex;
@@ -300,13 +292,18 @@
 @media (max-width: 900px) {
   .wdc-sponsors-page .support { grid-template-columns: 1fr; }
   .wdc-sponsors-page .sponsor-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, 130px);
     gap: 10px;
+    justify-content: center;
   }
   .wdc-sponsors-page .become-inner { grid-template-columns: 1fr; }
   .wdc-sponsors-page .become-ctas { flex-direction: row; }
   .wdc-sponsors-page .become-sponsor { padding: 28px; }
   .wdc-sponsors-page .become-sponsor h3 { font-size: 28px; }
+  /* Reduce padding and hide footer so logo fills the smaller cards */
+  .wdc-sponsors-page .card-face { padding: 10px; }
+  .wdc-sponsors-page .card-logo { padding: 6px; }
+  .wdc-sponsors-page .card-footer { display: none; }
 }
 
 /* Sponsor info modal (replaces flip card on small screens) */

@@ -23,4 +23,4 @@ Others have commented on their [recent decline](https://dbushell.com/2026/04/29/
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![alt text](github.png)
+![alt text](github.webp)

@@ -120,6 +120,13 @@ hide:
       card.blur();
       openModal(card);
     });
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.blur();
+        openModal(card);
+      }
+    });
   });
 
   mClose.addEventListener('click', function () { modal.close(); });

@@ -36,16 +36,15 @@ hide:
   </section>
 
   {% for year in sponsors.years.keys() | sort(reverse=true) %}
-  {% set ids = sponsors.years[year] or [] %}
+  {% set valid_ids = (sponsors.years[year] or []) | select('in', sponsors.sponsors) | list %}
   <section class="year-group" data-year="{{ year }}">
     <div class="year-header">
       <h2 class="year-num" id="year-{{ year }}">{{ year }}</h2>
-      <span class="year-meta">{{ ids|length }} sponsor{{ '' if ids|length == 1 else 's' }} (click/tap for info)</span>
+      <span class="year-meta">{{ valid_ids|length }} sponsor{{ '' if valid_ids|length == 1 else 's' }} (click/tap for info)</span>
       <div class="year-rule"></div>
     </div>
     <div class="sponsor-grid">
-      {% for id in ids %}
-        {% if id in sponsors.sponsors %}
+      {% for id in valid_ids %}
           {% set s = sponsors.sponsors[id] %}
           {% set card_links = s.links if s.links else ([{'label': s.link_label or 'Website', 'url': s.link}] if s.link else []) %}
           <div class="sponsor-card" role="button" tabindex="0">
@@ -72,7 +71,6 @@ hide:
               </div>
             </div>
           </div>
-        {% endif %}
       {% endfor %}
     </div>
   </section>

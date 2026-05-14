@@ -84,7 +84,7 @@
   background: var(--line);
 }
 
-/* Sponsor cards with hover-reveal back face */
+/* Sponsor cards */
 .wdc-sponsors-page .sponsor-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 160px);
@@ -169,52 +169,6 @@
   opacity: 0;
   pointer-events: none;
 }
-.wdc-sponsors-page .card-back-inner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  gap: 8px;
-}
-.wdc-sponsors-page .card-back-tier {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #b2dfdb;
-}
-.wdc-sponsors-page .card-back-name {
-  font-weight: 400;
-  font-size: 20px;
-  margin: 0;
-  line-height: 1.2;
-}
-.wdc-sponsors-page .card-back-desc {
-  flex: 1;
-  margin: 0;
-  font-size: 13px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.85);
-  overflow: hidden;
-}
-.wdc-sponsors-page .card-back-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  padding-top: 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-.wdc-sponsors-page .card-back-links a {
-  font-family: var(--mono);
-  font-size: 11px;
-  padding: 5px 9px;
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.15s;
-}
-.wdc-sponsors-page .card-back-links a:hover { background: var(--blue); }
-.wdc-sponsors-page .arrow { font-size: 10px; opacity: 0.7; }
 
 /* Become a sponsor CTA */
 .wdc-sponsors-page .become-sponsor {

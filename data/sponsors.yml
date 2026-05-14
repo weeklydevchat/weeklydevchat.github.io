@@ -31,7 +31,7 @@
 sponsors:
   saturday-mp:
     name: Saturday Morning Productions
-    image: smp.jpeg
+    image: saturday-morning-productions.jpeg
     tier: Primary Sponsor
     description: Main financial sponsor.
     links:
@@ -42,7 +42,7 @@ sponsors:
 
   dev-edmonton:
     name: Dev Edmonton Society
-    image: devEd.png
+    image: dev-edmonton.png
     tier: Community Partner
     description: Slack workspace and other promotional support.
     links:
@@ -51,7 +51,7 @@ sponsors:
 
   edmonton-unlimited:
     name: Edmonton Unlimited
-    image: EdmontonUnlimited.jpeg
+    image: edmonton-unlimited.jpeg
     tier: Community Partner
     description: Meetup group and other promotional support.
 

@@ -50,7 +50,7 @@ hide:
           <div class="sponsor-card" role="button" tabindex="0">
             <div class="card-face card-front">
               <div class="card-logo">
-                {% if s.image %}<img src="{{ s.image }}" alt="{{ s.name }}">{% else %}<div class="card-logo-placeholder">{{ s.name[0] }}</div>{% endif %}
+                {% if s.image %}<img src="{{ s.image }}" alt="{{ s.name }}">{% else %}<div class="card-logo-placeholder">{{ (s.name or 'Anonymous')[0] }}</div>{% endif %}
               </div>
               <div class="card-footer">
                 <span class="card-tier">{{ s.name or 'Sponsor' }}</span>

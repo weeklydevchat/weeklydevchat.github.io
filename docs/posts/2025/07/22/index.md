@@ -20,4 +20,4 @@ Prototyping is a vital tool for visualising ideas, collecting user feedback, and
 
 Everyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![breadboard](Protoboard_circuito_multivibradores.jpg)
+![breadboard](Protoboard_circuito_multivibradores.webp)

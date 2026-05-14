@@ -19,4 +19,4 @@ What do you think? How can estimates be realistic?  How are estimates done where
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![desk](estimates.png)
+![desk](estimates.webp)

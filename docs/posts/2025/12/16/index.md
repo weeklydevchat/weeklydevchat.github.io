@@ -15,4 +15,4 @@ The topic for the December 16th, 2025 chat is self-hosting. More and more develo
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![2 people working on a computer](Server_maintenance_-_IMG_1062.jpg)
+![2 people working on a computer](Server_maintenance_-_IMG_1062.webp)

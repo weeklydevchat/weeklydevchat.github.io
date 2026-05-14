@@ -19,4 +19,4 @@ So, if you're currently working and you get your choice from the Jira buffet or 
 
 Everyone and anyone are welcome to join as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm Mountain Time.
 
-![alt text](Philips_stereo_AM_radio,_encased_in_wood_1024.jpg)
+![alt text](Philips_stereo_AM_radio,_encased_in_wood_1024.webp)

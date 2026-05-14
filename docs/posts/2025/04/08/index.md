@@ -22,4 +22,4 @@ What are your views on technology’s role in addressing the big global issues? 
 
 Everyone and anyone are welcome to [join](../../../../join.md) as long as you are kind, supportive, and respectful of others.
 
-![tsunami travel times graph](2019_Alaska_Eq_Tsunami_Times.jpeg)
+![tsunami travel times graph](2019_Alaska_Eq_Tsunami_Times.webp)

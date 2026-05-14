@@ -14,4 +14,4 @@ The hosts of Weekly Dev Chat are pleased to announce we will be hosting **Advent
 
 See [here](https://luma.com/g8azmkzj) for more details and registration.
 
-![alt text](image.png)
+![alt text](image.webp)

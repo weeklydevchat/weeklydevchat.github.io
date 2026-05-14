@@ -17,5 +17,5 @@ Do you relate to this take? Do you have any great habits of your own when progra
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
-![A GUI window showing some Java code before and after refactoring.](960px-Refactor_Extract_Method.png)
+![A GUI window showing some Java code before and after refactoring.](960px-Refactor_Extract_Method.webp)
 

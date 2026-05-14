@@ -32,6 +32,6 @@ The event runs on Wednesday, March 25 from 6:30 PM to 8:30 PM at Edmonton Public
 
 [https://luma.com/hcsxff11](https://luma.com/hcsxff11)
 
-[![IRL Whiteboard Practice Night event image](2026-03-25-whiteboard-practice-luma.png)](https://luma.com/hcsxff11)
+[![IRL Whiteboard Practice Night event image](2026-03-25-whiteboard-practice-luma.webp)](https://luma.com/hcsxff11)
 
 *Nano Banana created the header image based on a previous variant of the WDC logo I designed.

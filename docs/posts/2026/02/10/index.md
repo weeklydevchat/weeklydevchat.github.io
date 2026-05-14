@@ -14,4 +14,4 @@ Have you encountered technical debt in your projects? How do you deal with it? H
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
-![messy desk](2026-02-10_desk.jpg)
+![messy desk](2026-02-10_desk.webp)

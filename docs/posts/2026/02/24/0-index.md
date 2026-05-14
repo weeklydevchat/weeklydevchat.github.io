@@ -19,4 +19,4 @@ Everyone and anyone is welcome to [join](https://weeklydevchat.com/join/) as lon
 
 *Feature image created by ChatGPT.
 
-![Features you wished existed feature image](2026-02-24-features.png)
+![Features you wished existed feature image](2026-02-24-features.webp)

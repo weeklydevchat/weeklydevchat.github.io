@@ -20,4 +20,4 @@ Have you run into the same hurdles? What are your work‑arounds? Any favourite 
 
 Everyone and anyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
-![MySQL Icon](Sql-icon.svg.png)
+![MySQL Icon](Sql-icon.svg.webp)

@@ -16,4 +16,4 @@ Did your career path turn out how you imagined it when you were younger? For peo
 
 Everyone and anyone are welcome to [join](../../../../join.md) as long as you are kind, supportive, and respectful of others.
 
-![Featured Image](2025-04-15_featured_image.jpeg)
+![Featured Image](2025-04-15_featured_image.webp)

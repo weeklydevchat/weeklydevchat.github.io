@@ -17,4 +17,4 @@ How do you consolidate these disparate systems?  How do you avoid creating an ex
 
 Everyone and anyone are welcome to [join](../../../../join.md) as long as you are kind, supportive, and respectful of others.
 
-![Featured Image](2025-05-06_featured_image.png)
+![Featured Image](2025-05-06_featured_image.webp)

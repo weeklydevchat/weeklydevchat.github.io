@@ -27,4 +27,4 @@ Questions to ponder:
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. 
 
-![BlackBerry phone on stand-by](BlackBerry_phone_on_stand-by_in_2015.jpg)
+![BlackBerry phone on stand-by](BlackBerry_phone_on_stand-by_in_2015.webp)

@@ -21,4 +21,4 @@ Metrics are everywhere, but people tend to be divided on their real value and wh
 
 Everyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
-![alt text](512px-Wikisound_Audio_Speaks_Campaign_Metrics_2023_05.png)
+![alt text](512px-Wikisound_Audio_Speaks_Campaign_Metrics_2023_05.webp)

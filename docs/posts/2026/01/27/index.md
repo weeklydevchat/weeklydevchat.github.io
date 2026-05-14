@@ -22,4 +22,4 @@ How do you approach naming?
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
-![Cookie jar labeled as 'Basmati Rice'](1740580077128.jpeg)
+![Cookie jar labeled as 'Basmati Rice'](1740580077128.webp)

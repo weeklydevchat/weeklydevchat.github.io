@@ -3,7 +3,7 @@
 ---
 # Every Tuesday at 12pm Mountain Time
 
-<img class="logo-article-img" src="assets/logo/svg/horizontal_logo_light.svg" alt="weekly-dev- chat logo">
+<img class="logo-article-img" src="assets/logo/horizontal_logo_light.svg" alt="weekly-dev- chat logo">
 
 A casual weekly [virtual chat](join.md) mostly focused on web and software development.
 

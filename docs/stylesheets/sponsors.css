@@ -124,7 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 2px;
   min-height: 0;
 }
 .wdc-sponsors-page .card-logo img {
@@ -154,7 +154,14 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.wdc-sponsors-page .card-tier { color: var(--ink-2); font-weight: 600; }
+.wdc-sponsors-page .card-tier {
+  color: var(--ink-2);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
 
 .wdc-sponsors-page .card-back {
   background: var(--teal-dark);

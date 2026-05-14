@@ -37,12 +37,14 @@ sponsors:
     links:
       - label: Website
         url: https://saturdaymp.com/
+      - label: GitHub Sponsors
+        url: https://github.com/sponsors/saturdaymp
 
   dev-edmonton:
     name: Dev Edmonton Society
     image: devEd.png
     tier: Community Partner
-    description: Slack and other promotional support.
+    description: Slack workspace and other promotional support.
     links:
       - label: Website
         url: https://devedmonton.com/
@@ -56,18 +58,17 @@ sponsors:
     links:
       - label: Website
         url: https://edmontonunlimited.com/
+      - label: Meetup
+        url: https://www.meetup.com/Edmonton-Unlimited/
 
 years:
   2026:
-    corporate:
-      - saturday-mp
-      - dev-edmonton
-      - edmonton-unlimited
-    individual: []
+    - saturday-mp
+    - dev-edmonton
+    - edmonton-unlimited
+    - chris-cumming
 
   2025:
-    corporate:
-      - saturday-mp
-      - dev-edmonton
-      - edmonton-unlimited
-    individual: []
+    - saturday-mp
+    - dev-edmonton
+    - edmonton-unlimited

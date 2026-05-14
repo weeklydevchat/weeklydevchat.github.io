@@ -36,7 +36,7 @@ hide:
   </section>
 
   {% for year in sponsors.years.keys() | sort(reverse=true) %}
-  {% set ids = (sponsors.years[year].corporate or []) + (sponsors.years[year].individual or []) %}
+  {% set ids = sponsors.years[year] or [] %}
   <section class="year-group" data-year="{{ year }}">
     <div class="year-header">
       <h2 class="year-num" id="year-{{ year }}">{{ year }}</h2>
@@ -54,7 +54,7 @@ hide:
                 {% if s.image %}<img src="{{ s.image }}" alt="{{ s.name }}">{% else %}<div class="card-logo-placeholder">{{ s.name[0] }}</div>{% endif %}
               </div>
               <div class="card-footer">
-                <span class="card-tier">{{ s.tier or 'Sponsor' }}</span>
+                <span class="card-tier">{{ s.name or 'Sponsor' }}</span>
               </div>
             </div>
             <div class="card-face card-back">

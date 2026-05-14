@@ -175,7 +175,7 @@ This script requires `pyyaml`, which is included in `requirements.txt`. It is al
 
 ## Updating Sponsors
 
-Sponsor and donor entries live in [`data/sponsors.yml`](data/sponsors.yml), which is loaded into the sponsors page via the [`mkdocs-macros`](https://mkdocs-macros-plugin.readthedocs.io/) plugin. The file's header comment documents the schema, consent policy, and how to reference one sponsor across multiple years. Place sponsor logos in `docs/sponsors/` and reference the filename via the `image:` field.
+Sponsor and donor entries live in [`data/sponsors.yml`](data/sponsors.yml), which is loaded into the sponsors page via the [`mkdocs-macros`](https://mkdocs-macros-plugin.readthedocs.io/) plugin. The file's header comment documents the schema, consent policy, and how to reference one sponsor across multiple years. Place sponsor logos in `docs/assets/sponsors/` and reference the filename via the `image:` field (e.g. `image: example.png` → `docs/assets/sponsors/example.png`). Optimize logos with `python3 scripts/optimize_image.py` before committing.
 
 ## Project Structure
 
@@ -205,9 +205,10 @@ Sponsor and donor entries live in [`data/sponsors.yml`](data/sponsors.yml), whic
     ├── tags.md                # Tags index page (auto-populated by tags plugin)
     ├── hosts/                 # Current hosts
     ├── past-hosts/            # Past hosts
-    ├── sponsors/              # Sponsors
+    ├── sponsors/              # Sponsors page (index.md)
     ├── posts/                 # Blog posts (YYYY/MM/DD/)
     ├── assets/                # Images, logos
+    │   └── sponsors/          # Sponsor logos (referenced by data/sponsors.yml)
     └── stylesheets/
         ├── extra.css          # Site-wide custom CSS
         └── sponsors.css       # Sponsors page styling

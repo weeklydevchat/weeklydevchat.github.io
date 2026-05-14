@@ -11,6 +11,13 @@ Weekly Dev Chat website — MkDocs Material static site. Read `mkdocs.yml` and r
 - Use `./create_post.sh` to scaffold a new post (calculates next Tuesday automatically).
 - **Multiple posts on the same date:** If a date folder already has an `index.md`, prefix the filename with a number and dash (e.g., `0-index.md`). The newest/latest post should use the lowest number so it appears first on the homepage. The original `index.md` keeps its name.
 
+## Sponsors
+
+- Sponsor data lives in `data/sponsors.yml` (loaded via the `mkdocs-macros` plugin). The file's header comment documents the schema and consent policy.
+- Sponsor logos go in `docs/assets/sponsors/`. Reference them with just the filename in the `image:` field.
+- Optimize logos with `python3 scripts/optimize_image.py <path>` before committing.
+- The page itself is `docs/sponsors/index.md`; styles are in `docs/stylesheets/sponsors.css`.
+
 ## Guardrails
 
 - Pushing to `main` triggers automatic deployment to production. Do not push without explicit approval.

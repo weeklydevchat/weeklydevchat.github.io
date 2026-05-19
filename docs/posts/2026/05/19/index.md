@@ -2,7 +2,7 @@
 title: "Anything AI Related"
 date: 2026-05-19
 authors:
- - chris
+  - chris
 categories:
   - Technical
   - Community

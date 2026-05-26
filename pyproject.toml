@@ -9,8 +9,9 @@ dependencies = [
     "urllib3>=2.7.0",
 ]
 
-# Optional but recommended
+# Dependencies are managed from this `pyproject.toml` with `uv`, not `requirements*.txt`.
+# Install the project environment with `uv sync` and run tools/scripts with `uv run <command>`.
 [tool.uv]
 dev-dependencies = [
-    # put dev-only tools here if needed
+    # Add dev-only tools here when needed; they will be installed by `uv sync`.
 ]

@@ -6,7 +6,7 @@
 #
 # Sponsor fields:
 #   name         (required) Display name.
-#   image        (optional) Filename in docs/sponsors/.
+#   image        (optional) Filename in docs/assets/sponsors/.
 #   tier         (optional) Short label shown on the card (e.g. "Primary Sponsor").
 #   description  (optional) Short thank-you or description line.
 #   links        (optional) List of { label, url } pairs shown on the card back.

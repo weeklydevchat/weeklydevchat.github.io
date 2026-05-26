@@ -189,8 +189,7 @@ Sponsor and donor entries live in [`data/sponsors.yml`](data/sponsors.yml), whic
 ├── requirements-dev.in         # Dev-only dependency pins (e.g. Pillow)
 ├── requirements-dev.txt        # Compiled dev dependencies
 ├── scripts/
-│   |── find_tags_categories.py # List all existing tags and categories
-│   |── find_tags_categories.py # List all existing tags and categories
+│   ├── find_tags_categories.py # List all existing tags and categories
 │   └── optimize_image.py       # Optimize images for the web (PNG/JPEG → WebP)
 ├── data/
 │   └── sponsors.yml           # Sponsor & donor data (consumed by macros plugin)

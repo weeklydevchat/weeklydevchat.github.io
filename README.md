@@ -36,15 +36,22 @@ This is a static site built with [MkDocs Material](https://squidfunk.github.io/m
 
 1. Install dependencies:
    ```bash
-   pip install mkdocs-material
+   uv sync
    ```
 
 2. Start the development server:
    ```bash
-   mkdocs serve
+   uv run mkdocs serve       
    ```
 
 3. Open your browser to [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+
+4. Run the image scripts if required: 
+   ```bash
+   uv run python scripts/optimize_image.py foo.png
+   uv run scripts/optimize_all_images.sh 
+   ```
 
 ### Local Development (Docker)
 
@@ -150,10 +157,7 @@ python3 scripts/optimize_image.py docs/posts/2026/04/14/*.png docs/posts/2026/04
 python3 scripts/optimize_image.py --quality 90 --max-width 1600 image.jpeg
 ```
 
-> **Note:** This script requires [Pillow](https://pillow.readthedocs.io/). Install dev dependencies with:
-> ```bash
-> pip install -r requirements-dev.txt
-> ```
+
 
 ### Categories and Tags
 

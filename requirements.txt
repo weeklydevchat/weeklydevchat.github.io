@@ -18,7 +18,7 @@ hjson==3.1.0
     # via
     #   mkdocs-macros-plugin
     #   super-collections
-idna==3.11
+idna==3.15
     # via requests
 jinja2==3.1.6
     # via
@@ -60,6 +60,8 @@ pathspec==0.12.1
     # via
     #   mkdocs
     #   mkdocs-macros-plugin
+pillow==12.2.0
+    # via -r requirements.in
 platformdirs==4.5.1
     # via mkdocs-get-deps
 pygments==2.20.0
@@ -91,7 +93,7 @@ super-collections==0.6.2
     # via mkdocs-macros-plugin
 termcolor==3.3.0
     # via mkdocs-macros-plugin
-urllib3==2.6.3
+urllib3==2.7.0
     # via
     #   -r requirements.in
     #   requests

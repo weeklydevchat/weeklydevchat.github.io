@@ -1,0 +1,73 @@
+# Sponsors & Donors data for Weekly Dev Chat
+#
+# Sponsor details are defined once under `sponsors:` and referenced by ID
+# in each year under `years:`. This avoids duplicating a sponsor's record
+# when they return across multiple years — update their info in one place.
+#
+# Sponsor fields:
+#   name         (required) Display name.
+#   image        (optional) Filename in docs/assets/sponsors/.
+#   tier         (optional) Short label shown on the card (e.g. "Primary Sponsor").
+#   description  (optional) Short thank-you or description line.
+#   links        (optional) List of { label, url } pairs shown on the card back.
+#   link         (optional, legacy) Single URL — used only if `links` is not set.
+#   link_label   (optional, legacy) Label for the legacy single `link`.
+#
+# Consent policy: only list individual donors by name with their explicit
+# opt-in consent. When in doubt, leave them out or use "Anonymous".
+#
+# Example (commented out — copy, uncomment, and edit when adding a sponsor):
+#
+# sponsors:
+#   example-org:
+#     name: Example Org
+#     image: example.png
+#     tier: Community Partner
+#     description: Thanks to Example Org for supporting the community.
+#     links:
+#       - label: Website
+#         url: https://example.com/
+
+sponsors:
+  saturday-mp:
+    name: Saturday Morning Productions
+    image: saturday-morning-productions.webp
+    tier: Primary Sponsor
+    description: Main financial sponsor that pays the bills and keeps the lights on.
+    links:
+      - label: Website
+        url: https://saturdaymp.com/
+      - label: GitHub Sponsors
+        url: https://github.com/sponsors/saturdaymp
+
+  dev-edmonton:
+    name: Dev Edmonton Society
+    image: dev-edmonton.webp
+    tier: Community Partner
+    description: Provides a Slack workspace and other promotional support.
+    links:
+      - label: Website
+        url: https://devedmonton.com/
+
+  edmonton-unlimited:
+    name: Edmonton Unlimited
+    image: edmonton-unlimited.webp
+    tier: Community Partner
+    description: Provide the Meetup Group and other promotional support.
+
+    links:
+      - label: Website
+        url: https://edmontonunlimited.com/
+      - label: Meetup
+        url: https://www.meetup.com/edmontonunlimited/
+        
+years:
+  2026:
+    - saturday-mp
+    - dev-edmonton
+    - edmonton-unlimited
+
+  2025:
+    - saturday-mp
+    - dev-edmonton
+    - edmonton-unlimited

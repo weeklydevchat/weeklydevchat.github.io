@@ -1,3 +1,13 @@
+.md-typeset h1 {
+  font-weight: 300;
+  font-size: clamp(32px, 4.5vw, 48px);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--md-primary-fg-color, #009688);
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 .logo-article-img {
   width: 300px;
   margin-left: 20px;

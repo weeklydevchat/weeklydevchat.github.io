@@ -11,8 +11,28 @@ Weekly Dev Chat website — MkDocs Material static site. Read `mkdocs.yml` and r
 - Use `./create_post.sh` to scaffold a new post (calculates next Tuesday automatically).
 - **Multiple posts on the same date:** If a date folder already has an `index.md`, prefix the filename with a number and dash (e.g., `0-index.md`). The newest/latest post should use the lowest number so it appears first on the homepage. The original `index.md` keeps its name.
 
+## Sponsors
+
+- Sponsor data lives in `data/sponsors.yml` (loaded via the `mkdocs-macros` plugin). The file's header comment documents the schema and consent policy.
+- Sponsor logos go in `docs/assets/sponsors/`. Reference them with just the filename in the `image:` field.
+- Optimize logos with `python3 scripts/optimize_image.py <path>` before committing.
+- The page itself is `docs/sponsors/index.md`; styles are in `docs/stylesheets/sponsors.css`.
+
 ## Guardrails
 
 - Pushing to `main` triggers automatic deployment to production. Do not push without explicit approval.
 - Do not modify `.github/workflows/ci.yml` unless explicitly asked.
-- Verify changes build cleanly with `mkdocs serve` before committing.
+- Verify changes build cleanly with `docker compose run --rm app mkdocs serve` before committing.
+
+## Using Docker Compose
+
+All Python, mkdocs, and similar commands should run via Docker Compose to ensure consistent Python versions:
+
+```bash
+docker compose run --rm app <command>
+
+# Examples:
+docker compose run --rm app mkdocs serve
+docker compose run --rm app mkdocs build
+docker compose run --rm app python -m pip list
+```

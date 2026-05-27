@@ -33,7 +33,7 @@ sponsors:
     name: Saturday Morning Productions
     image: saturday-morning-productions.webp
     tier: Primary Sponsor
-    description: Main financial sponsor.
+    description: Main financial sponsor that pays the bills and keeps the lights on.
     links:
       - label: Website
         url: https://saturdaymp.com/
@@ -44,7 +44,7 @@ sponsors:
     name: Dev Edmonton Society
     image: dev-edmonton.webp
     tier: Community Partner
-    description: Slack workspace and other promotional support.
+    description: Provides a Slack workspace and other promotional support.
     links:
       - label: Website
         url: https://devedmonton.com/
@@ -53,14 +53,14 @@ sponsors:
     name: Edmonton Unlimited
     image: edmonton-unlimited.webp
     tier: Community Partner
-    description: Meetup group and other promotional support.
+    description: Provide the Meetup Group and other promotional support.
 
     links:
       - label: Website
         url: https://edmontonunlimited.com/
       - label: Meetup
-        url: https://www.meetup.com/Edmonton-Unlimited/
-
+        url: https://www.meetup.com/edmontonunlimited/
+        
 years:
   2026:
     - saturday-mp

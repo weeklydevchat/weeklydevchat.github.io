@@ -27,10 +27,10 @@ try:
 except ImportError:
     print(
         "Error: Pillow is not installed.\n"
-        "Install dev dependencies with:\n"
-        "  pip install -r requirements-dev.txt\n"
-        "Or install Pillow directly:\n"
-        "  pip install Pillow",
+        "Install the project dependencies with:\n"
+        "  uv sync\n"
+        "Then run this script with:\n"
+        "  uv run python scripts/optimize_image.py ...",
         file=sys.stderr,
     )
     sys.exit(1)

@@ -33,18 +33,20 @@ sponsors:
     name: Saturday Morning Productions
     image: saturday-morning-productions.webp
     tier: Primary Sponsor
-    description: Main financial sponsor that pays the bills and keeps the lights on.
+    description: Main financial sponsor that pays the bills and keeps the lights on.  Check out their open source projects, the SaturdayMP Show, and give them a shout if you are struggling to get software out the door.
     links:
       - label: Website
         url: https://saturdaymp.com/
-      - label: GitHub Sponsors
-        url: https://github.com/sponsors/saturdaymp
+      - label: GitHub
+        url: https://github.com/saturdaymp
+      - label: SaturdayMP Show
+        url: https://www.youtube.com/@saturdaymp
 
   dev-edmonton:
     name: Dev Edmonton Society
     image: dev-edmonton.webp
     tier: Community Partner
-    description: Provides a Slack workspace and other promotional support.
+    description: Provides a Slack Workspace, assitance booking rooms for IRL events, and other support not only for the Weekly Dev Chat but for other YEG groups and events.  You should consider becoming a member and joining their Slack.
     links:
       - label: Website
         url: https://devedmonton.com/
@@ -53,21 +55,34 @@ sponsors:
     name: Edmonton Unlimited
     image: edmonton-unlimited.webp
     tier: Community Partner
-    description: Provide the Meetup Group and other promotional support.
+    description: Is kind enough to post Weekly Dev Chat events on their popular Meetup Organization.  They are also a great resource for startups and people looking to connect with other technologists with their many programs, workshops, and open desks.
 
     links:
       - label: Website
         url: https://edmontonunlimited.com/
       - label: Meetup
         url: https://www.meetup.com/edmontonunlimited/
-        
+      - label: Luma
+        url: https://luma.com/user/edmontonunltd
+  
+  austin-doan:
+    name: Austin Doan
+    tier: Individual Donor 
+    links:
+      - label: LinkedIn
+        url: https://www.linkedin.com/in/austinpwd/
+      - label: Dev Edmonton
+        url: https://devedmonton.com/
+
 years:
   2026:
     - saturday-mp
     - dev-edmonton
     - edmonton-unlimited
+    - austin-doan
 
   2025:
     - saturday-mp
     - dev-edmonton
     - edmonton-unlimited
+    - austin-doan

@@ -1,18 +1,21 @@
 services:
   app:
-    image: python:3.14-slim
-    command: python -m mkdocs serve -a 0.0.0.0:8000 --watch-theme --livereload
-    entrypoint: /app/docker-entrypoint.sh
+    image: ghcr.io/astral-sh/uv:python3.14-trixie-slim
     working_dir: /app
+    entrypoint: /app/docker-entrypoint.sh
+    command: uv run -- mkdocs serve -a 0.0.0.0:8000 --watch-theme --livereload
     ports:
-      - 8000:8000
+      - "8000:8000"
     volumes:
       - .:/app
-      - pip-cache:/root/.cache/pip
+      - uv-cache:/root/.cache/uv
+      # Optional: protect .venv if you ever create one locally
+      - /app/.venv
     environment:
       - PYTHONUNBUFFERED=1
+      - UV_LINK_MODE=copy          # helps with bind mounts
     stdin_open: true
     tty: true
 
 volumes:
-  pip-cache:
+  uv-cache:

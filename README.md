@@ -36,15 +36,22 @@ This is a static site built with [MkDocs Material](https://squidfunk.github.io/m
 
 1. Install dependencies:
    ```bash
-   pip install mkdocs-material
+   uv sync
    ```
 
 2. Start the development server:
    ```bash
-   mkdocs serve
+   uv run mkdocs serve       
    ```
 
 3. Open your browser to [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+
+4. Run the image scripts if required: 
+   ```bash
+   uv run python scripts/optimize_image.py foo.png
+   uv run scripts/optimize_all_images.sh 
+   ```
 
 ### Local Development (Docker)
 
@@ -125,7 +132,7 @@ These scripts will:
 After adding an image to a post, run the optimization script to convert it to WebP and resize it for the web:
 
 ```bash
-python3 scripts/optimize_image.py docs/posts/YYYY/MM/DD/your_image.png
+uv run python scripts/optimize_image.py docs/posts/YYYY/MM/DD/your_image.png
 ```
 
 This will create an optimized `.webp` file alongside the original. Update your post's markdown to reference the new `.webp` file, then delete the original if no longer needed.
@@ -141,19 +148,16 @@ This will create an optimized `.webp` file alongside the original. Update your p
 
 ```bash
 # Optimize a single image with defaults
-python3 scripts/optimize_image.py docs/posts/2026/04/14/photo.png
+uv run python scripts/optimize_image.py docs/posts/2026/04/14/photo.png
 
 # Batch optimize multiple images
-python3 scripts/optimize_image.py docs/posts/2026/04/14/*.png docs/posts/2026/04/14/*.jpg
+uv run python scripts/optimize_image.py docs/posts/2026/04/14/*.png docs/posts/2026/04/14/*.jpg
 
 # Custom quality and max width
-python3 scripts/optimize_image.py --quality 90 --max-width 1600 image.jpeg
+uv run python scripts/optimize_image.py --quality 90 --max-width 1600 image.jpeg
 ```
 
-> **Note:** This script requires [Pillow](https://pillow.readthedocs.io/). Install dev dependencies with:
-> ```bash
-> pip install -r requirements-dev.txt
-> ```
+
 
 ### Categories and Tags
 
@@ -163,15 +167,15 @@ To see all categories and tags currently in use, run:
 
 **Bash (Linux/macOS)**:
 ```bash
-python3 scripts/find_tags_categories.py
+uv run python scripts/find_tags_categories.py
 ```
 
 **PowerShell (Windows)**:
 ```powershell
-python scripts/find_tags_categories.py
+uv run python scripts/find_tags_categories.py
 ```
 
-This script requires `pyyaml`, which is included in `requirements.txt`. It is also run automatically by the `create_post` scripts when scaffolding a new post.
+This script requires `pyyaml`, which is included in the dev dependencies. It is also run automatically by the `create_post` scripts when scaffolding a new post.
 
 ## Updating Sponsors
 
@@ -182,12 +186,11 @@ Sponsor and donor entries live in [`data/sponsors.yml`](data/sponsors.yml), whic
 ```
 .
 ├── mkdocs.yml                 # Main configuration file
-├── requirements.txt           # Python dependencies
+├── pyproject.toml             # Python dependencies + uv config
+├── uv.lock                    # Locked dependency tree
 ├── docker-compose.yml         # Docker development environment
 ├── create_post.sh             # Bash script to create blog posts
 ├── create_post.ps1            # PowerShell script to create blog posts
-├── requirements-dev.in         # Dev-only dependency pins (e.g. Pillow)
-├── requirements-dev.txt        # Compiled dev dependencies
 ├── scripts/
 │   ├── find_tags_categories.py # List all existing tags and categories
 │   └── optimize_image.py       # Optimize images for the web (PNG/JPEG → WebP)
@@ -225,7 +228,7 @@ mkdocs build                    # Build static site to site/ directory
 mkdocs build --clean            # Clean build
 
 # Optimize an image for the web
-python3 scripts/optimize_image.py docs/posts/YYYY/MM/DD/image.png
+uv run python scripts/optimize_image.py docs/posts/YYYY/MM/DD/image.png
 
 # Help
 mkdocs -h                       # Show help
@@ -233,7 +236,7 @@ mkdocs -h                       # Show help
 # Docker
 docker compose up app           # Start development server (with hot reloading)
 docker compose down             # Stop containers
-docker compose down -v          # Stop containers and remove volumes (pip cache)
+docker compose down -v          # Stop containers and remove volumes (uv cache)
 ```
 
 ## Deployment

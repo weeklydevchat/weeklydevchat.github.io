@@ -1,7 +1,0 @@
-# Dev-only dependencies (not needed for production builds)
-# Regenerate with: uv pip compile requirements-dev.in --output-file requirements-dev.txt
-
-Pillow>=12.2.0
-
-# GitHub's dependabot detected an error in previous versions
-urllib3>=2.7.0

@@ -7,7 +7,7 @@ tags:
  - meetings
  - workplace
 categories:
- - business
+ - Business
 
 ---
 

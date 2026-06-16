@@ -12,11 +12,11 @@ tags:
   - open-discussion
 ---
 
-Arhur C Clark famouly said: "Any sufficiently advanced technology is indistinguishable from magic."  What is your "this is magic" in software development?  Put another way what is something you currently don't understand but would like too?
+Arthur C. Clarke famously said: "Any sufficiently advanced technology is indistinguishable from magic."  What is your "this is magic" in software development?  Put another way what is something you currently don't understand but would like to?
 
 As an older developer I'm struggling to fully understand LLMs and agents.  How do you train one?  Why are some agents/LLM models so much better then others?  I'm curious to hear what others struggle with.
 
-Clark's Three Laws: [https://en.wikipedia.org/wiki/Clarke%27s_three_laws](https://en.wikipedia.org/wiki/Clarke%27s_three_laws)
+Clarke's Three Laws: [https://en.wikipedia.org/wiki/Clarke%27s_three_laws](https://en.wikipedia.org/wiki/Clarke%27s_three_laws)
 
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 

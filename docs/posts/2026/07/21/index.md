@@ -7,9 +7,8 @@ categories:
   - Culture
   - Community
 tags:
-  - open-discussion
+  - types-of-fun
   - reflection
-  - work-life-balance
   - philosophy
 ---
 

@@ -13,7 +13,7 @@ dependencies = [
 # Install the project environment with `uv sync` and run tools/scripts with `uv run <command>`.
 [dependency-groups]
 dev = [
-    "pillow>=12.2.0",
+    "pillow>=12.3.0",
     "PyYAML>=6.0.1"
 
     # Add dev-only tools here when needed; they will be installed by `uv sync`.

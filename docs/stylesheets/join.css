@@ -7,9 +7,9 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.wdc-join-page .support.plain {
-  border-bottom: none;
-  padding-bottom: 0;
+/* Prose section with no cards — one full-width column */
+.wdc-join-page .support.full {
+  grid-template-columns: 1fr;
 }
 
 .wdc-join-page .support-card .card-eyebrow {

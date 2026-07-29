@@ -1,0 +1,142 @@
+/* Join page — reuses the sponsors page vocabulary.
+   Put the wrapper class on both: <div class="wdc-sponsors-page wdc-join-page" markdown>
+   so the tokens (--paper, --line, --teal, --radius, --mono) and the
+   .lead / .support-card / .become-sponsor / .btn styles all apply. */
+
+.wdc-join-page .support.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.wdc-join-page .support.plain {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.wdc-join-page .support-card .card-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.wdc-join-page .support-card a {
+  font-weight: 500;
+}
+
+/* Section heading with a rule, same shape as the sponsors year header */
+.wdc-join-page .section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin: 44px 0 4px;
+}
+.wdc-join-page .section-header h2 {
+  font-weight: 300;
+  font-size: clamp(22px, 2.6vw, 28px);
+  margin: 0;
+  color: var(--teal);
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.wdc-join-page .section-header .rule {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.wdc-join-page .section-header .meta {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+}
+
+/* Two-step "how" list.
+   The extra .md-typeset / ol qualifiers are needed to beat Material's
+   `.md-typeset ol:not([hidden]){display:flow-root}` and `li{margin-left:20px}`. */
+.md-typeset .wdc-join-page ol.steps:not([hidden]) {
+  display: grid;
+  gap: 14px;
+  margin: 18px 0 8px;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+.md-typeset .wdc-join-page ol.steps > li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 14px;
+  align-items: start;
+  margin: 0;
+  margin-left: 0;
+}
+.md-typeset .wdc-join-page ol.steps > li::before {
+  counter-increment: step;
+  content: counter(step);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #e0f2f1;
+  color: var(--teal-dark);
+  font-family: var(--mono);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.md-typeset .wdc-join-page ol.steps > li p {
+  margin: 0;
+  padding-top: 5px;
+  color: var(--ink-2);
+}
+.md-typeset .wdc-join-page ol.steps > li p strong {
+  color: var(--ink);
+}
+
+/* Q&A list */
+.wdc-join-page .qa {
+  display: grid;
+  gap: 18px;
+  margin: 20px 0 8px;
+}
+.wdc-join-page .qa > div {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.wdc-join-page .qa > div:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.wdc-join-page .qa .q {
+  margin: 0 0 4px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.wdc-join-page .qa .a {
+  margin: 0;
+  color: var(--ink-2);
+}
+
+/* Secondary IRL / follow-us block */
+.wdc-join-page .aside-card {
+  margin: 20px 0;
+  padding: 22px;
+  border-radius: var(--radius);
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+.wdc-join-page .aside-card h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+.wdc-join-page .aside-card p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .wdc-join-page .support.two { grid-template-columns: 1fr; }
+}

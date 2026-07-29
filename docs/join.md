@@ -5,17 +5,17 @@ hide:
 ---
 # How to join the Weekly Dev Chat
 
-<div class="wdc-sponsors-page wdc-join-page" markdown>
+<div class="wdc-page" markdown>
   <p class="lead">The virtual chat every Tuesday at 12pm Mountain Time.  IRL events are not consistent.</p>
 
-  <section class="become-sponsor">
+  <section class="cta">
     <div class="eyebrow"><span class="dot"></span>Preferred way to join</div>
-    <div class="become-inner">
+    <div class="cta-inner">
       <div>
         <h3></h3>
         <p>Follow the WDC Luma Calendar to get notified of upcoming events.  Register for an event to get the Zoom link.</p>
       </div>
-      <div class="become-ctas">
+      <div class="cta-actions">
         <a class="btn primary" href="https://luma.com/weeklydevchat">Luma Calendar</a>
       </div>
     </div>
@@ -25,12 +25,12 @@ hide:
 
   Don't like Luma or you are already on Meetup or the Dev Edmonton Slack?  Then use one of the options below.
 
-  <section class="support two">
-    <div class="support-card">
+  <section class="tiles">
+    <div class="tile">
       <h3>Edmonton Unlimited on Meetup</h3>
       <p>Join the group, find the Weekly Dev Chat event, and the link appears once you register. Good if Meetup is already how you keep track of events. <a href="https://www.meetup.com/startupedmonton/">Join the Meetup group</a></p>
     </div>
-    <div class="support-card">
+    <div class="tile">
       <h3>Dev Edmonton Slack</h3>
       <p>The link is posted every Tuesday in <code>#meetup-weekly-dev-chat</code>. It is also where topics get suggested and where the conversation keeps going afterwards. Free, and you don't have to live in Edmonton. <a href="https://devedmonton.com/#about-our-slack">Join the Slack</a></p>
     </div>
@@ -38,24 +38,25 @@ hide:
 
   <h2>What the virtual chat is like</h2>
 
-  <section class="support">
-    <div class="support-card">
+  <section class="tiles">
+    <div class="tile">
       <h3>Nothing to prepare</h3>
       <p>A starter topic gets posted each week, but the conversation drifts wherever it wants to. You don't have to prepare anything.</p>
     </div>
-    <div class="support-card">
+    <div class="tile">
       <h3>Cameras off is fine</h3>
       <p>Cameras and mics are both optional. Listening quietly is a completely normal way to attend, and plenty of people do.</p>
     </div>
-    <div class="support-card">
+    <div class="tile">
       <h3>Any experience level</h3>
       <p>Students, career switchers, and people twenty years in all end up in the same call.</p>
     </div>
   </section>
 
   <h2>In-Real-Life (IRL) events</h2>
-  <section class="support full">
+  <section class="tiles">
     <p>We host in-real-life (IRL) events in Edmonton, Alberta, Canada. They are announced on the same <a href="https://luma.com/weeklydevchat">Luma calendar</a> as the virtual events.</p>
+    <p>The IRL events range from pair coding, capture the flag (CTF), watch parties, show and tell, hardware swap, workshop, to whatever else we can think of.  Anything goes as long as it's interactive and has audience participation.  There are already enough one person talking to a group for an hour.</p>
   </section>
 
   <h2>FAQ</h2>

@@ -55,8 +55,10 @@ hide:
 
   <h2>In-Real-Life (IRL) events</h2>
   <section class="tiles">
-    <p>We host in-real-life (IRL) events in Edmonton, Alberta, Canada. They are announced on the same <a href="https://luma.com/weeklydevchat">Luma calendar</a> as the virtual events.</p>
-    <p>The IRL events range from pair coding, capture the flag (CTF), watch parties, show and tell, hardware swap, workshop, to whatever else we can think of.  Anything goes as long as it's interactive and has audience participation.  There are already enough one person talking to a group for an hour.</p>
+    <div>
+      <p>We host in-real-life (IRL) events in Edmonton, Alberta, Canada. They are announced on the same <a href="https://luma.com/weeklydevchat">Luma calendar</a> as the virtual events.</p>
+      <p>The IRL events range from pair coding, capture the flag (CTF), watch parties, show and tell, hardware swap, workshop, to whatever else we can think of.  Anything goes as long as it's interactive and has audience participation.</p>
+    </div>
   </section>
 
   <h2>FAQ</h2>

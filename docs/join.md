@@ -6,7 +6,7 @@ hide:
 # How to join the Weekly Dev Chat
 
 <div class="wdc-page" markdown>
-  <p class="lead">The virtual chat every Tuesday at 12pm Mountain Time.  In real life events date and time are nondeterministic.</p>
+  <p class="lead">We meet online deterministically every Tuesday at 12pm Mountain Time.  The in real life events date and time are nondeterministic.</p>
 
   <section class="cta">
     <div class="eyebrow"><span class="dot"></span>Preferred way to join</div>

@@ -4,31 +4,31 @@ hide:
 ---
 # Sponsors
 
-<div class="wdc-sponsors-page" markdown>
+<div class="wdc-page wdc-sponsors-page" markdown>
   <p class="lead">The Weekly Dev Chat is powered by community members like you!</p>
-  <section class="support">
-    <div class="support-card">
+  <section class="tiles">
+    <div class="tile">
       <h3>Show Up</h3>
       <p>Attending events is the best way to support the Weekly Dev Chat.  Bring your curiosity and be willing to share your knowledge and learn from others.</p>
     </div>
-    <div class="support-card">
+    <div class="tile">
       <h3>Spread the Word</h3>
       <p>Invite others who follow our values to an event.  Everyone and anyone is welcome as long as they are kind, supportive, and respectful of others.</p>
     </div>
-    <div class="support-card">
+    <div class="tile">
       <h3>Sponsor</h3>
       <p>Help keep the lights on and get things done with contributions of money, time, skills, or other resources.  Every little bit helps.</p>
     </div>
   </section>
 
-  <section class="become-sponsor">
+  <section class="cta">
     <div class="eyebrow"><span class="dot"></span> Want on this page?</div>
-    <div class="become-inner">
+    <div class="cta-inner">
       <div>
         <h3>Thank you to our Current and Past Sponsors!</h3>
         <p>Email us if you have any questions or would like to make non-financial contributions.</p>
       </div>
-      <div class="become-ctas">
+      <div class="cta-actions">
         <a class="btn primary" href="https://buy.stripe.com/dRmaEY4HJ2xUgcG8PdfIs01">Sponsor</a>
         <a class="btn primary" href="mailto:chris@weeklydevchat.com">Email</a>
       </div>
@@ -48,7 +48,7 @@ hide:
           {% set s = sponsors.sponsors[id] %}
           {% set card_links = s.links if s.links else ([{'label': s.link_label or 'Website', 'url': s.link}] if s.link else []) %}
           <div class="sponsor-card" role="button" tabindex="0">
-            <div class="card-face card-front">
+            <div class="card-front">
               <div class="card-logo">
                 {% if s.image %}<img src="../assets/sponsors/{{ s.image }}" alt="{{ s.name }}">{% else %}<div class="card-logo-placeholder">{{ (s.name or 'Anonymous')[0] }}</div>{% endif %}
               </div>
@@ -56,19 +56,18 @@ hide:
                 <span class="card-tier">{{ s.name or 'Sponsor' }}</span>
               </div>
             </div>
-            <div class="card-face card-back">
-              <div class="card-back-inner">
-                {% if s.tier %}<div class="card-back-tier">{{ s.tier }}</div>{% endif %}
-                <h4 class="card-back-name">{{ s.name }}</h4>
-                {% if s.description %}<p class="card-back-desc">{{ s.description }}</p>{% endif %}
-                {% if card_links %}
-                  <div class="card-back-links">
-                    {% for l in card_links %}
-                      <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} <span class="arrow">↗</span></a>
-                    {% endfor %}
-                  </div>
-                {% endif %}
-              </div>
+            <!-- Not rendered (see .card-back) — the modal script reads these. -->
+            <div class="card-back">
+              {% if s.tier %}<div class="card-back-tier">{{ s.tier }}</div>{% endif %}
+              <h4 class="card-back-name">{{ s.name }}</h4>
+              {% if s.description %}<p class="card-back-desc">{{ s.description }}</p>{% endif %}
+              {% if card_links %}
+                <div class="card-back-links">
+                  {% for l in card_links %}
+                    <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} ↗</a>
+                  {% endfor %}
+                </div>
+              {% endif %}
             </div>
           </div>
       {% endfor %}

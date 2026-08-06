@@ -1,21 +1,73 @@
-# How to join the weekly dev chat:
+---
+title: Join
+hide:
+  - toc
+---
+# How to join the Weekly Dev Chat
 
-#### The short version
+<div class="wdc-page" markdown>
+  <p class="lead">We meet online deterministically every Tuesday at 12pm Mountain Time.  The in real life events date and time are nondeterministic.</p>
 
-1.  Install [Zoom](https://zoom.us/).
-2.  Find the meeting link on the [#meetup-weekly-dev-chat](https://devedmonton.slack.com/archives/C01LZQ6550V) channel on Dev Edmonton [Slack](https://devedmonton.com/#about-our-slack).
-3.  Alternatively find the link on Weekly Dev Chat event on the Edmonton Unlimited's Meetup [group](https://www.meetup.com/startupedmonton/).
+  <section class="cta">
+    <div class="eyebrow"><span class="dot"></span>Preferred way to join</div>
+    <div class="cta-inner">
+      <div>
+        <h3>Luma Calendar</h3>
+        <p>Follow the WDC Luma calendar to get notified of upcoming events. Register for an event to get the Zoom link for virtual events or address for the IRL event.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn primary" href="https://luma.com/weeklydevchat">Luma Calendar</a>
+      </div>
+    </div>
+  </section>
 
-#### The longer version
+  <h2>Alternatives</h2>
 
-The Weekly Dev Chat uses [Zoom](https://zoom.us/). If you don't want to install Zoom you can use it directly in your [browser](https://support.zoom.us/hc/en-us/articles/201362593-Join-My-Meeting-via-Browser) instead.
+  Don't like Luma or you are already on Meetup or the Dev Edmonton Slack? Then use one of the options below.
 
-The recommended way for getting the link for the Zoom meeting is by joining the Dev Edmonton [Slack](https://devedmonton.com/#about-our-slack). The link will be posted every week in the #meetup-weekly-dev-chat channel. The #meetup-weekly-dev-chat channel is where you can post an initial topic suggestion. It is also used to continue the discussion once the chat is over.
+  <section class="tiles">
+    <div class="tile">
+      <h3>Edmonton Unlimited on Meetup</h3>
+      <p>Join the group, find the Weekly Dev Chat event, and the link appears once you register. Good if Meetup is already how you keep track of events. <a href="https://www.meetup.com/startupedmonton/">Join the Meetup group</a></p>
+    </div>
+    <div class="tile">
+      <h3>Dev Edmonton Slack</h3>
+      <p>The link is posted every Tuesday in <code>#meetup-weekly-dev-chat</code>. It is also where topics get suggested and where the conversation keeps going afterwards. Free, and you don't have to live in Edmonton. <a href="https://devedmonton.com/#about-our-slack">Join the Slack</a></p>
+    </div>
+  </section>
 
-You can join the Dev Edmonton Slack even if you don't live in Edmonton and it's free to join. Details on how to join the Dev Edmonton Slack and the organization can be found on their [website](https://devedmonton.com/).
+  <h2>What the virtual chat is like</h2>
 
-A second option is to join the Edmonton Unlimited Meetup [group](https://www.meetup.com/startupedmonton/). Once you join the group look for the Weekly Dev Chat event and the Zoom link will be shown when you register for the event.
+  <section class="tiles">
+    <div class="tile">
+      <h3>Nothing to prepare</h3>
+      <p>A starter topic gets posted each week, but the conversation drifts wherever it wants to. You don't have to prepare anything.</p>
+    </div>
+    <div class="tile">
+      <h3>Cameras off is fine</h3>
+      <p>Cameras and mics are both optional. Listening quietly is a completely normal way to attend, and plenty of people do.</p>
+    </div>
+    <div class="tile">
+      <h3>Any experience level</h3>
+      <p>Students, career switchers, and people twenty years in all end up in the same call.</p>
+    </div>
+  </section>
 
-#### In-Real-Life (IRL) Events
+  <h2>In real life (IRL) events</h2>
+  <section class="tiles">
+    <div>
+      <p>We host IRL events in Edmonton, Alberta, Canada. They are announced on the same <a href="https://luma.com/weeklydevchat">Luma calendar</a> as the virtual events.</p>
+      <p>The IRL events include pair coding, capture the flag (CTF), watch parties, show and tell, hardware swaps, and workshops &mdash; anything goes as long as it's interactive and has audience participation.</p>
+    </div>
+  </section>
 
-We occasionally host in-person meetups in Edmonton. To stay up to date on IRL events, subscribe to our [Luma calendar](https://luma.com/weeklydevchat).
+  <h2>FAQ</h2>
+
+  <div class="qa">
+    <div><p class="q">Do I have to be in Edmonton?</p><p class="a">No. The Tuesday chat is virtual and open to anyone, anywhere. Only the occasional IRL events are Edmonton-based.</p></div>
+    <div><p class="q">Do I need to come every week?</p><p class="a">No. Show up when it works for you &mdash; a lot of people drop in every few weeks.</p></div>
+    <div><p class="q">Is it recorded?</p><p class="a">No. Nothing is recorded or published, so people can speak freely.</p></div>
+    <div><p class="q">What if I'm late?</p><p class="a">Join anyway. People come and go throughout the hour.</p></div>
+    <div><p class="q">Can I suggest a topic?</p><p class="a">Yes. Post it in <code>#meetup-weekly-dev-chat</code> on Dev Edmonton Slack, or just raise it during the chat.</p></div>
+  </div>
+</div>

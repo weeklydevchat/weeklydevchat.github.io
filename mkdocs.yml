@@ -52,5 +52,6 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/page.css
   - stylesheets/sponsors.css
 

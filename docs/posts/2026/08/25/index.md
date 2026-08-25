@@ -27,4 +27,4 @@ Everyone and anyone is welcome to [join](https://weeklydevchat.com/join/) as lon
 
 P.S. - The image for this post was created by ChatGPT.  I asked it to create an image for this post, which I cut and pasted into the chat, and it produced the below.  No other tweaks needed.  I'm amazed at how much better image creation has gotten in the past couple of years.
 
-![alt text](mob_play_7_billion_humans.webp)
+![Weekly Dev Chat poster in the style of 7 Billion Humans: cartoon office workers moving binary digit blocks along a conveyor belt, with the text "Let's Mob Play 7 Billion Humans" and event details for August 25, 2026](mob_play_7_billion_humans.webp)

@@ -1,0 +1,172 @@
+/* Shared page vocabulary — tokens plus the components used by more than one
+   page (join, sponsors). Scoped to .wdc-page so it can't leak onto the
+   host/past-host pages. Add .wdc-page to a page's wrapper div to opt in. */
+.wdc-page {
+  --paper: #fafafa;
+  --line: #e0e0e0;
+  --ink: #1a1a1a;
+  --ink-2: #5a5a5a;
+  --ink-3: #8a8a8a;
+  --teal: var(--md-primary-fg-color, #009688);
+  --teal-dark: #00766c;
+  --blue: var(--md-accent-fg-color, #448aff);
+  --radius: 14px;
+  --mono: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+.wdc-page .lead {
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 4px 0 12px;
+  max-width: 60ch;
+}
+
+/* Row of tiles. auto-fit collapses the empty tracks, so the column count
+   follows the tile count on its own — a section with two tiles, or one
+   paragraph of prose, needs no modifier class. Stacking below 900px still
+   needs the breakpoint: the content column is wide enough there that the
+   minmax floor alone would keep three tiles side by side. */
+.wdc-page .tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px 0;
+  margin: 16px 0 20px;
+  border-bottom: 1px solid var(--line);
+}
+.wdc-page .tile {
+  padding: 22px;
+  border-radius: var(--radius);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.wdc-page .tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.wdc-page .tile h3 {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 10px 0 8px;
+}
+.wdc-page .tile p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 15px;
+}
+.wdc-page .tile a {
+  font-weight: 500;
+}
+
+/* Full-width teal call-to-action banner */
+.wdc-page .cta {
+  margin: 20px 0;
+  padding: 40px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--teal-dark), var(--teal));
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.wdc-page .cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(68, 138, 255, 0.3), transparent 50%);
+  pointer-events: none;
+}
+.wdc-page .cta-inner {
+  display: grid;
+  grid-template-columns: 1.4fr auto;
+  gap: 32px;
+  align-items: center;
+  position: relative;
+}
+.wdc-page .cta h3 {
+  font-weight: 300;
+  font-size: 36px;
+  margin: 14px 0 10px;
+  line-height: 1.15;
+  color: #fff;
+}
+.wdc-page .cta p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 48ch;
+}
+.wdc-page .cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wdc-page .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+}
+.wdc-page .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--blue);
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 3px rgba(68, 138, 255, 0.3);
+}
+
+.wdc-page .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 48px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 17px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s;
+}
+.wdc-page .btn.primary { background: var(--blue); color: #fff; }
+.wdc-page .btn.primary:hover { background: #2979ff; border-color: #fff; }
+
+/* Question/answer list */
+.wdc-page .qa {
+  display: grid;
+  gap: 18px;
+  margin: 20px 0 8px;
+}
+.wdc-page .qa > div {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.wdc-page .qa > div:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.wdc-page .qa .q {
+  margin: 0 0 4px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.wdc-page .qa .a {
+  margin: 0;
+  color: var(--ink-2);
+}
+
+@media (max-width: 900px) {
+  .wdc-page .tiles { grid-template-columns: 1fr; }
+  .wdc-page .cta { padding: 28px; }
+  .wdc-page .cta h3 { font-size: 28px; }
+  .wdc-page .cta-inner { grid-template-columns: 1fr; }
+  .wdc-page .cta-actions { flex-direction: row; }
+}

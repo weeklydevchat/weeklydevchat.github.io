@@ -17,3 +17,24 @@
     margin-left: 10px;
   }
 }
+
+/* Blog images: never wider than the column, never wider than 720px.
+   On phones min() picks 100%, so images fill the screen width as before. */
+.md-typeset img {
+  max-width: min(100%, 720px);
+  height: auto;
+}
+
+/* Center images that stand alone in a paragraph (the usual feature image),
+   including ones wrapped in a link. Floated/aligned images are left alone. */
+.md-typeset p > img:not([align]):not([style*="float"]),
+.md-typeset p > a:only-child > img:not([align]) {
+  display: block;
+  margin: 1.5em auto;
+}
+
+/* Opt out for images that need the width, e.g. graphs or wide infographics:
+   ![alt](graph.webp){ .full-width } */
+.md-typeset img.full-width {
+  max-width: 100%;
+}

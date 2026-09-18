@@ -26,4 +26,4 @@ Do you use rubber duck debugging? What other tricks work for you, for example:
 Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
 
 
-![alt text](2026-07-07_rubber_duck.jpg)
+![alt text](2026-07-07_rubber_duck.webp)

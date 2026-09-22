@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Vibrant gradient backgrounds -->
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff006e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8338ec;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a86ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffbe0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fb5607;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06ffa5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="glow1">
+      <stop offset="0%" style="stop-color:#ffbe0b;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffbe0b;stop-opacity:0" />
+    </radialGradient>
+    
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Dynamic background -->
+  <rect width="1200" height="630" fill="url(#bg1)"/>
+  
+  <!-- Abstract geometric shapes for energy -->
+  <g opacity="0.15">
+    <circle cx="150" cy="100" r="80" fill="#ffbe0b"/>
+    <circle cx="1050" cy="500" r="120" fill="#06ffa5"/>
+    <polygon points="900,50 1000,150 950,200 850,100" fill="#fb5607"/>
+    <circle cx="200" cy="500" r="60" fill="#00d4ff"/>
+  </g>
+  
+  <!-- Massive explosion of tech icons and symbols -->
+  <g opacity="0.3" stroke="#ffffff" stroke-width="3" fill="none">
+    <circle cx="300" cy="150" r="40"/>
+    <rect x="800" y="400" width="60" height="60" transform="rotate(25 830 430)"/>
+    <polygon points="1050,200 1080,240 1020,240"/>
+    <circle cx="150" cy="400" r="30"/>
+  </g>
+  
+  <!-- Dynamic swirling elements -->
+  <g stroke-width="6" fill="none" opacity="0.6" filter="url(#strongGlow)">
+    <path d="M 100,315 Q 300,200 500,315 T 900,315" stroke="url(#accent2)" stroke-linecap="round"/>
+    <path d="M 200,350 Q 400,450 600,350 T 1000,350" stroke="url(#accent1)" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Central focal point: Explosive rocket/update symbol -->
+  <g transform="translate(250, 250)">
+    <!-- Rocket body -->
+    <g filter="url(#shadow)">
+      <ellipse cx="0" cy="0" rx="45" ry="90" fill="url(#accent1)" transform="rotate(-30)"/>
+      <ellipse cx="0" cy="0" rx="35" ry="80" fill="#ffffff" transform="rotate(-30)"/>
+      
+      <!-- Window -->
+      <circle cx="-10" cy="-30" r="18" fill="#3a86ff" transform="rotate(-30)" opacity="0.8"/>
+      
+      <!-- Fins -->
+      <polygon points="-40,40 -70,70 -30,60" fill="#ff006e" transform="rotate(-30)"/>
+      <polygon points="40,40 70,70 30,60" fill="#ff006e" transform="rotate(-30)"/>
+      
+      <!-- Flames/thrust -->
+      <g transform="rotate(-30)">
+        <ellipse cx="0" cy="90" rx="25" ry="40" fill="#ffbe0b" opacity="0.9"/>
+        <ellipse cx="0" cy="100" rx="20" ry="35" fill="#fb5607" opacity="0.8"/>
+        <ellipse cx="0" cy="110" rx="15" ry="25" fill="#ff006e" opacity="0.7"/>
+      </g>
+    </g>
+    
+    <!-- Speed lines -->
+    <g stroke="#ffffff" stroke-width="4" opacity="0.5" stroke-linecap="round">
+      <line x1="60" y1="60" x2="120" y2="120"/>
+      <line x1="50" y1="80" x2="100" y2="140"/>
+      <line x1="70" y1="50" x2="140" y2="100"/>
+    </g>
+  </g>
+  
+  <!-- Floating tech symbols with energy -->
+  <g font-family="'Courier New', monospace" font-weight="bold" filter="url(#strongGlow)">
+    <text x="550" y="140" font-size="80" fill="#ffbe0b" transform="rotate(-15 550 140)">{ }</text>
+    <text x="850" y="250" font-size="70" fill="#06ffa5" transform="rotate(20 850 250)">&lt;/&gt;</text>
+    <text x="180" y="180" font-size="60" fill="#fb5607" transform="rotate(-25 180 180)">[ ]</text>
+    <text x="920" y="480" font-size="75" fill="#00d4ff" transform="rotate(10 920 480)">λ</text>
+    <text x="450" y="500" font-size="65" fill="#ff006e" transform="rotate(-10 450 500)">∞</text>
+  </g>
+  
+  <!-- Knowledge burst particles -->
+  <g fill="#ffbe0b" opacity="0.7">
+    <circle cx="650" cy="180" r="8"/>
+    <circle cx="720" cy="200" r="6"/>
+    <circle cx="680" cy="230" r="7"/>
+    <circle cx="590" cy="210" r="5"/>
+    <circle cx="780" cy="190" r="9"/>
+  </g>
+  
+  <g fill="#06ffa5" opacity="0.7">
+    <circle cx="450" cy="320" r="7"/>
+    <circle cx="480" cy="350" r="5"/>
+    <circle cx="420" cy="340" r="6"/>
+  </g>
+  
+  <!-- Bold, energetic title -->
+  <g filter="url(#shadow)">
+    <text x="600" y="400" font-family="'Arial Black', Arial, sans-serif" font-size="72" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">
+      STAYING UP
+    </text>
+    <text x="600" y="465" font-family="'Arial Black', Arial, sans-serif" font-size="72" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">
+      TO DATE
+    </text>
+    
+    <!-- Subtitle with pop -->
+    <text x="600" y="510" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#ffbe0b" text-anchor="middle" letter-spacing="1">
+      KEEP YOUR SKILLS SHARP
+    </text>
+  </g>
+  
+  <!-- Bold date badge -->
+  <g transform="translate(850, 545)">
+    <rect x="0" y="0" width="220" height="60" rx="30" fill="#ff006e" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="220" height="60" rx="30" fill="url(#accent1)" opacity="0.7"/>
+    <text x="110" y="40" font-family="'Arial Black', sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle">
+      OCT 21, 2025
+    </text>
+  </g>
+  
+  <!-- Weekly Dev Chat badge with attitude -->
+  <g transform="translate(100, 545)">
+    <rect x="0" y="0" width="300" height="60" rx="30" fill="#3a86ff" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="300" height="60" rx="30" fill="url(#accent2)" opacity="0.6"/>
+    <text x="150" y="40" font-family="'Arial Black', sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle">
+      WEEKLY DEV CHAT
+    </text>
+  </g>
+  
+  <!-- Energy stars -->
+  <g fill="#ffffff" opacity="0.8">
+    <polygon points="100,80 105,95 120,95 108,105 113,120 100,110 87,120 92,105 80,95 95,95" transform="scale(0.8)"/>
+    <polygon points="1100,120 1105,135 1120,135 1108,145 1113,160 1100,150 1087,160 1092,145 1080,135 1095,135" transform="scale(0.6)"/>
+    <polygon points="950,550 955,565 970,565 958,575 963,590 950,580 937,590 942,575 930,565 945,565" transform="scale(0.7)"/>
+  </g>
+  
+  <!-- More dynamic elements - circuit-like connections -->
+  <g stroke="#06ffa5" stroke-width="3" fill="none" opacity="0.4" stroke-dasharray="5,5">
+    <path d="M 700,170 L 800,220"/>
+    <path d="M 500,490 L 600,450"/>
+    <circle cx="700" cy="170" r="5" fill="#06ffa5"/>
+    <circle cx="800" cy="220" r="5" fill="#06ffa5"/>
+    <circle cx="500" cy="490" r="5" fill="#06ffa5"/>
+    <circle cx="600" cy="450" r="5" fill="#06ffa5"/>
+  </g>
+</svg>

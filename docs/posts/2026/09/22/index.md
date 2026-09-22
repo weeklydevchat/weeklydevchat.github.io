@@ -1,25 +1,22 @@
 ---
-title: "Trivia (IRL)"
+title: "Would I still Choose this Tool?"
 date: 2026-09-22
-pin: true
 authors:
   - chris
 categories:
-  - Community
+  - Technical
 tags:
-  - irl
-  - meetup
-  - trivia
-  - edmonton
-  - fun
+  - tools
+  - reflection
+  - sunk-cost-fallacy
 ---
 
-The first Weekly Dev Chat IRL (in-real-life) event of the 2026/2027 season is trivia! How well do you know your programming languages, security, history, and other software development topics? We will find out in this fun and friendly competition.
+The initial topic for today's (2026-09-22) chat is: What tool(s) have you stopped using over the past year or two?  An IDE, language, tech stack, 3rd party SaaS, something else?  Why did you stop using it?  Was it a conscious decision?  What, if anything, replaced the tool?
 
-September 24th, doors open at 6:45pm with the event starting at 7:00pm.  More details and registration:
+Inspired by me evaluating the tools used by Weekly Dev Chat and if we should keep them, switch, or something else.  Asking the question: "If I started fresh today, would I still choose this tool?"
 
-[https://luma.com/yoijfs3w](https://luma.com/yoijfs3w)
+Everyone and anyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
-Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
+P.S. Image created by ChatGPT.  Really likes green, which I assume it got from our website theme.
 
-[![White line-art icon on a teal background with the words "IRL Trivia". A host points at a board showing a lightbulb and question marks while three people watch.](trivia_irl.webp)](https://luma.com/yoijfs3w)
+![Illustration of a bearded developer at a laptop, hand on chin, with a thought bubble reading "Would I Choose This Today?" Beside him a cobwebbed box labelled "Old Tools" holds greyed-out, crossed-out app icons and sits on books labelled Time, Effort, and Investment, while a network of bright green tool icons grows on the other side](would_i_choose_this_today.webp)

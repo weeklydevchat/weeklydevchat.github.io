@@ -1,7 +1,6 @@
 ---
 title: "Trivia (IRL)"
 date: 2026-09-21
-pin: true
 authors:
   - chris
 categories:

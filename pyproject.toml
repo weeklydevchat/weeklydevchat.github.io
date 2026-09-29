@@ -6,7 +6,7 @@ dependencies = [
     "mkdocs-macros-plugin>=1.5.0",
     "mkdocs-material>=9.7.7",
     "pygments~=2.21.0",
-    "urllib3>=2.7.0",
+    "urllib3>=2.8.0",
 ]
 
 # Dependencies are managed from this `pyproject.toml` with `uv`, not `requirements*.txt`.

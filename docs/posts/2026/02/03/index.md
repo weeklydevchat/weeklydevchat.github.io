@@ -12,7 +12,7 @@ tags:
   - mob-programming
 ---
 
-<img src="2026/02/03/pico-logo.svg" alt="picoCTF logo" style="float: right; margin-left: 20px; margin-bottom: 10px; width: 200px; max-width: 45%;">
+![picoCTF logo](pico-logo.svg){: style="float: right; margin-left: 20px; margin-bottom: 10px; width: 200px; max-width: 45%;"}
 
 Let's work on picoCTF challenge in today's (February 3rd, 2026) Weekly Dev Chat.  It will be the usual where I share my screen and we work through some challenges together.
 

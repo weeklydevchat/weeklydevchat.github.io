@@ -17,3 +17,15 @@
     margin-left: 10px;
   }
 }
+
+
+
+/*This fixes the nav section, putting Archive and Categories at the bottom of the list */
+nav.md-nav--primary > ul.md-nav__list {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+nav.md-nav--primary > ul.md-nav__list > li.md-nav__item--nested {
+  order: 1 !important;
+}

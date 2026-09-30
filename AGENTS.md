@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Weekly Dev Chat website — MkDocs Material static site. Read `mkdocs.yml` and recent posts in `docs/posts/` for configuration and conventions.
+Weekly Dev Chat website — Zensical static site. Read `zensical.toml` and recent posts in `docs/posts/` for configuration and conventions.
 
 ## Blog Post Rules
 
@@ -13,7 +13,7 @@ Weekly Dev Chat website — MkDocs Material static site. Read `mkdocs.yml` and r
 
 ## Sponsors
 
-- Sponsor data lives in `data/sponsors.yml` (loaded via the `mkdocs-macros` plugin). The file's header comment documents the schema and consent policy.
+- Sponsor data lives in `data/sponsors.yml` (loaded via the `macros` plugin). The file's header comment documents the schema and consent policy.
 - Sponsor logos go in `docs/assets/sponsors/`. Reference them with just the filename in the `image:` field.
 - Optimize logos with `python3 scripts/optimize_image.py <path>` before committing.
 - The page itself is `docs/sponsors/index.md`; styles are in `docs/stylesheets/sponsors.css`.
@@ -22,17 +22,17 @@ Weekly Dev Chat website — MkDocs Material static site. Read `mkdocs.yml` and r
 
 - Pushing to `main` triggers automatic deployment to production. Do not push without explicit approval.
 - Do not modify `.github/workflows/ci.yml` unless explicitly asked.
-- Verify changes build cleanly with `docker compose run --rm app mkdocs serve` before committing.
+- Verify changes build cleanly with `docker compose run --rm app zensical serve` before committing.
 
 ## Using Docker Compose
 
-All Python, mkdocs, and similar commands should run via Docker Compose to ensure consistent Python versions:
+All Python, zensical, and similar commands should run via Docker Compose to ensure consistent Python versions:
 
 ```bash
 docker compose run --rm app <command>
 
 # Examples:
-docker compose run --rm app mkdocs serve
-docker compose run --rm app mkdocs build
+docker compose run --rm app zensical serve
+docker compose run --rm app zensical build
 docker compose run --rm app python -m pip list
 ```

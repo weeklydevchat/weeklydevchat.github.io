@@ -5,21 +5,24 @@ A static website for the Weekly Dev Chat community - a weekly virtual developer 
 **Live Site**: [weeklydevchat.com](https://weeklydevchat.com)
 
 ![GitHub Pages](https://github.com/weeklydevchat/weeklydevchat.github.io/actions/workflows/ci.yml/badge.svg)
-[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+
 
 ## About
 
-This is a static site built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and hosted on GitHub Pages. The site features:
+This is a static site built with [Zensical](https://zensical.org/) and hosted on GitHub Pages. The site features:
 - Weekly blog posts for Tuesday chat topics
 - Tag-based browsing to filter posts by topic
 - Host information and community guidelines
 - Sponsor information
 - Automatic deployment via GitHub Actions
 
+[!NOTE]
+Zensical is a replacement for  [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+
+
 ## Technology Stack
 
-- **Static Site Generator**: [MkDocs](https://www.mkdocs.org)
-- **Theme**: [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+- **Static Site Generator**: [Zensical](https://zensical.org/)
 - **Language**: Python 3.x
 - **Hosting**: GitHub Pages
 - **CI/CD**: GitHub Actions
@@ -41,7 +44,7 @@ This is a static site built with [MkDocs Material](https://squidfunk.github.io/m
 
 2. Start the development server:
    ```bash
-   uv run mkdocs serve       
+   uv run zensical serve       
    ```
 
 3. Open your browser to [http://127.0.0.1:8000](http://127.0.0.1:8000)
@@ -62,7 +65,7 @@ This is a static site built with [MkDocs Material](https://squidfunk.github.io/m
 
 2. Open your browser to [http://localhost:8000](http://localhost:8000)
 
-**Hot Reloading**: The Docker development environment supports hot reloading out of the box. When you edit any file in the `docs/` directory (or `mkdocs.yml`), the site will automatically rebuild and your browser will refresh to show the changes.
+**Hot Reloading**: The Docker development environment supports hot reloading out of the box. When you edit any file in the `docs/` directory (or `zensical.toml`), the site will automatically rebuild and your browser will refresh to show the changes.
 
 **Pip Cache**: Python packages are cached in a Docker volume (`pip-cache`), so subsequent container starts are faster since packages don't need to be re-downloaded.
 
@@ -179,13 +182,13 @@ This script requires `pyyaml`, which is included in the dev dependencies. It is 
 
 ## Updating Sponsors
 
-Sponsor and donor entries live in [`data/sponsors.yml`](data/sponsors.yml), which is loaded into the sponsors page via the [`mkdocs-macros`](https://mkdocs-macros-plugin.readthedocs.io/) plugin. The file's header comment documents the schema, consent policy, and how to reference one sponsor across multiple years. Place sponsor logos in `docs/assets/sponsors/` and reference the filename via the `image:` field (e.g. `image: example.png` → `docs/assets/sponsors/example.png`). Optimize logos with `python3 scripts/optimize_image.py` before committing.
+Sponsor and donor entries live in [`data/sponsors.yml`](data/sponsors.yml), which is loaded into the sponsors page via the [`macros`](https://zensical.org/docs/compatibility/mkdocs/plugins/?h=plugins#macros) plugin. The file's header comment documents the schema, consent policy, and how to reference one sponsor across multiple years. Place sponsor logos in `docs/assets/sponsors/` and reference the filename via the `image:` field (e.g. `image: example.png` → `docs/assets/sponsors/example.png`). Optimize logos with `python3 scripts/optimize_image.py` before committing.
 
 ## Project Structure
 
 ```
 .
-├── mkdocs.yml                 # Main configuration file
+├── zensical.toml              # Main configuration file
 ├── pyproject.toml             # Python dependencies + uv config
 ├── uv.lock                    # Locked dependency tree
 ├── docker-compose.yml         # Docker development environment
@@ -220,12 +223,12 @@ Sponsor and donor entries live in [`data/sponsors.yml`](data/sponsors.yml), whic
 
 ```bash
 # Development
-mkdocs serve                    # Start development server
-mkdocs serve -a 0.0.0.0:8000   # Start server accessible on network
+zensical serve                    # Start development server
+zensical serve -a 0.0.0.0:8000   # Start server accessible on network
 
 # Build
-mkdocs build                    # Build static site to site/ directory
-mkdocs build --clean            # Clean build
+zensical build                    # Build static site to site/ directory
+zensical build --clean            # Clean build
 
 # Optimize an image for the web
 uv run python scripts/optimize_image.py docs/posts/YYYY/MM/DD/image.png
@@ -245,7 +248,7 @@ docker compose down -v          # Stop containers and remove volumes (uv cache)
 
 Pushes to the `main` branch automatically trigger deployment via GitHub Actions:
 
-1. The workflow builds the site using `mkdocs gh-deploy`
+1. The workflow builds the site using `zensical gh-deploy`
 2. The static HTML is pushed to the `gh-pages` branch
 3. GitHub Pages serves the site from `gh-pages`
 
@@ -255,13 +258,13 @@ See [.github/workflows/ci.yml](.github/workflows/ci.yml) for details.
 
 While not typically needed, you can manually deploy:
 ```bash
-mkdocs gh-deploy --force
+zensical gh-deploy --force
 ```
 
 ## Dependency Management
 
 The project uses **Dependabot** to automatically keep dependencies up to date. Dependabot is configured to check weekly for:
-- Python package updates (mkdocs-material)
+- Python package updates (zensical)
 - GitHub Actions updates
 
 When updates are available, Dependabot creates pull requests automatically. Review and merge these PRs after verifying the CI workflow passes.
@@ -271,7 +274,7 @@ When updates are available, Dependabot creates pull requests automatically. Revi
 ### Build Fails
 - Check YAML syntax in post frontmatter
 - Verify all referenced images exist
-- Check `mkdocs.yml` for syntax errors
+- Check `zensical.toml` for syntax errors
 - Review GitHub Actions logs for deployment failures
 
 ### Images Not Loading
@@ -279,20 +282,19 @@ When updates are available, Dependabot creates pull requests automatically. Revi
 - Verify the image file exists in the same directory as the post's `index.md`
 
 ### Navigation Issues
-- File paths in the `nav:` section of `mkdocs.yml` must match actual file locations
+- File paths in the `nav:` section of `zensical.toml` must match actual file locations
 - New pages need to be added to `nav:` manually
 
 ### Styling Not Applied
 - Check `docs/stylesheets/extra.css` for syntax errors
 - Clear your browser cache
-- Theme updates may rename CSS classes — check the [Material for MkDocs changelog](https://squidfunk.github.io/mkdocs-material/changelog/)
+- Theme updates may rename CSS classes — check the [Zensical](https://github.com/zensical/zensical/releases) release changes.
 
 ## Resources
 
-- [MkDocs Documentation](https://www.mkdocs.org)
-- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
-- [Material Blog Plugin](https://squidfunk.github.io/mkdocs-material/plugins/blog/)
-- [Material Tags Plugin](https://squidfunk.github.io/mkdocs-material/plugins/tags/)
+- [Zensical Documentation](https://zensical.org/docs)
+- [Blog Plugin](https://zensical.org/docs/compatibility/mkdocs/plugins/?h=Blog#blog)
+- [Tags Plugin](https://zensical.org/docs/compatibility/mkdocs/plugins/?h=Tags#tags)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 
 ## Community

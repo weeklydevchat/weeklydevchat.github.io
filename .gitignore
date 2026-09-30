@@ -1,10 +1,10 @@
 # This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# mkdocs
+# zensical
 
 # python environment
 .venv/
 
-# mkdocs build output 
+# zensical build output 
 site/
 
 # OS image files

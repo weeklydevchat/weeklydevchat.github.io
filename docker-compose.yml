@@ -3,7 +3,7 @@ services:
     image: ghcr.io/astral-sh/uv:python3.14-trixie-slim
     working_dir: /app
     entrypoint: /app/docker-entrypoint.sh
-    command: uv run -- mkdocs serve -a 0.0.0.0:8000 --watch-theme --livereload
+    command: uv run -- zensical serve -a 0.0.0.0:8000 --watch-theme --livereload
     ports:
       - "8000:8000"
     volumes:

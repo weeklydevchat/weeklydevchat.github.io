@@ -16,8 +16,8 @@ This is a static site built with [Zensical](https://zensical.org/) and hosted on
 - Sponsor information
 - Automatic deployment via GitHub Actions
 
-[!NOTE]
-Zensical is a replacement for  [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+> [!NOTE]
+> Zensical is a replacement for  [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 
 
 ## Technology Stack

@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="vibrantBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d946ef;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <pattern id="dotPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="2" fill="#ffffff" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#vibrantBg)"/>
+  <rect width="1200" height="630" fill="url(#dotPattern)"/>
+  
+  <!-- Animated code symbols floating in background -->
+  <g opacity="0.15">
+    <text x="100" y="150" font-family="'Courier New', monospace" font-size="80" fill="#ffffff" transform="rotate(-15 100 150)">{}</text>
+    <text x="950" y="200" font-family="'Courier New', monospace" font-size="70" fill="#ffffff" transform="rotate(20 950 200)">[ ]</text>
+    <text x="150" y="500" font-family="'Courier New', monospace" font-size="90" fill="#ffffff" transform="rotate(10 150 500)">&lt;/&gt;</text>
+    <text x="1000" y="480" font-family="'Courier New', monospace" font-size="75" fill="#ffffff" transform="rotate(-12 1000 480)">=&gt;</text>
+  </g>
+  
+  <!-- Main illustration: Coffee shop/third place scene -->
+  <g transform="translate(600, 250)">
+    <!-- Large stylized coffee cup with steam -->
+    <ellipse cx="0" cy="80" rx="100" ry="15" fill="#000000" opacity="0.2"/>
+    <path d="M-80,20 L-70,80 L70,80 L80,20 Z" fill="#fbbf24" opacity="0.9"/>
+    <ellipse cx="0" cy="20" rx="80" ry="20" fill="#f59e0b"/>
+    
+    <!-- Cup handle -->
+    <path d="M80,35 Q110,35 110,55 Q110,75 80,75" 
+          stroke="#fbbf24" stroke-width="12" fill="none" stroke-linecap="round"/>
+    
+    <!-- Coffee liquid -->
+    <ellipse cx="0" cy="30" rx="65" ry="15" fill="#78350f"/>
+    
+    <!-- Steam with glow effect -->
+    <g filter="url(#glow)">
+      <path d="M-30,-10 Q-35,-35 -25,-50" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8">
+        <animate attributeName="d" 
+                 values="M-30,-10 Q-35,-35 -25,-50;M-30,-10 Q-25,-35 -35,-50;M-30,-10 Q-35,-35 -25,-50" 
+                 dur="3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M0,-10 Q-5,-40 5,-55" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.9">
+        <animate attributeName="d" 
+                 values="M0,-10 Q-5,-40 5,-55;M0,-10 Q5,-40 -5,-55;M0,-10 Q-5,-40 5,-55" 
+                 dur="2.5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M30,-10 Q25,-35 35,-50" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8">
+        <animate attributeName="d" 
+                 values="M30,-10 Q25,-35 35,-50;M30,-10 Q35,-35 25,-50;M30,-10 Q25,-35 35,-50" 
+                 dur="3.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+  
+  <!-- Chat bubbles with conversation -->
+  <g>
+    <!-- Bubble 1 - left side -->
+    <g transform="translate(150, 140)">
+      <rect x="0" y="0" width="200" height="80" rx="15" fill="#ffffff" opacity="0.95"/>
+      <polygon points="20,80 10,95 35,80" fill="#ffffff" opacity="0.95"/>
+      <text x="100" y="30" font-family="'Courier New', monospace" font-size="16" fill="#6366f1" text-anchor="middle" font-weight="bold">coffee shops?</text>
+      <text x="100" y="55" font-family="Arial, sans-serif" font-size="14" fill="#4b5563" text-anchor="middle">meetups?</text>
+    </g>
+    
+    <!-- Bubble 2 - right side -->
+    <g transform="translate(850, 180)">
+      <rect x="0" y="0" width="220" height="75" rx="15" fill="#fbbf24" opacity="0.95"/>
+      <polygon points="200,75 210,90 180,75" fill="#fbbf24" opacity="0.95"/>
+      <text x="110" y="28" font-family="Arial, sans-serif" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">hackerspaces!</text>
+      <text x="110" y="50" font-family="'Courier New', monospace" font-size="13" fill="#1f2937" text-anchor="middle">conferences 🎯</text>
+    </g>
+    
+    <!-- Bubble 3 - left lower -->
+    <g transform="translate(100, 400)">
+      <rect x="0" y="0" width="180" height="70" rx="15" fill="#a78bfa" opacity="0.95"/>
+      <polygon points="160,70 170,85 145,70" fill="#a78bfa" opacity="0.95"/>
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">coworking</text>
+      <text x="90" y="52" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">spaces?</text>
+    </g>
+    
+    <!-- Bubble 4 - right lower -->
+    <g transform="translate(920, 420)">
+      <rect x="0" y="0" width="200" height="65" rx="15" fill="#ffffff" opacity="0.95"/>
+      <polygon points="20,65 10,80 35,65" fill="#ffffff" opacity="0.95"/>
+      <text x="100" y="25" font-family="Arial, sans-serif" font-size="15" fill="#8b5cf6" text-anchor="middle" font-weight="bold">Discord servers</text>
+      <text x="100" y="47" font-family="'Courier New', monospace" font-size="13" fill="#6366f1" text-anchor="middle">IRL meetups!</text>
+    </g>
+  </g>
+  
+  <!-- Title with glow effect -->
+  <g filter="url(#glow)">
+    <text x="600" y="420" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#ffffff" text-anchor="middle">THIRD PLACES</text>
+  </g>
+  <text x="600" y="460" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#fbbf24" text-anchor="middle">Where Devs Connect IRL</text>
+  
+  <!-- Event banner at bottom -->
+  <rect x="200" y="520" width="800" height="90" rx="12" fill="#000000" opacity="0.6"/>
+  <rect x="200" y="520" width="800" height="90" rx="12" fill="url(#accentGlow)" opacity="0.2"/>
+  
+  <text x="600" y="555" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#fbbf24" text-anchor="middle">Weekly Dev Chat</text>
+  <text x="600" y="585" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">Dec 2, 2025 • 12pm MT • Everyone Welcome! 💬</text>
+  
+  <!-- Decorative people icons around the scene -->
+  <g fill="#ffffff" opacity="0.7">
+    <g transform="translate(380, 300)">
+      <circle cx="0" cy="0" r="12"/>
+      <rect x="-10" y="12" width="20" height="25" rx="3"/>
+    </g>
+    <g transform="translate(820, 320)">
+      <circle cx="0" cy="0" r="12"/>
+      <rect x="-10" y="12" width="20" height="25" rx="3"/>
+    </g>
+    <g transform="translate(450, 380)">
+      <circle cx="0" cy="0" r="10"/>
+      <rect x="-8" y="10" width="16" height="20" rx="3"/>
+    </g>
+    <g transform="translate(750, 360)">
+      <circle cx="0" cy="0" r="10"/>
+      <rect x="-8" y="10" width="16" height="20" rx="3"/>
+    </g>
+  </g>
+  
+  <!-- URL badge -->
+  <g transform="translate(50, 570)">
+    <rect x="0" y="0" width="250" height="40" rx="20" fill="#ffffff" opacity="0.2"/>
+    <text x="125" y="26" font-family="'Courier New', monospace" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">weeklydevchat.com</text>
+  </g>
+</svg>

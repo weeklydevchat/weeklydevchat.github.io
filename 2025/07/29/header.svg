@@ -1,0 +1,131 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient backgrounds -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="tableGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Filter for glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Pattern for tech background -->
+    <pattern id="circuitPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#ffffff" opacity="0.1"/>
+      <line x1="0" y1="20" x2="40" y2="20" stroke="#ffffff" stroke-width="0.5" opacity="0.05"/>
+      <line x1="20" y1="0" x2="20" y2="40" stroke="#ffffff" stroke-width="0.5" opacity="0.05"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGradient)"/>
+  <rect width="800" height="400" fill="url(#circuitPattern)"/>
+  
+  <!-- Title Section -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    Weekly Dev Chat
+  </text>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#cbd5e1">
+    Database Migrations Discussion
+  </text>
+  
+  <!-- Database Tables Illustration -->
+  <!-- Old Database Schema -->
+  <g transform="translate(80, 140)">
+    <rect x="0" y="0" width="120" height="140" rx="8" fill="url(#tableGradient)" stroke="#64748b" stroke-width="2"/>
+    <rect x="0" y="0" width="120" height="30" rx="8" fill="#475569"/>
+    <text x="60" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">users_v1</text>
+    
+    <!-- Table rows -->
+    <rect x="8" y="38" width="104" height="18" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="12" y="50" font-family="Arial, sans-serif" font-size="10" fill="#374151">id (int)</text>
+    
+    <rect x="8" y="58" width="104" height="18" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="12" y="70" font-family="Arial, sans-serif" font-size="10" fill="#374151">name (varchar)</text>
+    
+    <rect x="8" y="78" width="104" height="18" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="12" y="90" font-family="Arial, sans-serif" font-size="10" fill="#374151">email (varchar)</text>
+    
+    <rect x="8" y="98" width="104" height="18" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="12" y="110" font-family="Arial, sans-serif" font-size="10" fill="#374151">created_at</text>
+  </g>
+  
+  <!-- Migration Arrow -->
+  <g transform="translate(250, 190)">
+    <path d="M 0 0 L 80 0 L 70 -10 M 80 0 L 70 10" stroke="url(#arrowGradient)" stroke-width="4" fill="none" filter="url(#glow)"/>
+    <text x="40" y="-20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#10b981">MIGRATE</text>
+    <text x="40" y="25" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#ffffff">v1.0 → v2.0</text>
+  </g>
+  
+  <!-- New Database Schema -->
+  <g transform="translate(380, 140)">
+    <rect x="0" y="0" width="120" height="160" rx="8" fill="url(#tableGradient)" stroke="#64748b" stroke-width="2"/>
+    <rect x="0" y="0" width="120" height="30" rx="8" fill="#475569"/>
+    <text x="60" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">users_v2</text>
+    
+    <!-- Table rows -->
+    <rect x="8" y="38" width="104" height="18" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="12" y="50" font-family="Arial, sans-serif" font-size="10" fill="#374151">id (int)</text>
+    
+    <rect x="8" y="58" width="104" height="18" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="12" y="70" font-family="Arial, sans-serif" font-size="10" fill="#374151">first_name</text>
+    
+    <rect x="8" y="78" width="104" height="18" fill="#dcfce7" stroke="#22c55e"/>
+    <text x="12" y="90" font-family="Arial, sans-serif" font-size="10" fill="#166534">last_name</text>
+    
+    <rect x="8" y="98" width="104" height="18" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="12" y="110" font-family="Arial, sans-serif" font-size="10" fill="#374151">email (varchar)</text>
+    
+    <rect x="8" y="118" width="104" height="18" fill="#dcfce7" stroke="#22c55e"/>
+    <text x="12" y="130" font-family="Arial, sans-serif" font-size="10" fill="#166534">phone (varchar)</text>
+    
+    <rect x="8" y="138" width="104" height="18" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="12" y="150" font-family="Arial, sans-serif" font-size="10" fill="#374151">created_at</text>
+  </g>
+  
+  <!-- Tools Section -->
+  <g transform="translate(550, 140)">
+    <rect x="0" y="0" width="180" height="140" rx="8" fill="rgba(255,255,255,0.1)" stroke="#64748b" stroke-width="1"/>
+    <text x="90" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Migration Tools</text>
+    
+    <text x="10" y="40" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1">• Entity Framework</text>
+    <text x="10" y="55" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1">• Ruby on Rails</text>
+    <text x="10" y="70" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1">• Laravel Migrations</text>
+    <text x="10" y="85" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1">• Flyway</text>
+    <text x="10" y="100" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1">• Liquibase</text>
+    <text x="10" y="115" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1">• Redgate</text>
+    <text x="10" y="130" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1">• Custom Scripts</text>
+  </g>
+  
+  <!-- Bottom Section -->
+  <rect x="50" y="330" width="700" height="50" rx="25" fill="rgba(255,255,255,0.1)" stroke="#64748b"/>
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ffffff">
+    Share your database migration experiences and tools
+  </text>
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#cbd5e1">
+    Join the discussion at weeklydevchat.com
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="70" cy="50" r="3" fill="#10b981" opacity="0.6"/>
+  <circle cx="730" cy="50" r="3" fill="#10b981" opacity="0.6"/>
+  <circle cx="50" cy="350" r="2" fill="#3b82f6" opacity="0.8"/>
+  <circle cx="750" cy="350" r="2" fill="#3b82f6" opacity="0.8"/>
+</svg>

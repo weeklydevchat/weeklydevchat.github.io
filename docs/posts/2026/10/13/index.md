@@ -11,7 +11,7 @@ tags:
   - reflection
 ---
 
-Happy (belated) Thanksgiving!  Today's (2026-10-13) chat is giving thanks and gratitude.  What are you thankful for, both technology related and just in general?  A tool, library, or open source project that made your life better?  A coworker, mentor, or community that helped you grow?  Any successes from the past year you want to humble brag about?  Some else?
+Happy (belated) Thanksgiving!  Today's (2026-10-13) chat is giving thanks and gratitude.  What are you thankful for, both technology related and just in general?  A tool, library, or open source project that made your life better?  A coworker, mentor, or community that helped you grow?  Any successes from the past year you want to humble brag about?  Something else?
 
 Obviously inspired by Thanksgiving, which was yesterday.  I'm thankful for you, the amazing Weekly Dev Chat community!  Thank you for showing up to listen, ask questions, share you knowledge, tell your stories, and just be a good human.  A human that is kind, supportive, and respectful of others.
 

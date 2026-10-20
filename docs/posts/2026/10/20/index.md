@@ -9,7 +9,7 @@ tags:
   - surveys
 ---
 
-Recently Stack Overflow released the results of their [annual developer survey](https://survey.stackoverflow.co/2026). Today we'll go through it and some others too:
+Recently Stack Overflow released the results of their [annual developer survey](https://survey.stackoverflow.co/2026). Today we'll go through it and possibly some others too:
 
 * [2026 Ruby on Rails Community Survey](https://railsdeveloper.com/survey/2026)
 * JetBrains [The State of CI/CD in 2026](https://www.jetbrains.com/pages/state-of-cicd2026/)

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background gradient with vibrant colors -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Animated code symbols floating around -->
+  <g opacity="0.2" fill="#3b82f6">
+    <text x="100" y="100" font-family="monospace" font-size="24" font-weight="bold">&lt;dev/&gt;</text>
+    <text x="1000" y="150" font-family="monospace" font-size="20">{ }</text>
+    <text x="150" y="500" font-family="monospace" font-size="18">fn()</text>
+    <text x="1050" y="550" font-family="monospace" font-size="22">[ ]</text>
+    <text x="80" y="300" font-family="monospace" font-size="16">=&gt;</text>
+    <text x="1100" y="350" font-family="monospace" font-size="18">...</text>
+  </g>
+  
+  <!-- Glowing orbs for excitement -->
+  <circle cx="200" cy="200" r="60" fill="url(#glowGradient)" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="1000" cy="450" r="80" fill="url(#glowGradient)" opacity="0.15" filter="url(#glow)"/>
+  
+  <!-- Main content with exciting border -->
+  <rect x="100" y="100" width="1000" height="430" rx="20" fill="none" stroke="url(#accentGradient)" stroke-width="3" opacity="0.6"/>
+  <rect x="110" y="110" width="980" height="410" rx="15" fill="#1e293b" opacity="0.85"/>
+  
+  <!-- Weekly Dev Chat badge/logo style -->
+  <rect x="120" y="130" width="280" height="60" rx="30" fill="url(#accentGradient)" filter="url(#glow)"/>
+  <text x="260" y="170" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    WEEKLY DEV CHAT
+  </text>
+  
+  <!-- Date badge -->
+  <rect x="850" y="140" width="220" height="40" rx="20" fill="#334155" stroke="#3b82f6" stroke-width="2"/>
+  <text x="960" y="168" font-family="Arial, sans-serif" font-size="18" fill="#60a5fa" text-anchor="middle" font-weight="600">
+    SEPT 30, 2025
+  </text>
+  
+  <!-- Main title with excitement -->
+  <text x="600" y="270" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    Experimenting with
+  </text>
+  <text x="600" y="340" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="url(#accentGradient)" text-anchor="middle" filter="url(#glow)">
+    CLAUDE AI
+  </text>
+  
+  <!-- Feature pills -->
+  <g>
+    <rect x="180" y="380" width="200" height="45" rx="22.5" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+    <text x="280" y="410" font-family="Arial, sans-serif" font-size="20" fill="#60a5fa" text-anchor="middle" font-weight="600">
+      Code 2.0
+    </text>
+  </g>
+  
+  <g>
+    <rect x="410" y="380" width="200" height="45" rx="22.5" fill="#581c87" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="510" y="410" font-family="Arial, sans-serif" font-size="20" fill="#a78bfa" text-anchor="middle" font-weight="600">
+      Sonnet 4.5
+    </text>
+  </g>
+  
+  <g>
+    <rect x="640" y="380" width="200" height="45" rx="22.5" fill="#831843" stroke="#ec4899" stroke-width="2"/>
+    <text x="740" y="410" font-family="Arial, sans-serif" font-size="20" fill="#f9a8d4" text-anchor="middle" font-weight="600">
+      Imagine
+    </text>
+  </g>
+  
+  <!-- Call to action -->
+  <text x="600" y="475" font-family="Arial, sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle" font-weight="500">
+    What problem should Claude solve?
+  </text>
+  
+  <!-- Corner accent decorations -->
+  <line x1="120" y1="520" x2="250" y2="520" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+  <line x1="950" y1="520" x2="1080" y2="520" stroke="#ec4899" stroke-width="3" stroke-linecap="round"/>
+</svg>

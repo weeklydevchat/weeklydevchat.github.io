@@ -1,7 +1,6 @@
 ---
 title: "IRL Watch Party: General Magic - October 27th"
 date: 2026-10-21
-pin: true
 authors:
  - chris
 categories:

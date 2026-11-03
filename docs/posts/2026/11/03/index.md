@@ -19,4 +19,6 @@ Let's chat about time, time zones, and how you deal with it in software and data
 
 Everyone and anyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others.
 
+P.S. - The image was created by ChatGPT.  For some reason Alberta is to the right and both Saskatchewan and B.C. are to the left.
+
 ![Cartoon of a clock above a sign reading "It's Five/Four/Six O'Clock Somewhere in Western Canada?", with signposts for Alberta (ABT), Saskatchewan (SST), and British Columbia (PST) and a Nov 1 calendar marking the end of daylight saving time](western_canada_time_zone_confusion.webp)

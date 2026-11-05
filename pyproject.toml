@@ -8,8 +8,10 @@ dependencies = []
 [dependency-groups]
 dev = [
     "zensical>=0.1.0",
-    "pillow>=12.3.0", # for scripts/optimize_image.py
+    "pillow>=13.0.0", # for scripts/optimize_image.py
     "PyYAML>=6.0.1",  # for scripts/find_tags_categories.py
     # "pygments~=2.21.0",  TODO: remove, I think this is unneeded 
     # "urllib3>=2.8.0",    TODO: remove, I think this is unneeded 
+
+    
 ]

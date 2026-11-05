@@ -2,18 +2,14 @@
 name = "weeklydevchat-github-io"
 version = "0.1.0"
 requires-python = ">=3.14"
-dependencies = [
-    "pygments~=2.21.0",
-    "urllib3>=2.8.0",
-    "zensical>=0.1.0",
-]
+dependencies = []
 
-# Dependencies are managed from this `pyproject.toml` with `uv`, not `requirements*.txt`.
-# Install the project environment with `uv sync` and run tools/scripts with `uv run <command>`.
+# Zensical recommends putting dependencies here:
 [dependency-groups]
 dev = [
-    "pillow>=12.3.0",
-    # Add dev-only tools here when needed; they will be installed by `uv sync`.
-    "PyYAML>=6.0.1",
-    "zensical>=0.0.66",
+    "zensical>=0.1.0",
+    "pillow>=12.3.0", # for scripts/optimize_image.py
+    "PyYAML>=6.0.1",  # for scripts/find_tags_categories.py
+    # "pygments~=2.21.0",  TODO: remove, I think this is unneeded 
+    # "urllib3>=2.8.0",    TODO: remove, I think this is unneeded 
 ]

@@ -3,9 +3,9 @@ name = "weeklydevchat-github-io"
 version = "0.1.0"
 requires-python = ">=3.14"
 dependencies = [
-
     "pygments~=2.21.0",
     "urllib3>=2.8.0",
+    "zensical>=0.1.0",
 ]
 
 # Dependencies are managed from this `pyproject.toml` with `uv`, not `requirements*.txt`.

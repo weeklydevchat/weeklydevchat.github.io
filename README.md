@@ -118,7 +118,7 @@ These scripts will:
    ```markdown
    TOPIC_INTRODUCTION_HERE
 
-   Everyone and anyone are welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm MDT.
+   Everyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm ABT (CST).
 
    ![alt text](YYYY-MM-DD_image_filename.webp)
    ```

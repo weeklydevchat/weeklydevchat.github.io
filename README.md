@@ -1,6 +1,6 @@
 # Weekly Dev Chat Website
 
-A static website for the Weekly Dev Chat community - a weekly virtual developer chat that meets every Tuesday at 12pm Mountain Time.
+A static website for the Weekly Dev Chat community - a weekly virtual developer chat that meets every Tuesday at 12pm Alberta Time.
 
 **Live Site**: [weeklydevchat.com](https://weeklydevchat.com)
 
@@ -297,4 +297,4 @@ When updates are available, Dependabot creates pull requests automatically. Revi
 
 ## Community
 
-Join our virtual chat every Tuesday at 12pm Mountain Time! Visit [weeklydevchat.com/join](https://weeklydevchat.com/join) for details.  We also occasionally do in real-life events.
+Join our virtual chat every Tuesday at 12pm Alberta Time! Visit [weeklydevchat.com/join](https://weeklydevchat.com/join) for details.  We also occasionally do in real-life events.

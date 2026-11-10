@@ -43,7 +43,7 @@ tags:
 
 TOPIC_INTRODUCTION_HERE
 
-Everyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12pm ABT (CST).
+Everyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Proton Meet link will be posted at 12pm ABT (CST).
 
 ![alt text](${tuesday}_image_filename.webp)
 EOF

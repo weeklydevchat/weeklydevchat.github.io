@@ -13,7 +13,7 @@ hide:
     <div class="cta-inner">
       <div>
         <h3>Luma Calendar</h3>
-        <p>Follow the WDC Luma calendar to get notified of upcoming events. Register for an event to get the Zoom link for virtual events or address for the IRL event.</p>
+        <p>Follow the WDC Luma calendar to get notified of upcoming events. Register for an event to get the Proton Meet link for virtual events or address for the IRL event.</p>
       </div>
       <div class="cta-actions">
         <a class="btn primary" href="https://luma.com/weeklydevchat">Luma Calendar</a>

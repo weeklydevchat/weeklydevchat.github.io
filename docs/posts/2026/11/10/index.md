@@ -18,6 +18,6 @@ This would be impressive if it pans out. On my machine, at the moment, I see 842
 
 What's your opinion of Electron? It's been the foundation of many apps I use daily (Slack, VS Code, Discord). Is it worth the price paid in memory (which isn't cheap!)? Is Discord going to lead a trend? If starting a new project, what framework would you use?
 
-Everyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Zoom link will be posted at 12 pm Alberta Time aka Central Standard Time (ABT/CST/UTC-6).
+Everyone is welcome to [join](https://weeklydevchat.com/join/) as long as you are kind, supportive, and respectful of others. Proton Meet link will be posted at 12 pm Alberta Time aka Central Standard Time (ABT/CST/UTC-6).
 
 ![alt text](2026_11_10_memory_prices.webp)

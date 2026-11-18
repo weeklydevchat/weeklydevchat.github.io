@@ -1,0 +1,208 @@
+/* Sponsors page only. The tokens and the shared .lead / .tiles / .cta / .btn
+   components live in page.css — the wrapper carries both classes:
+   <div class="wdc-page wdc-sponsors-page" markdown> */
+
+/* Year header */
+.wdc-sponsors-page .year-group {
+  margin-bottom: 72px;
+  scroll-margin-top: 80px;
+}
+.wdc-sponsors-page .year-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.wdc-sponsors-page .year-num {
+  font-weight: 300;
+  font-size: clamp(24px, 3vw, 32px);
+  margin: 0;
+  color: var(--teal);
+}
+.wdc-sponsors-page .year-meta {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+}
+.wdc-sponsors-page .year-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+/* Sponsor cards */
+.wdc-sponsors-page .sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 160px);
+  gap: 14px;
+  justify-content: start;
+}
+.wdc-sponsors-page .sponsor-card {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  transition: transform 0.25s, box-shadow 0.25s;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+}
+.wdc-sponsors-page .sponsor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.18);
+}
+.wdc-sponsors-page .sponsor-card:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.wdc-sponsors-page .card-front {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
+.wdc-sponsors-page .card-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  min-height: 0;
+}
+.wdc-sponsors-page .card-logo img {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+}
+.wdc-sponsors-page .card-logo-placeholder {
+  width: 60%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: #e0f2f1;
+  color: var(--teal-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 300;
+}
+.wdc-sponsors-page .card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.wdc-sponsors-page .card-tier {
+  color: var(--ink-2);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+/* Never rendered — it only carries the sponsor details the modal reads. */
+.wdc-sponsors-page .card-back {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .wdc-sponsors-page .sponsor-grid {
+    grid-template-columns: repeat(auto-fill, 130px);
+    gap: 10px;
+    justify-content: center;
+  }
+  /* Reduce padding and hide footer so logo fills the smaller cards */
+  .wdc-sponsors-page .card-front { padding: 10px; }
+  .wdc-sponsors-page .card-logo { padding: 6px; }
+  .wdc-sponsors-page .card-footer { display: none; }
+}
+
+/* Sponsor info modal */
+#wdc-sponsor-modal {
+  border: none;
+  border-radius: var(--radius);
+  padding: 0;
+  width: min(92vw, 400px);
+  background: var(--teal-dark);
+  color: #fff;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+#wdc-sponsor-modal::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(3px);
+}
+.wdc-sponsor-modal-inner {
+  padding: 28px;
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+.wdc-sponsor-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.wdc-sponsor-modal-close:hover { background: rgba(255, 255, 255, 0.28); }
+.wdc-sponsor-modal-tier {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b2dfdb;
+  margin-bottom: 6px;
+}
+.wdc-sponsor-modal-name {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0 0 14px;
+  line-height: 1.2;
+  color: #fff;
+}
+.wdc-sponsor-modal-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 16px;
+}
+.wdc-sponsor-modal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.wdc-sponsor-modal-links a {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.wdc-sponsor-modal-links a:hover { background: var(--blue); }

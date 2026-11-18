@@ -1,0 +1,115 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Desktop Computer Setup -->
+  <g transform="translate(50, 80)">
+    <!-- Monitor -->
+    <rect x="0" y="0" width="200" height="120" rx="5" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+    <rect x="5" y="5" width="190" height="110" rx="2" fill="url(#screenGlow)"/>
+    
+    <!-- Code on screen -->
+    <rect x="15" y="15" width="60" height="4" fill="#10b981" opacity="0.8"/>
+    <rect x="15" y="25" width="80" height="4" fill="#f59e0b" opacity="0.8"/>
+    <rect x="15" y="35" width="40" height="4" fill="#ef4444" opacity="0.8"/>
+    <rect x="15" y="45" width="90" height="4" fill="#8b5cf6" opacity="0.8"/>
+    <rect x="15" y="55" width="70" height="4" fill="#06b6d4" opacity="0.8"/>
+    
+    <!-- Monitor stand -->
+    <rect x="85" y="120" width="30" height="15" fill="#4a5568"/>
+    <rect x="70" y="135" width="60" height="5" fill="#4a5568"/>
+    
+    <!-- Desktop tower -->
+    <rect x="220" y="40" width="60" height="100" rx="3" fill="#374151" stroke="#4b5563" stroke-width="2"/>
+    <circle cx="240" cy="60" r="3" fill="#10b981"/>
+    <circle cx="260" cy="60" r="3" fill="#f59e0b"/>
+    <rect x="230" y="80" width="40" height="2" fill="#6b7280"/>
+    <rect x="230" y="90" width="40" height="2" fill="#6b7280"/>
+    <rect x="230" y="100" width="40" height="2" fill="#6b7280"/>
+  </g>
+  
+  <!-- Laptop -->
+  <g transform="translate(400, 120)">
+    <!-- Laptop base -->
+    <rect x="0" y="40" width="140" height="80" rx="5" fill="#374151" stroke="#4b5563" stroke-width="2"/>
+    <!-- Laptop screen -->
+    <rect x="10" y="0" width="120" height="50" rx="3" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+    <rect x="15" y="5" width="110" height="40" rx="2" fill="url(#screenGlow)"/>
+    
+    <!-- Code on laptop screen -->
+    <rect x="20" y="10" width="40" height="3" fill="#10b981" opacity="0.8"/>
+    <rect x="20" y="17" width="50" height="3" fill="#f59e0b" opacity="0.8"/>
+    <rect x="20" y="24" width="30" height="3" fill="#ef4444" opacity="0.8"/>
+    <rect x="20" y="31" width="60" height="3" fill="#8b5cf6" opacity="0.8"/>
+    
+    <!-- Keyboard -->
+    <rect x="10" y="50" width="120" height="30" rx="2" fill="#4b5563"/>
+    <!-- Keys -->
+    <g fill="#6b7280">
+      <rect x="15" y="55" width="8" height="6" rx="1"/>
+      <rect x="25" y="55" width="8" height="6" rx="1"/>
+      <rect x="35" y="55" width="8" height="6" rx="1"/>
+      <rect x="45" y="55" width="8" height="6" rx="1"/>
+      <rect x="55" y="55" width="8" height="6" rx="1"/>
+      <rect x="15" y="64" width="8" height="6" rx="1"/>
+      <rect x="25" y="64" width="8" height="6" rx="1"/>
+      <rect x="35" y="64" width="8" height="6" rx="1"/>
+      <rect x="45" y="64" width="8" height="6" rx="1"/>
+      <rect x="55" y="64" width="8" height="6" rx="1"/>
+      <rect x="15" y="73" width="20" height="6" rx="1"/>
+      <rect x="37" y="73" width="20" height="6" rx="1"/>
+    </g>
+    
+    <!-- Trackpad -->
+    <rect x="90" y="60" width="30" height="20" rx="2" fill="#4b5563" stroke="#6b7280"/>
+  </g>
+  
+  <!-- CPU/GPU Icons -->
+  <g transform="translate(150, 260)">
+    <!-- CPU -->
+    <rect x="0" y="0" width="40" height="40" rx="3" fill="#1f2937" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="5" y="5" width="30" height="30" rx="1" fill="#374151"/>
+    <rect x="10" y="10" width="20" height="20" rx="1" fill="#f59e0b" opacity="0.3"/>
+    <text x="20" y="55" font-family="Arial, sans-serif" font-size="12" fill="#e5e7eb" text-anchor="middle">CPU</text>
+    
+    <!-- GPU -->
+    <rect x="80" y="0" width="50" height="30" rx="3" fill="#1f2937" stroke="#10b981" stroke-width="2"/>
+    <rect x="85" y="5" width="40" height="20" rx="1" fill="#374151"/>
+    <rect x="90" y="8" width="30" height="14" rx="1" fill="#10b981" opacity="0.3"/>
+    <text x="105" y="50" font-family="Arial, sans-serif" font-size="12" fill="#e5e7eb" text-anchor="middle">GPU</text>
+    
+    <!-- RAM -->
+    <rect x="160" y="5" width="8" height="20" rx="1" fill="#1f2937" stroke="#8b5cf6" stroke-width="2"/>
+    <rect x="170" y="5" width="8" height="20" rx="1" fill="#1f2937" stroke="#8b5cf6" stroke-width="2"/>
+    <rect x="180" y="5" width="8" height="20" rx="1" fill="#1f2937" stroke="#8b5cf6" stroke-width="2"/>
+    <rect x="190" y="5" width="8" height="20" rx="1" fill="#1f2937" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="174" y="45" font-family="Arial, sans-serif" font-size="12" fill="#e5e7eb" text-anchor="middle">RAM</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Ideal Development Machine Specs</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="16" fill="#cbd5e1" text-anchor="middle">Weekly Dev Chat • Desktop vs Laptop • Hardware Discussion</text>
+  
+  <!-- VS text -->
+  <text x="320" y="180" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#fbbf24" text-anchor="middle">VS</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="650" cy="100" r="3" fill="#10b981" opacity="0.6"/>
+  <circle cx="680" cy="80" r="2" fill="#f59e0b" opacity="0.6"/>
+  <circle cx="700" cy="120" r="4" fill="#8b5cf6" opacity="0.6"/>
+  <circle cx="720" cy="90" r="2" fill="#ef4444" opacity="0.6"/>
+</svg>

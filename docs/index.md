@@ -1,7 +1,7 @@
 ---
     title: Home
 ---
-# Every Tuesday at 12pm Mountain Time
+# Every Tuesday at 12pm Alberta Time
 
 <img class="logo-article-img" src="assets/logo/horizontal_logo_light.svg" alt="weekly-dev- chat logo">
 

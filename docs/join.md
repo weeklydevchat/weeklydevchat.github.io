@@ -6,14 +6,14 @@ hide:
 # How to join the Weekly Dev Chat
 
 <div class="wdc-page" markdown>
-  <p class="lead">We meet online deterministically every Tuesday at 12pm Mountain Time.  The in real life events date and time are nondeterministic.</p>
+  <p class="lead">We meet online deterministically every Tuesday at 12pm Alberta Time.  The in real life events date and time are nondeterministic.</p>
 
   <section class="cta">
     <div class="eyebrow"><span class="dot"></span>Preferred way to join</div>
     <div class="cta-inner">
       <div>
         <h3>Luma Calendar</h3>
-        <p>Follow the WDC Luma calendar to get notified of upcoming events. Register for an event to get the Zoom link for virtual events or address for the IRL event.</p>
+        <p>Follow the WDC Luma calendar to get notified of upcoming events. Register for an event to get the Proton Meet link for virtual events or address for the IRL event.</p>
       </div>
       <div class="cta-actions">
         <a class="btn primary" href="https://luma.com/weeklydevchat">Luma Calendar</a>
